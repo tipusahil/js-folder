@@ -1,0 +1,20 @@
+.xyz{
+
+    color:red;
+    font-weight: 400px;
+    font-size: 3rem;
+
+}
+
+/* 2.jei tag ta css er maddome style kore js er maddome run time e style korte cacci oi tag er sate css e selector hisebe classname tar mil  thakte parbena.
+ortat css e emn ekta (random/icce moto) ekta class name k selector banabe jeta html er oi tag tar sate mil nei emn ekta random name k selector baniye style korte hobe, 
+& oi css e random classname ta (dot .) bad diye shudo classname ta js er (variable.classList.add/remove('css random classname')); evabe js e  css er random name ta (vari.classList.add / remove('random css classname'); ) evabe select korte hobe.
+ */
+
+
+.random_style{
+/* css e jei classname (.random_style) hisebe jei name ta selector baniyeci etar sate jei tag k style korte cacci otar sate rltn thakte parbena. eta just oi tag er sate somporko nei emn ekta name niye css e classname banano hoyece. */
+    color: blue;
+    font-size: 3rem;
+    background-color: grey;
+}

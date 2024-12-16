@@ -1,0 +1,381 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <pre>
+        1.tofixed property diye kuno float number dosomik er pore koita sonka thakbe,ortat output dosomik er pore koita sonka dekabe seta fix kore dewa hoi toFixed) function er maddome tobe fixed er (F)letter ta capital letter er hote hobe.
+        2.(toPrecesion)property diye kuno number type data seta float hok ba intiger type hok setar total koita sonka output e dekabe seta precesion kore dewa hoi, tobe must (toPrecesion)property er(P) ta capital letter er hote hobe,nahoi kaj korbena.
+        3.(toString) property diye kuno ekta number type data k string type data te convert kora hoi.
+     
+        4.(Number)property er(N)ta caital letter er hote hobe must be. & number property diye kuno string type data kinba float/intgiter/boolean type data k number type data te convert kora hoi.
+    
+        <!--strings related library function er kaj. -->
+        5.(prompt) property ta use kora hoi kuno ekta variable niye equal sign er pore  then bracket er vitore data store kore raka hoi seta input feel er upore label hisebe kaj kore, prompt property diye user  theke popup er maddome input newa hoi.
+    6.(length)property er maddome kuno datar total length koto seta ber kora hoi. & documeent.write function er maddome call kore deka jai.
+    6.(charAt) property er kaj holo kuno datar  X number charecter/letter ta ki seta dekar jonno charAt property use korte hoi & charAt property er (A)ta capital letter er hote hoi.
+    7.(concat)property er maddome string er sate string/variable kinba number type data jukto/concatenate kora hoi. library function (concat) use na korew shudo (+)sign er maddomew concatenate kora jai. ortat ekadik variable/string eksate kora jai, even extra kore bracket niye tar vitore mathmetical kaj o kora jai.
+    8.(slice) property er maddome kuno datar X/8ta letter hoter 2ta slice/kete nile baki j 6ta letter thake segulo dekabe, eta korar jonno (slice)library function use kora hoi.
+    9.(toUpperCase) & (toLowerCase) property er maddome kuno variable er data k uppercase kinba lower case e convert kora hoi.tobe property tar sate extra kore shudo parent bracket dite hoi,bracket er vitore kisu likte hoina, bracket na dile function ta kaj korbena .jmn: document.write(toUpperCase()); evabe. lowercase er jonnow same process
+    
+    </pre>
+    
+    
+<!-- fahrenheit to celsius otoba celsius to fahrenheit converter -->
+<pre>
+
+    <h1>fahrenheit to celsius program.</h1>
+    <script>
+  
+
+ //   fahrenheit to celsius program.
+var faren=prompt("enter your fahrenheit value: ")
+
+celsius=((faren-32)* 5/9);
+// Formula	(32°F − 32) × 5/9 = 0°C
+
+document.write("your celsius value is = "+ celsius);
+    </script>
+
+<h1>fahrenheit to celsius program.</h1>
+<script>
+
+
+//   celsius to fahrenheit program.
+var cels=prompt("enter your celsius value: ")
+
+faren=((cels*9/5)+32);
+// Formula	(0°C × 9/5) + 32 = 32°F
+
+
+document.write("your fahrenheit value is = "+ faren);
+</script>
+
+
+<h1>day to second e convert korar system</h1>
+<script>
+
+
+//   celsius to fahrenheit program.
+var day=prompt("enter your day to: ")
+
+sec=(day*86400);
+
+document.write("the second is = " + sec);
+
+</script>
+
+
+</pre>
+
+<pre>
+<h1>relation op. & logical op. songa</h1>
+
+
+1.rltn op true false er ketre beshi use kora hoi.
+
+##1.rltn op. diyew true flse nirnoy kora hoi.
+##1.rltn op. 8ta jmn:
+1.(>)greater then
+2.(< )lessthen
+3.(>=)graterthen assignment
+4.(<=)lessthen assignment
+5.(==)double assignment
+6.(===)3ple assignment
+7.(!=)not assignment
+8.(!==)not double assignment
+
+
+1.rltn op.:
+<script>
+// 1.rltn op:
+
+var  num1 =20;
+var num2 = 15;
+
+//1. greater (>) then er use
+ num= (num1>num2);
+document.write("greater  result is= "num);
+
+// 2.lessthen(<) er use
+num= (num1<num2);
+document.write("less then  result is= "num);
+
+
+// 3.greater then or wqual op.
+num= (num1>=num2);
+document.write("greater then or equal sign result is= "  num);
+
+
+// 4.less then or wqual op.
+num= (num1<=num2);
+document.write("lester then or equal sign result is= "  num);
+
+// 5.double equal op.
+num= (num1==num2);
+document.write("double equal sign result is= "  num);
+
+// 6.3ple equal op.
+num= (num1===num2);
+document.write("3ple equal sign result is= "  num);
+
+
+// 7.(!=)not equal op.
+num= (num1!=num2);
+document.write("(!=)not equal sign result is= "  num);
+
+// 8.(!==)not double equal op.
+num= (num1!==num2);
+document.write("(!=)not double equal sign result is= "  num);
+
+</script>
+
+</pre>
+
+<pre>
+<h1>logical op. details:</h1>
+
+##2.logical op. diye ture flase nirnoy kora hoi.
+##2.lofical op 3ta , jmn:
+
+1.(&&) double and logi. op.
+2.(||) or (||) logical op.
+3.(!)not logical. op.
+
+
+<script>
+    // (&&)double logic oop. 
+ var nom1=50;
+ var nom2=30;
+ var nom3=100;
+
+nom=(nom2<nom1 && nom3>nom2);
+    // (&&) double & logic. op.. ta tokoni true dekabe jokon son gulo condition er man true hobe ,ar jodi ekadik codniton e shudo ektaw jodi false hoi tahole true dekabena false dekabe, so careful
+
+    document.write("(&&) doulbe and logic op. er resuls= " + nom);
+
+    //(||) or logic op.
+    var nom1=50;
+ var nom2=30;
+ var nom3=100;
+
+nom=(nom2<nom1 || nom3>nom2);
+// (||)  or logic op. ta tokoni kaj kore hocce ekadik conditon er modde jekuno  1ta conditon o jodi true hoi tahole true dekabe jodi ekta conditon o true nahoi tkn false dekabe, ortat (&&) op. er biprit kaj kore. 
+    document.write("(||)  or logic op. er resuls= " + nom);
+
+
+
+</script>
+
+</pre>
+
+
+<pre>
+<h1>controls statment details:</h1>
+##1. control statment 2prokar:
+
+1.conditional statment: (if , else if, and else) condi. st.
+2.loop  statment: (for, while, and do while) loop st.
+
+<h2>condtional st. (if ,else if , else) details:</h2>
+<script>
+// example :1
+//(if & else)diye jor sonka & bejor sonka nirnoy :
+var num=prompt( "enter your number: ");
+
+if(num%2==0)
+document.write("Your number is= " + "jor sonka");
+
+else
+document.write("Your number is= " + "bejor sonka");
+</script>
+
+<h1>loop st. (for, while, do while) details:</h1>
+<script>
+
+</script>
+
+<h2>grade ber kora (if, else if , else ) condi. st. use kore.</h2>
+
+<script>
+
+
+
+
+
+</script>
+
+<script>
+/* 
+Grade	Scale	Scale 2	US Grade
+A+	5.00	80.00 - 100.00	A+
+A	4.00 - 4.99	70.00 - 79.99	A
+A-	3.50 - 3.99	60.00 - 69.99	AB
+B	3.00 - 3.49	50.00 - 59.99	B
+C	2.00 - 2.99	40.00 - 49.99	C
+D	1.00 - 1.99	33.00 - 39.99	D
+F	0.00 - 0.99	0.00 - 32.99	F
+
+*/
+
+
+//1. number to grade logical op. (&&, ||) use kore:
+
+var marks=prompt("enter your mark1: ");
+
+if(marks>100 || marks<0)
+document.write("your number is invalid");
+
+else if(marks>=80 && marks<=100);
+document.write( "your results is = "+"A+");
+
+
+else if(marks>=70 && marks<=79)
+ document.write( "your results is = "+"A");
+
+
+else if(marks>=60 && marks<=69)
+document.write( "your results is = "+"A-");
+
+
+
+else if(marks>=50 && marks<=59)
+document.write( "your results is = "+"B");
+
+
+else if(marks>=40 && marks<=49)
+document.write( "your results is = "+"C");
+
+
+
+else  // (marks>=1 && marks<=32)
+document.write( "your results is = "+ "FAIL");
+
+
+
+</script>
+
+<script>
+// (rltn op. use) number to grade:
+
+var mark2=prompt("enter your mark2: ")
+
+if(mark2>100 && mark2<0)
+document.write("the number is invalid ");
+
+
+else if(mark2>=80)
+document.write("YOUR RESULT IS = "+ "A+");
+
+else if(mark2>=70)
+document.write("YOUR RESULT IS = "+ "A");
+
+else if(mark2>=60)
+document.write("YOUR RESULT IS = "+ "A-");
+
+else if(mark2>=50)
+document.write("YOUR RESULT IS = "+ "B");
+
+
+else if(mark2>=40)
+document.write("YOUR RESULT IS = "+ "D");
+
+else if(mark2>=33)
+document.write("YOUR RESULT IS = "+ "C");
+
+else
+document.write("YOUR RESULT IS = "+ "FAIL");
+
+
+</script>
+
+<h1>3ta number er moddde konta boro seta logical op. diye nirnoy:</h1>
+<script>
+
+var num1=prompt("enter your 1st number: ");
+var num2=prompt("enter your 2nd number: ");
+var num3=prompt("enter your 3rd number: ");
+
+if(num1>num2 && num1>num3)
+document.write("the largest number is= " + num1);
+
+else if(num2>num1 && num2>num3)
+document.write("the largest number is= " + num2);
+
+else
+document.write("the largest number is= " + num3);
+</script>
+
+
+</pre>
+
+
+<pre>
+
+    <h1>vowel & consonant nirnoy: </h1>
+
+<script>
+
+var letter=prompt("enter your letter : ");
+
+if(letter==a || letter==e || letter==i || letter ==o || letter ==u)
+document.write( "your letter is= " +"vowel");
+
+else document.write("your letter is= " +"consonant");
+
+</script>
+
+<h1>(switch,case,break,default). diye vowel & consonant check</h1>
+
+
+<script>
+
+var lettter=prompt("enter a lettttter : ");
+
+switch(lettter){
+    case"a":
+    case"e":
+    case"i":
+    case"o":
+    case"u":
+    document.write("the letttter is= "+"vowel");
+break;
+
+    default:
+        document.write("the letttter is= "+"consonant");
+}
+
+</script>
+</pre>
+
+
+
+
+
+
+
+
+<style>
+h1{
+    background-color: navy;
+    color:white;
+    text-align: center;
+    display: block;
+}
+
+pre{
+    background-color:#91fde2;
+    display: block;
+    width:100vw;
+    padding:10px;
+    margin: 10px;
+
+}
+</style>
+</body>
+</html>

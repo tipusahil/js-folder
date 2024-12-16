@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>how to create and use array</title>
+</head>
+<body>
+  
+
+
+<h1 style="text-align: center;">bismillahir rahmanir rahim.</h1>
+<h2 style="text-align: center;">how to create and use array</h2>
+
+<pre>
+video no:26
+class no:26
+topic:how to create and use array
+part:
+</pre>
+
+
+
+<!-- socipotro part -->
+<h2>shocipotro</h2>
+<pre>
+#1.ekane ja ja ase.
+1.TOPIC 1
+2. TOPIC 2
+3. TOPIC 3
+</pre>
+
+
+<h2>details of topic start from here.</h2>
+
+
+
+<!-- #topic 1. -->
+
+<div class="topic1">
+                       <h3>array details: </h3>
+<pre>#1.array holo ek dhoroner object,onek gulo variable mile jei jinishta make/goton kora hoi setai holo array .
+onk smy ekadik variable declaree korte hoi ,tokon ekta ekta kore variable declare korte onk smy lege jabe, sei kaj ta simply easily korar jonno array use kora hoi.
+
+$$$1.jevabe array/(multiple variable) make korte hobe:
+!important.(Array er  (A)letter ta capital letter er hote hobe,other ways kaj korbena. )
+0.
+1.protome var keyword dite hobe,
+then
+2. array/(multi variable name) dite hobe.jmn:
+ var katal=
+ then
+3. assignment op. er pore new array lika then 1st bracket dite hobe; then semiclone dite hobe.jmn: 
+var katal=new array();
+then 
+new Array (); ekane 1st bracket er modde variable koita hobe seta mention kore dewa jabe jmn:
+ var katal=new array(100x);
+THEN
+4.porer line e variable name ta mention kore tar sate 3rd bracket ditee hobe,jmn: 
+katal [0]="kaca katal";
+then
+
+5.katal [0]="kaca katal"; ekane 3rd bracket e jeta thake seta hocce index number , ar array diye multiple variable declare korar smy 0number index theke shuro hobe.
+then
+6.evabe just variable er same name ta mention kore just 3rd bracket er vitorer index number change kore multiple variable declare kora jai.
+then
+7.variable call korar smy shudo variable ta name lika write function diye print korle oi variable(katal) e jotogulo variable thakbe sob print kore dekabe.
+then
+8.ar jodi 100x variable er modde specific kuno variable declare kora lage tahole write function variable er sate index number ta shuddo dile (with 3rd) bracket,thle sei specific variable ta declare kore dekabe.jmn: document.write(katal[3]); ekabe index number 3 dewai 3number variable ta output e print kore dekabe.
+THEN
+9.array te notun kore arekta variable/string add korte chaile varaible.push(xyz); keyword ta use korte hobe.jmn: 
+katal.push("kata;-amar"); evabe likle (katal) mein variable er vitore push kora data ta add hoye jabe, tobe ekdm sesh e add hobe. abr chaile index numbert shuddo meniton kore dile sei index number er jaigai push kora jabe.
+ evabe.then 
+ 10.array theke kuno main variable (katal) theke variable/string(katalxyz) data remove/delete korte chaile mein varible.pop(xyz or [4]); evabe pop keyword diye remove kora jabe, jmn:
+ katal.pop(katal[5]); evabe korle katal variable er 5index number er jei data ta ase ota remove hoye jabe.
+
+
+<!--  -->
+<pre class="syntex">
+
+<h3>~1.array diye variable declare korar pura syntex ta holo: </h3>
+
+  var katal=new Array (5);
+  <!-- variable joto ta hobe seta ekane likte hobe. jmn:5 -->
+  <!-- variable name er sate 3rd bracket diye index number diye diye multiple variable declare kora:  -->
+  katal[0]="katal-x";
+  katal [1]="katal-y";
+  katal[2]="katal-z";
+  katal [3]="katal-a";
+  katal [4]="katal-b";
+  
+  document.write(katal);
+  1.sob gulo variable eksate print korte caile shudo variable name ta write function er vitor dile hobe.
+  2.ar jodi specific kuno variable print korte hoi tkn variable name er sate 3rd bracket soho index number ta dile hobe jmn: write(katal[3]);
+  document.write(katal[3]);
+  
+  array length dekar jonno variable er sate (.lentgh) property dilei hbe:
+  document.write(katal.length);
+
+</pre>
+
+
+
+
+
+1.array diye variable make korar smy protom variable ta [0] index number theke shuro hoi.
+2. variable_name.push(); ei push() function diye array te extra variable add kora hoi.
+3.variable_name.pop(); ei pop() function diye array theke niser dik theke ekta kore variable remove kora hoi.ortat 5ta variable thakle 5number variable ta remove/deletee kora hbe,jotobar ei propertry use kora hobe totobar ekta kore variable delete/remove hoye jabe..
+4.array er te total koita variable ase seta dekar jonno (variable.lentgh)just length property use korlei hobe.
+
+
+</pre>
+
+<h4>topic1 JS example 1:  </h4>
+
+<h5> array diye multiple variable declare: </h5>
+<script>
+
+var classs=new Array(5);
+classs[0]="class0";
+classs[1]="class1";
+classs[2]="class2";
+classs[3]="class3";
+classs[4]="class4";
+// ekane index numbeeer 4 thaklew eta variablee number 5, karon index count kora shuro hoi 0number index theke.
+
+// notun kore data/variable/string add korte chaile .push() function use korte hobe.
+classs.push("class5");
+classs.push("sokina");
+classs.push("jorina");
+// variable bad dite caile tkn .pop() keyword use korte hobe.
+classs.pop();
+// ekane ami sesh er index number er data ta pop er maddome kete feleci tai ota ar print hobena.
+// .pop() keyword e 1st bracket er vitore kisu na liklew mein variable (classs) theke sesh index er data ta kete felbe.
+
+
+// sob gulo eksate print korte caile
+document.write(classs);
+// specific print variable print korte caile
+
+document.write( "<br/>"+ "specific  data call/print korte caile evabe (classs[3]) mein variable name er sate index number ta toto number index e jei variable/data ta thakbe seta print kore dekabe.jmn= " + classs[3]);
+document.write("<br>"+classs[3]);
+</script>
+
+
+<h5> example2</h5>
+<script></script>
+
+
+<span>explaination</span>
+
+</div>
+
+
+
+<!-- #topic 2. -->
+
+<div class="topic2">
+                       <h3>topic2 head</h3>
+<pre>discription of topic
+1.
+2.
+3.
+
+<!-- syntex 2 -->
+array er shortcut syntex holo:
+1.variable declare kore assignment op. er pore 3rd bracket diye sob gulo variable koma diye diye store kora jabe.jmn: 
+var gari= ["car,bus,moha,motor, truck"];
+then
+2.variable er vitore store kore raka bibnno rkm string data gulo must quetetio er vitore rakte hobe. jmn:
+var gari= ["car,bus,moha,motor, truck"];
+then
+
+
+
+
+2. variable er 3rd bracket er vitore store kore raka variable gulo call/print korte chaile same 
+document.write(gari);
+1.sob gulo variable eksate print korte caile shudo variable name ta write function er vitor dile hobe.
+2.ar jodi specific kuno variable print korte hoi tkn variable name er sate just index number dite, thole oi index number jei variable ta ase ota print kore debabe.jmn: 
+document.write(gari[3]);
+
+
+
+
+<pre class="syntex">
+<h3>~2.array er aro shorcut syntex2: </h3>
+
+var gari=["truck,car,bus,haice,micro,motorcycle"];
+
+
+document.write(gari);
+document.write(gari[3]);
+
+</pre>
+
+
+</pre>
+
+<h5> syntex 2 er practical example: </h5>
+<script>
+
+var gari=["truck,car,bus,haice,micro,motorcycle"];
+
+
+document.write(gari);
+document.write(gari[3]);
+
+</script>
+
+
+<h5> example2</h5>
+<script></script>
+
+
+<span>explaination</span>
+</div>
+
+
+
+<!-- #topic 3. -->
+<div class="topic3">
+                      <h3>topic3 head</h3>
+<pre>discription of topic
+1.
+2.
+3.
+
+</pre>
+
+
+<h4>topic3 JS example 1:  </h4>
+
+<h5> example 1</h5>
+<script></script>
+
+
+<h5> example2</h5>
+<script></script>
+
+
+<span>explaination</span>
+</div>
+
+
+
+<!-- #topic 4. -->
+<div class="topic1">
+<h3>topic4 head</h3>
+<p>discription of topic
+1.
+2.
+3.
+</p>
+
+
+<h4>topic4 JS example 1:  </h4>
+
+<h5> example 1</h5>
+<script></script>
+
+
+<h5> example2</h5>
+<script></script>
+
+
+<span>explaination</span>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+div{
+padding: 10px;
+}
+
+.topic1{
+background: linear-gradient(rgb(185, 196, 130),rgb(130, 215, 130),skyblue);
+
+.syntex{
+  color:rgb(255, 255, 255);
+  background-color: rgb(131, 6, 58);
+}
+
+}
+
+.topic2{
+background: linear-gradient(to right,rgb(181, 170, 170),rgb(120, 228, 120),rgb(250, 165, 250));
+
+
+}
+
+.topic3{
+background-color: RED;
+
+}
+
+
+h3{
+display: inline-block;
+color: #000;
+
+text-align: center;
+background-color: white;
+padding: 10px 20px;
+border-radius: 10px;
+position: relative;
+top: 50%;
+left:40%;
+}
+
+p{
+text-decoration: underline;
+}
+
+span{
+display: block;
+background-color: NAVY;
+COLOR:white;
+}
+</style>
+</body>
+</html>
+              
+              

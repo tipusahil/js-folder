@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>keypress listener</title>
+</head>
+<body>
+  
+
+
+<h1 style="text-align: center;">bismillahir rahmanir rahim.</h1>
+<h2 style="text-align: center;">keypress listener</h2>
+
+<pre>
+video no:46
+class no:46
+topic:keypress listener
+part:
+</pre>
+
+
+
+<!-- socipotro part -->
+<h2>shocipotro</h2>
+<pre>
+#1.ekane ja ja ase.
+1.TOPIC 1
+2.TOPIC 2
+3.TOPIC 3
+</pre>
+
+
+<h2>details of topic start from here.</h2>
+
+
+
+<!-- #topic 1. -->
+
+<div class="topic1">
+                       <h3>keypress listener  ortat keyboard er key press korlei listener program ta kaj korbe.</h3>
+<pre>
+1.
+2.
+3.
+
+<!-- syntex of topic 1 -->
+<pre class="syntex">
+<h3>syntex of topic 1</h3>
+
+<p>you have not press any key</p>
+
+<script>
+document.addEventListener("keypress", function(event) {
+    /* pura document property te eventlistener property event add kora hoyece, 
+    jodi ei document open obostai keyboard er key press kora
+     thole jei keyboard er key press kora hobe sei key er name (xyz,keyboard er jei button click kora hobe sei keyname) eventlistener e asbe, ar seta annonimous
+      function er event peramitar e  cole jabe, & event peramitar ta function 
+      er vitore (key_text) variable e pass kore dibe.*/
+   var key_text =event.key;
+// document eta open thaka obostai keyboard er kuno key press kora hole seta listener er maddome function er peramitar e pass hobe & sei key er value/ke name ta varaiable e pass kore dibe.
+//event er key value ta (key_text) variable e store  cole asbe document theke. 
+   document.querySelector("p").innerHTML="you have pressed :" + key_text;
+/*  ekane p tag select kora hoyece & inner html er maddome (key_text) er modde thaka keypressed er value ta p tag e dekanu hobe ami jodi keyboard er x press kori taile p tag x press korsi seta dekabe.
+   document er p tag ta queryselector er maddome select kore js diye innerHMTL diye p tag er 
+    vitore thaka text ta change hoye jabe.
+*/    
+});
+
+</script>
+
+
+</pre>
+
+</pre>
+
+<h4>textarea  te joto gulo text likina keno koita press korsi seta count hobe </h4>
+
+<h5> example 1</h5>
+<textarea name="" id="text_box"></textarea>
+<p class="jog"> you have not press any key on keyboard</p>
+<script> 
+var count=0;
+document.querySelector("textarea").addEventListener("keypress", function(event) { //ekane (eventlistener) er modde 2ta peramitar, ekta  (keypress) ta listener er event,& arekta ota annonimous function jeta te event name ekta peramitar add kora hoyece jeta diye vitorer viarable e value pass kora hobe.
+count++;
+    var key_letter=event.key;
+    // (event.key) event er maddome jei value ta asbe seta key property te add hobe, ar seta (key_letter) variable e thakbe.
+    document.querySelector(".jog").innerHTML=" you have pressed : " + count; // textarea te joto key press korbe toto count variable er man 1 1 kore barbe, ar seta p tag e show korbe,innerHTML  er maddome seta emn p tag er vitorer taxt change hoye jav.e
+})
+
+</script>
+
+
+<h5> example2</h5>
+<script></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+div{
+padding: 10px;
+}
+
+.topic1{
+background: linear-gradient(rgb(185, 196, 130),rgb(130, 215, 130),skyblue);
+
+
+.syntex{
+color:black;
+background-color: rgb(236, 147, 184);
+}
+
+
+}
+
+.topic2{
+background: linear-gradient(to right,rgb(181, 170, 170),rgb(120, 228, 120),rgb(250, 165, 250));
+
+
+}
+
+.topic3{
+background-color: RED;
+
+}
+
+
+h3{
+display: inline-block;
+color:black;
+
+text-align: center;
+background-color: white;
+padding: 10px 20px;
+border-radius: 10px;
+position: relative;
+top: 50%;
+left:40%;
+}
+
+p{
+text-decoration: underline;
+}
+
+span{
+display: block;
+background-color: NAVY;
+COLOR:white;
+}
+</style>
+</body>
+</html>
+              
+              

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>topic</title>
+</head>
+<body>
+  
+
+
+<h1 style="text-align: center;">bismillahir rahmanir rahim.</h1>
+<h2 style="text-align: center;">DOM  diye (Find, create, add, remove html elements)</h2>
+
+<pre>
+video no:38
+class no:38
+topic:dom
+part: 2...  (part 1 is 35number video)
+</pre>
+
+
+
+<!-- socipotro part -->
+<h2>shocipotro</h2>
+<pre>
+#1.DOM amra ja ja korte pari.
+1.find / get
+2. change
+3. add , or
+4.delete HTML elements.
+</pre>
+
+
+<h2>details of topic start from here.</h2>
+
+
+
+<!-- #topic 1. -->
+
+<div class="topic1">
+                       <h3>topic1 head</h3>
+<pre>discription of topic
+1.DOM diye element k find kora jai,change kora jai,add kora jai & html element delete kora jai.
+2.
+3.
+1.DOM Mehtod holo getElementById() 
+<!-- jar sate 1st bracket thake.& -->
+2.DOM Properties = innerHTML 
+<!-- jar sate 1st bracket thakena. -->
+
+<!-- syntex of topic 1 -->
+<pre class="syntex">
+<h3>dom diye kuno element find/get jevabe korte hoi tar syntex: </h3>
+1.document.getElementById('idname');
+<!-- 1.find element by id name-->
+2.document.getElementsByClassName('classname')[class_index_number];
+<!-- 2. find elements by class name & index number -->
+3.document.getElementsByTagName('tagname')[tag_index_number];
+<!-- 3. find elements by tag name & index number-->
+<!-- class & tag name diye element select korar ketre index number dite hoi -->
+
+4.document.querySelector('#id / .class tag / parenttag child tag');
+<!-- find elements by queryselector.. purai css er moto kore 1st bracket er vitore html er element gulo select korte hoi. -->
+</pre>
+
+
+
+
+<h3>DOM property use kore diye HTML elements er vitore thaka  data/text/content change korar ketre</h3>
+
+Property : 
+1.Element.innerHTML = "new html content/text/data";
+2.Element.attribute = "new value";
+3.Element.style.property= "new style";   
+ <!--3.kuno tag e style korte caile tag.style.property= " green/none,px";    evabe likte hobe. property bolte (color,decoration xyz); -->
+
+Method: 
+1.Element.setAttribute(attribute, value) 
+change the attribute value of an html element
+
+
+
+
+<h5>SYNTEX OF DOM er maddome jevabe element select kore seta te content add korte hoi & change korte hoi tar syntex</h5>
+
+<a href="http://www.google.com/">google er link</a>
+
+<script>
+
+// DOM diye tag/element select:
+    var go_link=document.getElementsByTagName('a')[0];
+    // 1.a tag select kora hoyece.
+
+    // DOM property use kore content change & attribute add
+    go_link.innerHTML=" google link to facebook link";
+    go_link.style.color="green";
+    go_link.style.textDecoration="none";  // default vabe text a tag e decoration thake.
+// ekane textDecoration er D ta capital letter hote hobe ortat (.style) er pore ekadik word thakle 1st letter ta small letter diye holew 2nd word ta capital letter diye shuro hobe.space na thaka sottew evabe likte hobe.jmn: (tag.style.textDecoration)
+    // 2. a tag er vitorer text,&color, attiribute change kora korar jonno kuno function er proyojon nei .
+
+    go_link.style.fontSize="1.5em";
+
+    // tag er link er address change korte caile.
+go_link.href= "http://www.facebook.com/";
+// attribute gulo alada kore thake.jmn (style) taw ekta attribute tik tmn href,title esob tag er attribute.
+// link e google er href diyecilm,kintu DOM  property use kore facebook er link kore diyeci.
+
+
+</script>
+
+
+<h5> example2</h5>
+<script></script>
+
+
+<span>explaination</span>
+
+</div>
+</pre>
+
+
+<!-- #topic 2. -->
+
+<div class="topic2">
+                       <h3>DOM er maddome HTML e notun tag create.</h3>
+<pre>discription of topic
+1.document.
+2.
+3.
+
+<!-- syntex of topic 2 -->
+<h2 id="h222">for remove by js</h2>
+<script>
+
+var tag_js=document.createElement("h1");
+// 1. eta diye h1 tag creat kora hobe eta evabe likte hobe.
+var text_js=document.createTextNode("i am new tag from js");
+// 2.tag er vitorer text/content gulo evabe likte hobe.
+tag_js.appendChild(text_js);
+// 3. tag ar tag er text evabe appendchild er maddome add korte hoi
+var parent=document.querySelector('.topic2');
+// h1 tag ta kon tag er vitore hobe sei parent ta select korte hobe.
+parent.appendChild(tag_js);
+// parent tag er vitore h1 tag ta evabe include korte hobe.
+
+var remo=document.querySelector("#h222");
+remo.removeChild();
+
+</script>
+
+<h5> example2</h5>
+<script>
+
+var before_tag= document.createElement('h2');
+var before_text= document.createTextNode('ei tag ta js er maddome kora hoyece kuno tag er age/upore boshanur jonno');
+before_tag.appendChild(before_text);
+
+var b_pare=document.querySelector('topic2');
+
+// b_pare.appendChild(before_tag);  // ei property diye emne tag ta add kora hoi, but kuno tag er vitore onno child tag er age add korte caile niser (insert)
+var etar_age_boshate_chai=document.getElementById("h222")
+b_pare.insertBefore(before_tag,h222);
+// insertBefore property diye parent tag er vitore ekadik tag take tai parent tag er vitore kon child tag er age tag ta insert korte cacci seta define kore dite hoi, a
+// bracket er vitore new tag jeta add korte cacci ota dite hobe ,then koma diye jei tag er age add korte cacci sei tag er name ta dite hobe.
+</script>
+
+</pre>
+
+<h4>topic2 JS example 1:  </h4>
+
+<h5> example 1</h5>
+<script></script>
+
+
+
+
+<span>explaination</span>
+</div>
+
+
+
+<!-- #topic 3. -->
+<div class="topic3">
+                      <h3>topic3 head</h3>
+<pre>discription of topic
+1.
+2.
+3.
+
+
+
+
+<!-- syntex of topic 2 -->
+<pre class="syntex">
+<h3>syntex of topic 2</h3>
+
+</pre>
+
+
+
+</pre>
+
+
+<h4>topic3 JS example 1:  </h4>
+
+<h5> example 1</h5>
+<script></script>
+
+
+<h5> example2</h5>
+<script></script>
+
+
+<span>explaination</span>
+</div>
+
+
+
+<!-- #topic 4. -->
+<div class="topic1">
+            <h3>topic4 head</h3>
+<pre>discription of topic
+1.
+2.
+3.
+
+
+
+
+<!-- syntex of topic 2 -->
+<pre class="syntex">
+<h3>syntex of topic 2</h3>
+
+</pre>
+
+
+
+
+</pre>
+
+
+<h4>topic4 JS example 1:  </h4>
+
+<h5> example 1</h5>
+<script></script>
+
+
+<h5> example2</h5>
+<script></script>
+
+
+<span>explaination</span>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+div{
+padding: 10px;
+}
+
+.topic1{
+background: linear-gradient(rgb(185, 196, 130),rgb(130, 215, 130),skyblue);
+
+
+.syntex{
+color:black;
+background-color: rgb(236, 147, 184);
+}
+
+
+}
+
+.topic2{
+background: linear-gradient(to right,rgb(181, 170, 170),rgb(120, 228, 120),rgb(250, 165, 250));
+
+
+}
+
+.topic3{
+background-color: RED;
+
+}
+
+
+h3{
+display: inline-block;
+color:black;
+
+text-align: center;
+background-color: white;
+padding: 10px 20px;
+border-radius: 10px;
+position: relative;
+top: 50%;
+left:40%;
+}
+
+p{
+text-decoration: underline;
+}
+
+span{
+display: block;
+background-color: NAVY;
+COLOR:white;
+}
+</style>
+</body>
+</html>
+              
+              

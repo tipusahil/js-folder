@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listeners with multiple elements</title>
+</head>
+<body>
+
+ video:43
+ class:43
+ topic:  Event Listeners with multiple elements
+
+
+
+<div class="syntex">
+    <h1>Event Listeners with multiple elements </h1>
+
+    <h3>you have not click any button</h3>
+    <button class="all_btn "> button 1 </button>
+    <button class="all_btn "> button 2 </button>
+    <button class="all_btn "> button 3 </button>
+
+    <script>
+var leng= document.querySelectorAll(".all_btn").length;
+/* 1.(all_btn) btn er classname  jeta ase otar length. ortat oi class name jotota tag/btn e ase sob gulo mile joto ta ase totota obdi jate loop calate pari tar jonno
+  ei class tar length ber korar jonno ekta variable nilm oi variable ta loop e calai dilm
+  jate oi class name jei jei tag e ase sob gulo te 1 1 kore jabe, */
+
+
+for(var x =0; x<leng;x++){
+
+// 1.program start point. ekan theke end point obdi pura program ta  for loop er body/curly bracket er vitore dite hobe.
+//2. btn variable e j jaigai 0index number chilo button 1 k select korar jonno sei jaigai for loop er x varaible ta dile hobe, 
+// 3.jeheto for loop ta index number 2 obdi cholbe seheto 3ta button er kaj ekta progra me hoe gelo ,sob kisu same but index number er jaigai 0,1,2 evabe chilo,
+var btn= document.querySelectorAll(".all_btn")[x].addEventListener("click", function(){
+var btn_text=this.innerHTML;
+
+document.querySelector("h3").innerHTML= btn_text + " is clicked";// ekane btn_text variable ta h3 er inner htmml e likar smy quetion na dilew prbm hobena, dilew prbm nai. run korbe, btn 1 er text dekabe.
+    
+})
+// program end point
+
+
+}
+
+
+ /* program start point  
+var btn= document.querySelectorAll(".all_btn")[0].addEventListener("click", function(){
+ var btn_text=this.innerHTML;
+
+document.querySelector("h3").innerHTML= btn_text + " is clicked";// ekane btn_text variable ta h3 er inner htmml e likar smy quetion na dilew prbm hobena, dilew prbm nai. run korbe, btn 1 er text dekabe.
+    
+})
+ program end point */
+
+    </script>
+
+
+</div>
+    
+
+
+   <!-- topic 1 full details -->
+<pre>
+<h1>topic 1 use kivabe kore,syntex ta jmn full details:</h1>
+#1. 
+#2. 
+
+1.
+2.
+3.
+
+<h3> you have not click any button</h3>
+<button class="all_button"> button 1 </button>
+<button class="all_button"> button 2 </button>
+<button class="all_button"> button 3 </button>
+<!-- sob gulo butn er class name eki dite hobe, jate queryselectorall diye eksate select kora jai,
+ &alada korte chaile classname er index number hiseb kore ekta ekta select korte parbe. -->
+
+<script>
+    // button 1 index number 0 er button
+    var btn=document.querySelectorAll(".all_button")[0].addEventListener("click", function(){
+   // querySelector(ALL) korte hobe,jeheto all class seelct korte cai.
+
+        // 1.all btn er classname same niye querySelectorAll(.common classname)[index number 0] diye btn 0 select kora hoyece.
+    // 2. erpor oi 1number btn ta jate click korlei kuno kaj kore tar jonno dot diye .addEventListener("click property", function) ;
+        var btn_x=this.innerHTML;
+    // 3.btn 1 er vitorer text ta jate print hoi tar jonno ekta variable er modde (this.innerHTML) this property use kore btn 1 er text ta variable e store kore raka hoyece, & jate btn e thak text ta copy kore arekta jaigai pass kore dei.
+    // 4.ortat kew btn 1 click korle  btn 1 er text ta variable e cole asbe sei text ta niser function onujai h3 tag e pass kore dibe.
+        document.querySelector("h3").innerHTML=  btn_x + "is clicked";
+//  5.btn 1  e click korle h3 tag ta select hoye jabe, & h3 er vitore thaka text ta change hoye jabe,
+// btn 1 er varaible e thaka text ( button 1) ei text ta + (is clicked); eta run hobe,
+// ortat button 1 e click korlei h3 er vitorer text ta replace hoye uporer function onujai text boshabe, 
+    });
+    
+    
+    // button 2 index number 1 er button
+    var btn=document.querySelectorAll(".all_button")[1].addEventListener("click", function(){
+    // ei pura program ta btn 1 er ketre jmn kaj korce tik tmni kaj korbe, but btn 2 er jonno ortat (allbutton) class er index number 1 e thaak button ta click korlei ei program ta run  hobe,
+    // jeheto btn 1 & btn 2 er program puratoa same just index number ta  chagne hocce tai oi jaigai loop calai dile ekta program liklei 3 ta index er jonno kaj korbe.
+    var btn_x=this.innerHTML;
+    
+    document.querySelector("h3").innerHTML=  btn_x + "is clicked";
+    
+    });
+    
+    
+    // button 3 index number 2 er button
+    var btn=document.querySelectorAll(".all_button")[2].addEventListener("click", function(){
+    
+    var btn_x=this.innerHTML;
+    
+    document.querySelector("h3").innerHTML=  btn_x + "is clicked";
+    
+    });
+    
+    
+    </script>
+    jeheto button 1,2,3 er jonno same function just index number ta change hocce
+    2.tai button 1 er jonno ekta program lika sei pura program loop st. er body te reke pura program e jei jaigai index number boshe sei jaigai loop er index serial  calai dile sei onujai loop colbe.
+    3.alada kore 3ta button er jonno 3ta function likar proyojon nei
+    4.pur
+    
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    .syntex{
+    background:linear-gradient(to left, rgb(227, 150, 150),rgb(127, 231, 127),rgb(194, 194, 241));
+    
+    }
+    
+    pre{
+        background:linear-gradient(to right, rgb(9, 235, 160),rgb(248, 159, 251),rgb(201, 242, 173));
+    
+    }
+    </style>
+    
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ডকুমেন্টটি মোবাইল এবং ডেস্কটপ উভয় ডিভাইসে ভালোভাবে রেন্ডার হবে -->
+  <title>onsubmit Event Example</title>
+
+  <script>
+    // Function to validate form
+    function validateForm(event) { 
+      // ফর্মের ভ্যালিডেশন চেক করার জন্য এই ফাংশনটি তৈরি করা হয়েছে
+
+      // নাম ফিল্ডের মান (value) খুঁজে বের করার জন্য
+      const nameField = document.getElementById('name');
+
+      // ইমেল ফিল্ডের মান (value) খুঁজে বের করার জন্য
+      const emailField = document.getElementById('email');
+
+      // যদি নাম ফিল্ড খালি থাকে
+      if (nameField.value.trim() === '') {
+        alert('Name field khali rakha jabe na!'); // ব্যবহারকারীকে সতর্ক করার জন্য মেসেজ
+        event.preventDefault(); // ফর্ম সাবমিট বন্ধ করা হচ্ছে
+        return false; // ভ্যালিডেশন ব্যর্থ হলে false রিটার্ন
+      }
+
+      // যদি ইমেল ফিল্ডে '@' না থাকে
+      if (!emailField.value.includes('@')) {
+        alert('Email thikmoto din!'); // ব্যবহারকারীকে সতর্ক করার জন্য মেসেজ
+        event.preventDefault(); // ফর্ম সাবমিট বন্ধ করা হচ্ছে
+        return false; // ভ্যালিডেশন ব্যর্থ হলে false রিটার্ন
+      }
+
+      // যদি সবকিছু ঠিক থাকে, ফর্ম সাবমিট হবে
+      alert('Form successfully submit kora hoyeche!');
+      return true; // ভ্যালিডেশন সফল হলে true রিটার্ন
+    }
+  </script>
+</head>
+<body>
+  <h1>Form Validation Example</h1> <!-- পেজের শিরোনাম -->
+
+  <!-- ফর্মের শুরু -->
+  <form onsubmit="return validateForm(event)"> 
+    <!-- ফর্ম সাবমিট করার সময় validateForm(event) ফাংশন কল হবে -->
+
+    <!-- নাম ইনপুট ফিল্ড -->
+    <label for="name">Name:</label> <!-- নাম ইনপুটের লেবেল -->
+    <input type="text" id="name" name="name"><br><br> <!-- টেক্সট ইনপুট ফিল্ড, id="name" দিয়ে চিহ্নিত -->
+
+    <!-- ইমেল ইনপুট ফিল্ড -->
+    <label for="email">Email:</label> <!-- ইমেল ইনপুটের লেবেল -->
+    <input type="email" id="email" name="email"><br><br> <!-- ইমেল ইনপুট ফিল্ড, id="email" দিয়ে চিহ্নিত -->
+
+    <!-- সাবমিট বাটন -->
+    <button type="submit">Submit</button> <!-- ফর্ম সাবমিট করার জন্য বাটন -->
+  </form>
+</body>
+</html>

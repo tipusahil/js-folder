@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>image slider</title>
+</head>
+<body>
+  
+
+
+<h1 style="text-align: center;">bismillahir rahmanir rahim.</h1>
+<h2 style="text-align: center;">image slider</h2>
+
+<pre>
+video no:40
+class no:40
+topic:
+part:
+</pre>
+
+
+
+<!-- socipotro part -->
+<h2>shocipotro</h2>
+<pre>
+#1.ekane ja ja ase.
+1.TOPIC 1
+2. TOPIC 2
+3. TOPIC 3
+</pre>
+
+
+<h2>details of topic start from here.</h2>
+
+
+
+<!-- #topic 1. -->
+
+<div class="topic1">
+                       <h3>image slider crate program </h3>
+<pre>
+1.
+2.
+3.
+
+<!-- syntex of topic 1 -->
+<pre class="syntex">
+<h3>syntex of topic 1</h3>
+
+<button onclick="prev()">prev btn</button>
+<button onclick="next()">next btn</button>
+<!-- #1.2ta button nite hobe button er vitore 2ta  function name onclick attribute e add kora hoyece,
+1.jate next button e click korle next() function er program ta run hobe.&
+2.prev btn e click korel prev() function wal program ta run hobe. -->
+
+ <img src="" alt="" width="300px" height="400px">
+<!--#2. img tag  er vitore width height ta setup kore dite hobe jate js theke kuno image run korle sei width height onujai boshe jai.-->
+
+<script>
+
+var photos=['image/space.jpg','image/joba.jpg ',' image/fol.jpg'];
+// #3.image gulo ekta array te newa hoyece,3rd brcket er vitore quetion er vitore img er link dite hobe, then quetetio ner baire koma dite hobe, evabe jotot icce image add kora jabe.
+
+var imgTag= document.querySelector("img");
+// #4.html img tag ta js e select kora hoyece.eta diye array er vitiroe newa image gulor link pass kora hobe, img tag e, & imag er width height onujai array er image gulo boshbe.
+
+count=0;
+// #5.kew next/prev btn e click korle count er man 1 1 kore barbe,& ei number ta function er vitore 
+
+function next(){
+count++;
+// #6.nxt btn e click korle next()function e asbe, & count variable er man 1 kore barbe.
+
+if(count>=photos.length){
+  // #7.(count) variable er man  jodi photos array er index number thekew beshi hoye jai tkn abr,count variable er man 0 hoye jabe.
+//  
+  count=0;
+  imgTag.src=photos[count];
+// #8.(imgTag) variable er modde img tag ta select kora ase,& ( imgtag.src= photos[count]; )ei property  diye (photos)array er index number dhore  (photos)array er modde thaka img er link gulo ei (imgTag) variable e pass kore dibe, 
+// jokoni user nxt btn e click korbe tkn count er man  ek ek kore bere jabe,seta src er value te (photos) array er index number hisebe  pass kore dibe, jeheto ar sei index number onujai img er link change hobe, ortat 0 number index e jei img ta ase ota sore giye jkn index number1 hobe ,tkn index nuber 1 e jei img ta ase seta pass kore dibe,
+// 
+}else{
+  //#9. emne count varaible er value jodi 0 theke photos array er index number er soman thakbe ,tokon svabik vabe else er condtio nonujai kja korbe,ar jkn count er value photos array er index number thekew boro hoye jabe, tkn if e conditon onujai kaj korbe.
+  imgTag.src=photos[count];
+
+}
+
+}
+
+
+function prev(){
+  // #10.jokon user prev btn e click korbe tkn prev() function onujai kaj korbe, prev button diye jeheto previuos iamge dkeabo, tai 
+
+count--;
+// #11.user prev btn e click korle count variable er man 1 kore kombe, komar jonno ( count--;)eta use kora hoyece.
+
+if(count<0){
+  //#12. count er man 0 thekew chuto hole negative man hole tkn if er condtion onujai kaj korb,e nahoi prev() founctio ner else condition onujai kaj korbe.
+
+  imgTag.src=photos.length -1; // photos array er index number theke -1 ek ek kore komiye nile tkn array er img o ager ta dekabe. abr e kkomle abr array er ager img dekabe.
+
+  // 
+}else{
+  // 
+  imgTag.src=photos[count];
+}
+
+}
+
+</script>
+
+
+</pre>
+
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+div{
+padding: 10px;
+}
+
+.topic1{
+background: linear-gradient(rgb(185, 196, 130),rgb(130, 215, 130),skyblue);
+
+
+.syntex{
+color:black;
+background-color: rgb(236, 147, 184);
+}
+
+
+}
+
+.topic2{
+background: linear-gradient(to right,rgb(181, 170, 170),rgb(120, 228, 120),rgb(250, 165, 250));
+
+
+}
+
+.topic3{
+background-color: RED;
+
+}
+
+
+h3{
+display: inline-block;
+color:black;
+
+text-align: center;
+background-color: white;
+padding: 10px 20px;
+border-radius: 10px;
+position: relative;
+top: 50%;
+left:40%;
+}
+
+p{
+text-decoration: underline;
+}
+
+span{
+display: block;
+background-color: NAVY;
+COLOR:white;
+}
+</style>
+</body>
+</html>
+              
+              

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Array library methods</title>
+</head>
+<body>
+  
+
+
+<h1 style="text-align: center;">bismillahir rahmanir rahim.</h1>
+<h2 style="text-align: center;"> Array library methods</h2>
+
+<pre>
+video no:28
+class no:28
+topic: Array library methods
+part:
+</pre>
+
+
+
+<!-- socipotro part -->
+<h2>shocipotro</h2>
+<pre>
+#1.ekane ja ja ase.
+#2. Array library methods's details:
+1.shift() method opposite of pop() 
+& unshift(zyx)method opposite of push(xyz) details with example: 
+
+2. splice method details: &
+ slice() method er use. 
+3.sort() method er use:
+ sort() data type string hole sort()method jmn hobe,defult vabe string k alphabetly sorting kora hoi.
+ & data type number hole sort() method ta jevabe tircks follow kore kaj sorted koraite hobe.
+
+
+ 4.reverse method 
+</pre>
+
+
+<h2>details of topic start from here.</h2>
+
+
+
+<!-- #topic 1. -->
+
+<div class="topic1">
+                       <h3> Array library methods's details: </h3>
+<pre>
+##1.array library methods er kaj o partokko, & likar niom:  
+ 
+
+1.shift() method opposite of pop(): eta  pop.() method er tik biporit hocce .shift() method 
+karon: .pop() method ta (array's variable er datar) ekdom sesher dik theke 1ta remove kore, kintu shift  (array's variable er datar) edkom shuror theke 1ta remove kore.
+example:
+
+<script>
+var names=["allah", "rahman","rohim"];
+
+names.shift();
+// ekane .shift() method ta use korai array er variable er datar ekdm shuror thek 1 ta remove hoye gece, kintu pop() method diy korle ekdm sesh er dik theke 1ta remove hoto j.
+document.write(names);
+</script>
+
+2.unshift(xyz) method opposite of push(xyz):  eta .push() method er tik biporit kaj kore.ortat (array's variable er datar) shuror dike 1ta data add kore dei, kintu push() method ta (array's variable er datar) sesh er dike ekta data add kore dito.  
+example: 
+
+<script>
+    var fruits=["am","jam","katal"];
+    fruits.unshift("lisu");
+    // ekane unshift(zyx) fruits variable er datar shuror dike 1ta data (lisu) add kre dilo.
+    document.write(fruits);
+</script>
+
+
+</pre>
+
+<h4>topic1 JS example 1:  </h4>
+
+<h5>1.sort() method diye (string) data kivabe alphabetly sorting kora hoi:</h5>
+
+
+<script> 
+var porot= ["jam","katal","lisu","am","banana"];
+
+document.write("normal= "+ porot + " <br>");
+// normally variable ta jevabe store kore hoyece sevabe print korbe.
+porot.sort();
+// ekane fruits variable e sort() method use korle prottek word er protom letter check kore alphabetly a,b,c evabe  serial ways fruits er data gulo k sajiye nibe.
+document.write( "##2.(sort() method) er kaj: sorted korar pore data gulor protom letter check kore a,b,c ways alphabetly serial hoye boshbe.jmn = "+ porot + "<br>");
+
+var numm= [1,2,3,4,5,6];
+
+numm.reverse();
+document.write( "##3.(reverse() method) er kaj: data gulo jmn ase tik tar ulto/reverse kore print korbe.jmn= "+ numm)
+// reverse meethod er kaj holo data gulo jevabe store kore raka hoyece tik tar ulto  dik kore ortat reverse/ultai print kora.
+
+ </script>
+
+
+<h5> 2.sort()method diye number jevabe sorting  kora hoi: upore string kivabe alphabetly sorting korte hoi seta lika ase.  </h5>
+<pre>
+sort() method ta string er ketre default vabe kaj kore.
+ kintu number type data k sorting korte hole etka trick
+  follow korte hobe.nise dekanu holo: 
+
+#1. sort(anonymous function) method  er bracket er vitore anonymous function likte hobe, curly bracket/body soho sort er 1st brakcet() er vitore thakbee.
+
+
+
+1.variable.sort() ekane sort er 1st bracket er vitore ekta anonymous function make korte hobe. function keyword ta lika then abar 1st bracket er vitore 2ta peramitar dite hobe (a,b).then curly bracket dite hobe. 
+#puro function ta sort er 1st bracket er vitorei thaktee hobe curly bracket er closing bracket soho.
+jmn: 
+variable.sort( function(a,b){
+
+} )
+
+then
+2.bracket er vitore return keyword use kore 1,2,3 evbae serial ways sorting korte chaile(a-b) & 4,3,2,1 evabe sorting korte caile(b-a) dite hobe.
+variable.sort(function(a,b){
+return=a-b;
+<!-- 1,2,3,4 evabe serial ways sorting korte cahile (a-b) & -->
+<!-- 5,4,3,2,1 evabe  print korte  caile return (b-a)  -->
+})
+
+then
+3. variable ta write function diye print kore dilei number type dataw sorting hoye jabe.
+document.write(varaible);
+
+
+
+
+</pre>
+<script>
+
+var nnum= [50,5,3,7,9,45,56,77,80];
+// variable e pura oguchalo vabe number type data dewa hoyece.
+// sort() method er maddome variable e oguchalo vabe store kore raka data gulo sort() method er maddome guchalo & chuto theke boro kore sajanu hobe.
+
+nnum.sort ( function(a,b){
+  return a-b;
+} );
+document.write("number data sorting korar pore= "+  nnum +"<br>");
+
+
+// number data ulto dik thek sorting korte caile just return (b-a) b ta age & a ta pore dilei ulto dik theke number data sorting kore dibe.
+nnum.sort( function(a,b){
+  return b-a;
+} );
+
+
+document.write("number data ulto vabe (return b-a) diye sorting korar pore= "+  nnum);
+</script>
+
+
+<span>explaination</span>
+
+</div>
+
+
+
+<!-- #topic 2. -->
+
+<div class="topic2">
+                       <h3>array's splice method details: </h3>
+<pre>discription of topic
+1.splice method er maddome (array's variable er data) jekuno index/jaiga theke remove kora jai,& jekuno jaigai add o kora jai. 
+2.
+example
+<script>
+var sir=["fahad","saiful","kaisar","rubel"];
+
+document.write( "normal = "+ sir + "<br>");
+
+sir.splice(2,0,"jabed vai","masum vai");
+// ekane splice er vitore vlaue 2 dewar mane holo 2number index theke splice er data gulo boshbe. & 0 value ta holo ektaw remove hobena setar jonno 0 dewa holo, 0 er jaigai jodi 1 ditam taile  2number index er pore 1ta data kete nito. 
+document.write("splice method diye add korar pore= "+ sir + "<br>");
+
+// splice method diye data remove korte caile starting point & ending point bole dite hobe. jmn slice korar smy bole dite hoi.
+sir.splice(1,2);
+// remove korar smy data er name dite hoina, kintu splice method diye add korar smy ki add korte cacci seta mention korte hoi.
+// ekane 1 number index theke 2number index obdi jei data thakbe segulo remove hoye jabe.
+document.write("splice method diye remove korar pore= "+ sir+ "<br>");
+
+</script>
+
+
+2.slice() diye data slice kora hoi. ortat kete newa hoi. etar kaji hocce shudo slice/kete newa/remove kora.
+<script>
+  var num=[1,2,3,4,5,6,];
+  num= num.slice(2);
+  // ekana bola hoyece 1 thek e 3obdi slice korte bola hoyece. 
+  // slice method er value ekta dile shudo oi 2number index ta bad diye bakisob data print korbe.
+  // ar jodi slice() method er value (x,y)x theke y obdi hoi tkn x theke y obdi jei data gulo ase ogulai output e print kore dekabe,bad baki sob slice hoye jabe.
+  document.write("<br>" +"slice korar pore num= "+  num);
+</script>
+
+<!-- syntex of topic 2 -->
+<pre class="syntex">
+<h3>syntex of topic 2</h3>
+
+</pre>
+
+
+</pre>
+
+<h4>topic2 JS example 1:  </h4>
+
+<h5> example 1</h5>
+<script></script>
+
+
+<h5> example2</h5>
+<script></script>
+
+
+<span>explaination</span>
+</div>
+
+
+
+<!-- #topic 3. -->
+<div class="topic3">
+                      <h3>topic3 head</h3>
+<pre>discription of topic
+1.
+2.
+3.
+
+
+
+
+<!-- syntex of topic 2 -->
+<pre class="syntex">
+<h3>syntex of topic 2</h3>
+
+</pre>
+
+
+
+</pre>
+
+
+<h4>topic3 JS example 1:  </h4>
+
+<h5> example 1</h5>
+<script></script>
+
+
+<h5> example2</h5>
+<script></script>
+
+
+<span>explaination</span>
+</div>
+
+
+
+<!-- #topic 4. -->
+<div class="topic1">
+            <h3>topic4 head</h3>
+<pre>discription of topic
+1.
+2.
+3.
+
+
+
+
+<!-- syntex of topic 2 -->
+<pre class="syntex">
+<h3>syntex of topic 2</h3>
+
+</pre>
+
+
+
+
+</pre>
+
+
+<h4>topic4 JS example 1:  </h4>
+
+<h5> example 1</h5>
+<script></script>
+
+
+<h5> example2</h5>
+<script></script>
+
+
+<span>explaination</span>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+div{
+padding: 10px;
+}
+
+.topic1{
+background: linear-gradient(rgb(185, 196, 130),rgb(130, 215, 130),skyblue);
+
+
+.syntex{
+color:rgb(255, 255, 255);
+background-color: rgb(131, 6, 58);
+}
+
+
+}
+
+.topic2{
+background: linear-gradient(to right,rgb(181, 170, 170),rgb(120, 228, 120),rgb(250, 165, 250));
+
+
+}
+
+.topic3{
+background-color: RED;
+
+}
+
+
+h3{
+display: inline-block;
+
+text-align: center;
+background-color: white;
+padding: 10px 20px;
+border-radius: 10px;
+position: relative;
+top: 50%;
+left:40%;
+}
+
+p{
+text-decoration: underline;
+}
+
+span{
+display: block;
+background-color: NAVY;
+COLOR:white;
+}
+</style>
+</body>
+</html>
+              
+              

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>topic</title>
+</head>
+<body>
+  
+
+
+<h1 style="text-align: center;">bismillahir rahmanir rahim.</h1>
+<h2 style="text-align: center;">Event Handler to onclick event</h2>
+
+<pre>
+video no:37
+class no:37
+topic:Event Handler to onclick event
+part:
+</pre>
+
+
+
+<!-- socipotro part -->
+<h2>shocipotro</h2>
+<pre>
+#1.ekane ja ja ase.
+1. html e onclick er use.
+2. TOPIC 2
+3. TOPIC 3
+</pre>
+
+
+<h2>details of topic start from here.</h2>
+
+
+
+<!-- #topic 1. -->
+
+<div class="topic1">
+                       <h3>topic1 head</h3>
+<pre>discription of topic
+1.
+2.
+3.
+<pre class="syntex">
+<h4>syntex of topic 1</h4>
+<h5>1.internal way te onclick er use er syntex.</h5>
+
+    <button onclick="alert( 'hello i am button 1')"> button 1</button>
+ekane alert er bracket er vitore double quetetion use kora jabena,single quetion use k korte hobe..karon alert function already double quetion er vitore ase -->
+1.internal way te onclick er use.
+
+    <h5>js er modde onclick er use er syntex</h5>
+
+    <button onclick="butt()">button for js 1</button>
+2.onclick e js function name ta quetetion er vitore dile 1st bracket shuddo dite hobe.
+<script>
+   function butt(){
+    alert("i am also button 1  from js 1 ") ;
+   }
+</script>
+
+
+<h5>multiple onclick function use er sytex</h5>
+.1tar jonno alada kore tag newa lagbe. temni alada kore 2ta function korte hobe.
+<button onclick="multi_1()">multiple button 1</button>
+<p onclick="multi_2()">click me!,  i am paragraph tag 1</p>
+<script>
+
+function multi_1(){
+    alert("multi alert 1");
+}
+
+function multi_2(){
+    alert("multi alert for p tag 2");
+}
+
+</script>
+</pre>
+
+</pre>
+<pre>
+<h4>onclick function er kaj gulo alert e na deke document e msg  show korar syntex</h4>
+
+1.p teg er jonno js theke function er vitore p teg er id select kore then tar vitore innerhtml diye text pas korteci.,
+
+<h5> example 1</h5>
+<button onclick="btn_1()">button 111 click me i sent msg to p teg</button>
+<button onclick="btn_2()">button 222 click me i sent msg to p teg</button>
+<p  id="p_teg" ></p>
+
+<script>
+  var tt= document.querySelector("#p_teg");
+function btn_1(){
+// var tt=document.querySelector("#p_teg");
+tt.innerHTML="you clicked button 1111  ,& ei msg ta js er function theke pass kora hoyece,p teg e pass hoyece karon p teg ta function er vitore query selector er maddome select kora hoyece, tai ei p teg er maddome oi button 1 er msg ta pass hocce.";
+}
+
+
+function btn_2(){
+    // var tt= document.querySelector("#p_teg");
+// ei (tt) variable wala line ta jeheto eki rkm dekte tai eta function er vitore alada alada kore na niye function er baire 2function er jonnoi ekta nilei 2tai kaj korbe.
+
+ tt.innerHTML="you clicked button 222,  & ei msg ta js er function theke pass kora hoyece,p teg e pass hoyece karon p teg ta function er vitore query selector er maddome select kora hoyece, tai ei p teg er maddome oi button 1 er msg ta pass hocce.";
+}
+
+</script>
+
+
+<h3>onclick syntex of (button1 click korle image1 dekabe ar button2 click korle image2) </h3>
+
+<button onclick="btn_1">picture 1 show me!</button>
+<button onclick="btn_2">picture 2 show me! </button>
+
+
+<img src="#" id="imgteg" alt=""  width="400px" height="350px" display="block">
+
+<script>
+
+var img_select=document.querySelector('#imgteg');
+
+function btn_1(){
+    img_select.src = "image/fol.jpg";
+}
+
+function btn_2(){
+    img_select.src = "image/space_moon.jpg";
+}
+
+</script>
+
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+div{
+padding: 10px;
+}
+
+.topic1{
+background: linear-gradient(rgb(185, 196, 130),rgb(130, 215, 130),skyblue);
+
+
+.syntex{
+color:black;
+background-color: rgb(236, 147, 184);
+}
+
+
+}
+
+.topic2{
+background: linear-gradient(to right,rgb(181, 170, 170),rgb(120, 228, 120),rgb(250, 165, 250));
+
+
+}
+
+.topic3{
+background-color: RED;
+
+}
+
+
+h3{
+display: inline-block;
+color:black;
+
+text-align: center;
+background-color: white;
+padding: 10px 20px;
+border-radius: 10px;
+position: relative;
+top: 50%;
+left:40%;
+}
+
+p{
+text-decoration: underline;
+}
+
+span{
+display: block;
+background-color: NAVY;
+COLOR:white;
+}
+</style>
+</body>
+</html>
+              
+              

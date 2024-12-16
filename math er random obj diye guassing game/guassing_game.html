@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>math er random math obj diye guassing game.</title>
+</head>
+<body>
+  video: 33;
+  class:33;
+  topic: guassing game create
+<!--  pura game & dekle syntex buje asbe,na sle nise details example soho deakno ase -->
+  <div class="syntex">
+  <script>
+// ##1.guassing game ta jevabe banano holo/sytex ta jmn: 
+var number_of_win=0;
+var number_of_lose=0;
+
+
+for(var x=1; x<=5;x++){
+    var usernumber=parseInt(prompt("enter your guassing number: "));
+    var randomnumber= Math.floor(Math.random() *5)+1;
+
+
+            if(usernumber===randomnumber){
+            document.write([x]+  ".you are win =" +randomnumber + "<br>");
+            number_of_win++;
+            }
+            else{
+                document.write([x]+ ".you are lose! "+" the number was:" +randomnumber + "<br>");
+                number_of_lose++;
+            }
+
+
+}
+
+document.write(" total number of won!= " + number_of_win + "<br>");
+document.write(" total number of lose!= " + number_of_lose + "<br>");
+
+   </script> 
+
+
+  </div>
+
+<!-- game ta bananur details:  -->
+
+<pre>
+        
+##1.guassing game ta jevabe banano holo ta details e dekte caile: 
+
+// ##1.guassing game ta jevabe banano holo/sytex ta jmn: 
+
+var number_of_win=0;
+var number_of_lose=0;
+
+
+for(var x=1; x<=5;x++){
+    var usernumber=parseInt(prompt("enter your guassing number: "));
+    //1.user theke ekta variable (usernumber) er maddome ekta input newa hoyece.
+    var randomnumber= Math.floor(Math.random() *5)+1;
+/*2.same random number er jonno ekta variable declare kora hoyece.
+        1.variable er vitore floor math obj er vitore random math obj newa hoyece, random sonka newar jonno.jeheto onno math obj er vitore random math obj nile random er 1st bracket er vitore kuno value dewa jaina
+        2.tai floor er bracket er vitore random er pore 5 er sate gon kora hoyece random sonka jeta asbe setar sate 5 gon hobe.
+        3.jeheto floor obj use kora hoyece floor obj to niser dike jeta purno sonka take ota print kore tai floor er sate 1 jog kora hoyece, tobe seta floor er bracket er baire semiclone er vitore.jmn: 
+        var random_num= Math.floor(Math.random() *5 ) +1 ; */
+
+
+// 4.user er dewa number ar random number compare korar jonno ,ortat soman hole (win), & random sonkar soman na hole (lose) evabe ekta (if else) diye condition make kora hoyece.
+            if(usernumber===randomnumber){
+ //5. user er dewa number ar random number soman hole win print korbe, ar jodi soman na hoi tokon lose print korbe. lose er condition ta (else) diye kora hoyece.
+            document.write([x]+  ".you are win =" +randomnumber + "<br>");
+ //6.jeheto serial ways print korte cai tai (for)loop er (x)name variable ta write() function er shurote dewa hoyece, jate serial ta boshe jai. 
+            number_of_win++;
+// 7.number_of_win++; etar mane (win) hole 1 1 kore barbe, & (number_of_win) ekta variable for loop er baire variable declare kora hoyece,jetar value 0, ei (if)  condtion e jodi win hoi thle oi variabler 0 er sate 1 1 kore jotobar ei condtion ta true hobe totobar jog hobe.
+            }
+            else{
+                document.write([x]+ ".you are lose! "+" the number was:" +randomnumber + "<br>");
+                number_of_lose++;
+//8. number_of_lose++; etar mane (lose) hole 1 1 kore barbe, & (number_of_lose)namew ekta variable for loop er baire variable declare kora hoyece,jetar value 0, ei (if)  condtion e jodi lose hoi thle oi variabler 0 er sate 1 1 kore jotobar ei condtion ta false/lose hobe totobar jog hobe.               
+            }
+
+
+}
+// 9.jeheto ekadik bar user theke input newa lagbe & conditon o ekadik check kore print kora lagbe tai.
+// 10.pura user er input newa theke shuro kore if condition er body er sesh obdi ekta (for)loop condition er vitore rakte hobe.
+
+document.write(" total number of won!= " + number_of_win + "br>");
+document.write(" total number of lose!= " + number_of_lose + "br>");
+
+/* 11.(for) loop er upore jei variable newa hoyece, okane jei (if)conditon onujai win/lose er number ber hobe, ortat koibar win & koibar lose setar value add hobe
+seta print korar jonno same (for) loop er bairei oi win/lose er number ta print kora lagbe.
+  */
+ 
+ 
+    
+   
+</pre>
+
+<style>
+.syntex{
+background:linear-gradient(rgb(227, 150, 150),rgb(127, 231, 127),rgb(194, 194, 241));
+
+}
+
+pre{
+    background:linear-gradient(rgb(9, 235, 160),rgb(78, 3, 80),rgb(201, 242, 173));
+
+}
+</style>
+
+
+</body>
+</html>

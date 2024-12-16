@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    video:30 
+    class:30
+
+    <h1></h1>
+
+    <pre>
+        1.create a function called highestrunscore that will
+        2.rechieve 2D array called playersinfo
+        3. based of highest score return the name of the player
+        
+        <div class="js">
+
+
+
+           <script>
+        // bismillahir rahmanir rahim.
+        
+        function  highestrunscore(){
+        
+       var play_name=playersinfo[0][0];
+       var high_run=playersinfo[0][1];
+        
+            for(var x=1;x<playersinfo.length;x++){
+
+                if(high_run<playersinfo[x][1]){
+                    high_run=playersinfo[x][1];
+                play_name=playersinfo[x][0];
+                
+                }
+            }
+
+return play_name;
+             
+ }
+        
+ var playersinfo= [ 
+["tamim", 8],
+["sakib",10],
+["mashrafi",71],
+["chuto mia",80]
+];
+     
+   var names=  highestrunscore(playersinfo);
+        
+document.write("top runere name is = "+ names);
+
+        </script>
+        
+      
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        </pre>
+        
+        
+
+
+
+
+
+<style>
+    .js{
+        background:linear-gradient(rgb(227, 126, 126),rgb(135, 254, 135),rgb(129, 129, 254));
+    }
+</style>
+</body>
+</html>

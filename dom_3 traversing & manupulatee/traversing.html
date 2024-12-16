@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM traversing & manipulating </title>
+</head>
+<body>
+  
+
+
+<h1 style="text-align: center;">bismillahir rahmanir rahim.</h1>
+<h2 style="text-align: center;">DOM traversing & manipulating </h2>
+
+<pre>
+video no:39
+class no:39
+topic: DOM traversing & manipulating 
+part:
+</pre>
+
+
+
+<!-- socipotro part -->
+<h2>shocipotro</h2>
+<pre>
+#1.ekane ja ja ase.
+1.TOPIC 1
+2. TOPIC 2
+3. TOPIC 3
+</pre>
+
+<!-- #topic 1. -->
+
+<div class="topic1">
+                       <h3>topic1 head</h3>
+<pre>discription of topic
+1.js er DOM er maddome html er ekta element select korar pore abr notun kore arekta oi tag er porer tag kinba parent tag kinba child tag kinba pasher tag  select korte caile 
+pura html document theke khujte hoi, tai document e na khuje aro easily jate kuno tag k select 
+kora jai tar jonno traversing er maddome select korte ho. ekta element select korar pore onno arekta  tag  oi tag
+ er maddome move kora jabe/ select kora jabe.
+ ortat html head tag er pore html tag ase ekn ami html er title tag ta select kore then html  tag ta title tag er nextelement bole slect korte pari ei system kei dom er traversing  way bole
+2.
+
+<h4>downwards way te select: </h4>
+1.(downwards) way te select: ami kuno ekta parent tag js e select koreci ,ekhhn jodi parent tag er child tag k select korte chai tkn downwards way te select korte hobe.jmn 
+<script>
+ var downward1= document.querySelector("topic1");
+var child_h4= downward1.children("h4");
+    // 1.ekane ami age topic 1 div k select korlm then h4 teg ta document function charai parent tag er variable name.childen evabe select kore nilm, etai holo downwards e select korar niom
+</script>
+
+
+<h4 class="upward1">upward way te select: </h4>
+2.(upwards) way te select: jodi kuno child tag k js e select korar pore tar parent tag e select korte  cai tkn upwards way te select korte hoi.jmn: 
+<script>
+var child1= document.querySelector(".upward1");
+var parent=child1.parentElement("topic1");
+//2. ekane age (h4)child emenent k select korlm ,erpore ei tag er variable(child1.parentElement) er sate . diye parent element bole upward niome parent tag kew  select kore nilm kuno document use kora charai.
+</script>
+  
+
+<h4>sideway te tag select: </h4>
+<ul>
+    <li  class="side1">side 1</li>
+    <li class="side2"> side 2</li>
+    <li class="side3">side 3</li>
+    <li class="side4">side 4</li>
+    <li class="side5">side 5</li>
+
+</ul>
+3.(sideways) way te select: jodi kuno side tag select korar pore tar side er uporer kinba niser hok jodi side er tag k select korte chai thle sidways way te select korte hobe.jmn: 
+<script>
+var side= document.querySelector("side2");
+var child3= side.nextElementSibling('side3');
+ /*side 2 k age select korlm then porer (side3) tag ta side2 er variable.nextElementSibling('side3'); 
+ evabe variable er .nextele.sibi. diye document function charai select kore fellam same vabe jodi side 1 select
+  korte cai tkn varible.previouselementsibiling(side1) evabe select kora hoto.*/
+var child1= side.previousSibling("side1")
+
+var child4= side.ul.children([4]); //ekane side name variable niye jei tag (side1) select kora hoyece age tar parent tag (ul)then ul er 4number index e jei tag ta ase otai select kora hoyece.
+// side= 1;
+// ul = side1 child er parent tag ul tag
+// children([4]) =  ul tag er 4number index e jei child ta ase ota 
+</script>
+
+
+
+
+
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+div{
+padding: 10px;
+}
+
+.topic1{
+background: linear-gradient(rgb(185, 196, 130),rgb(130, 215, 130),skyblue);
+
+
+.syntex{
+color:black;
+background-color: rgb(236, 147, 184);
+}
+
+
+}
+
+.topic2{
+background: linear-gradient(to right,rgb(181, 170, 170),rgb(120, 228, 120),rgb(250, 165, 250));
+
+
+}
+
+.topic3{
+background-color: RED;
+
+}
+
+
+h3{
+display: inline-block;
+color:black;
+
+text-align: center;
+background-color: white;
+padding: 10px 20px;
+border-radius: 10px;
+position: relative;
+top: 50%;
+left:40%;
+}
+
+p{
+text-decoration: underline;
+}
+
+span{
+display: block;
+background-color: NAVY;
+COLOR:white;
+}
+</style>
+</body>
+</html>
+              
+              

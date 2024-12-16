@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>number method</title>
+ 
+</head>
+<body>
+  <h1 style="text-align: center;">bismillahir rahmanir rahim.</h1>
+  <h2 style="text-align: center;">js number method part:</h2>
+
+<pre>
+  #1.ekane ja ja ase.
+  1.typeof function.
+  2.tostring function.
+  (number data type to string data type.)
+  (string  data type to other data type e convert korar system.)
+  3.parseInt function er kaj : string theke intiger e convert korar jonno use hoi.,,
+
+  4.toFixed funtion use kora hoi dosomik er pore koi sonka dekabe seta define kore dewar jonno.jmn: console.log(tofixed(2)); ekane tifixed e value 2dewai dosomik er pore ekadik sonka thaklew 2ta dekabe,value 3 dile dosomik er porer 3ta sonka obdi dekabe. 
+  5.topr
+  6.
+</pre>
+
+
+
+
+
+
+        <h3>typeof function diye kon data kon catagorir seta nirnoi korar system.</h3>
+        var num=20;
+        var name='sahil';
+        
+        <script>
+        console.log(typeof(num));
+        console.log(typeof(name));
+        console.log(typeof(true));
+        console.log(typeof(false));
+// kon variable ta kon data type seta nirnoi korar jonno  console.log function er modde bracket er vitore (typeof) keyword ta diye then abr bracket er vitore oi variable ta bosai, bracket er baire semiclone dilei output er  console e variable ta kon data type seta deka jabe.
+ </script>           
+        
+
+
+
+      <h3> number data type to string data type e convert, by  (tostring) function.</h3>
+
+<pre>               
+               
+  /* tostring function diye kuno number data k string data type e convert kora hoi jmn: */               
+ 
+ var tk=20;
+ <!--ekane tk name e variable ta (tostring) function er vitore diyeci, 
+ tai eta number data howa sottew eta string hoye jabe. -->
+ tk=toString(tk);
+ 
+ console.log(typeof(tk));
+
+</pre>
+
+                    <h3> string data type to others data type...</h3>         
+<!-- string data type theke jodi onno kuno data type jmn intiger,flaot e convert korar proyojon hoi thle -->
+
+<script>
+  var tk="50";
+  // 50 number ta quetion er vitore dewai eta string type data hoye jabe,quetion chara dile tkn number type data thakto.
+// kuno number type data quetion er vitore likle seta string type data hoye jai.
+   document.write(typeof(tk));
+</script>
+
+ 
+
+<!-- string to intigier data type e convert korar system. -->
+ <script>
+
+var dam='40';
+dam = parseInt(dam)
+
+// ekane dam variable tar data (40) ta string type data,kintu parseInt function er maddome seta k intiger e convert kora hoise.
+// jeheto js e float,intiger bole kuno cetagory nai tai sob number type data er modde pore, & console e gelew same number type data dekabe.
+ console.log(typeof(dam));
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+<!-- string type data theke flaot type data te convert korar jonno parseFloat property ta use korte hoi -->
+
+<script>
+var apple=10;
+
+ apple = parseFloat(apple);
+console.log(typeof(apple));
+
+
+// kuno number data type k strintg data type e convert korte caile  tostring function er maddome korte hobe jmn:
+// purno sonkar jonno parseInt use korte hobe, & dosomik sonkar jonno parseFloat function use korte hobe.
+var money=33;
+
+
+money = toString(money);
+
+console.log(typeof(money));
+
+
+
+                      // tofixed funtion er use.
+// FUNCTION LIKAR SOMOY toFixed  er (F)ta & toPrecision er (P) ta capital letter er hote hobe nahoi error dibe.
+// tofixed function er maddome kuno ekadik digit wala dosomik sonkar dosomik er pore tik koita digit output e dekabe seta (toFixed)function er madddome define kore dewa hoi.
+
+var mon =42.12345
+
+console.log(mon.toFixed(1));
+console.log(mon.toFixed(3));
+// ekane console.log funtion er vitore age variable ta diye dot (.)diye tofixed (X) funtion er vitore value x dewa hoyece,jar karone output e dosomik er poire x ta sonka show korbe, kintu toprecision funtion ekto diffent
+
+
+var precsion=345.6321123
+
+                  // toprecision funtion er maddome  number er lenth kototuk hobe eta define kore dewa hoi,ortat ekta number er modde digit ase 10ta tar moddo theke output tik koita sonka dekabe seta define kore dewa hoi variable er sate toPrecision function use er maddome.Jmn:
+
+ console.log(precsion.toPrecision(4));
+ console.log(precsion.toPrecision(2));
+//  
+//  ekadik digit wala number er output e tik total koita sonka dekabe seta  tPrecision function er maddome define kroe dewa hoi.
+// ekane toprecsion funttion e value 4 dewai precsion variable er 10digit er number theke output e 4ta dekabe, 
+
+
+
+                  // number method in js
+
+
+// Number method er kaj holo string/onno kuno data k number datai convert kore newa.
+// Number function er protom letter N ta capital hater hote hoi,.& console.log function er vitore bracket niye tar vitrore "Number" ta likte hober ,then arekta brakcete diye tar vitore ja value dewar dewa jabe..
+console.log(Number("12"));
+
+console.log(Number(12.55));
+
+
+// number function e  number hisebe foat kinba intiger dilew seta output e number type data dekabe.
+
+console.log(typeof(Number("   10.33  ")));
+// ekane bracketer vitore space dilew value 12.44 e output e dekabe, space dilew prbm nai.
+// ekane typeof function ta use korar karon hocce kon value ta kon type datas seta jate dekte pai tar jonno typeof function ta sob function use korteci.
+
+
+
+// NUMBER FUNCTION er maddome true/false data type kew number e convert kore jabe, true er jonno 1 show korbe ,& false er jonno 0 show korbe.
+console.log(Number(true));
+console.log(Number(false));
+// ekane true ar false muloto boolean type data , kintu NUMBER function er vitore likai seta boolean data k number type datai show kortece.
+// true & false er output asbe true=1 & false =0 asbe.
+
+</script>
+</body>
+</html>

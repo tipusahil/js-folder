@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to loop an Array</title>
+</head>
+<body>
+  
+
+
+<h1 style="text-align: center;">bismillahir rahmanir rahim.</h1>
+<h2 style="text-align: center;">How to loop an Array</h2>
+
+<pre>
+video no:27
+class no:27
+topic:How to loop an Array  
+part:
+</pre>
+
+
+
+<!-- socipotro part -->
+<h2>shocipotro</h2>
+<pre>
+#1.ekane ja ja ase.
+1.loop st. use kore Array er value/data print.
+2. TOPIC 2
+3. TOPIC 3
+</pre>
+
+
+<h2>details of topic start from here.</h2>
+
+
+
+<!-- #topic 1. -->
+
+<div class="topic1">
+                       <h3>loop st. use kore Array er value/data print.</h3>
+<pre>discription of topic
+1.normally Array er variable er data ekadik thakle specific vabe print korte chaile oi datar index number diye call kora lage.jmn: 
+document.write(num[4]); ekane number variable er index number 4 e jei data ta ase seta print kore dibe.
+2.evabe ekta ekta print korte caile onk time lege jabe,ei kajta 
+loop function er condtion/starting point e thaka variable diye kora jabe, 
+3.jeheto loop function diye ekadik man eksate print kora jai.j tai ei (for(x=1;x<=10;x++) )loop function er xyz variable ta index er jaigai boshai dile array er data gulo loop er condition onujai serial ways printt korbe.jmn: 
+for(x=0;x<=10;x++){
+    document.write(num[x]);
+    <!-- ekane loop er x er man 1 1 kore number er index number hisebe boshbe.  -->
+}
+
+2.
+3.
+
+<!-- syntex of topic 1 -->
+<pre class="syntex">
+<h3>syntex of topic 1</h3>
+
+</pre>
+
+</pre>
+
+<h4>topic1 JS example 1:</h4>
+
+<h5>Array er kaj shortcut korte loop function er use: </h5>
+<script>
+
+var vehicle=["1car","2truck" , "3bus", "4minimus", "5bike", "6cycle", "7prado"];
+var num=[ 10, 20, 30, 40, 50];
+// normal niyom.: 
+// document.write(num[0] + "<br>");
+// document.write(num[1] + "<br>");
+// document.write(num[2] + "<br>");
+// document.write(num[3]) + "<br>";
+
+// loop use kore shortcut e Array er man nirnoi.
+for(var x=0;x<=7;x++){
+    document.write(vehicle[x]   + "<br>");
+    document.write(num[x]  + "<br>") ;
+}
+
+</script>
+
+
+<h5>array er kaj loop er maddome kivabe  aro sohoje kora jai seta dekanur/bejunaor jonno image ta: </h5>
+<img src="../1D ARRAY.png" alt="">
+</div>
+
+
+
+<!-- #topic 2. -->
+
+<div class="topic2">
+                       <h3>Array er length te way k loop er maddome shortcut: </h3>
+<pre>
+    <script>
+var num1=[5,10,15,20,25,30];
+var gari= new Array();
+
+gari[0]="bus0";
+gari[1]="bike2";
+gari[2]="minibus3";
+gari[3]="cycle4";
+
+// for loop er maddome specific vabe print. 
+// jeheto loop multiple print korte pare so Array er variable er jaigai (for loop) er variable (x/y/z)ta boshai dilei array er varaible k ekta ekta kore serial ways multiple time print korbe.
+for(var x= 0; x<=5;x++){
+    document.write(gari[x]  + "<br>") ;
+
+    document.write(num1[x]  + "<br>");
+}
+    // chaile array er data gulo jog,biok,gon bak kora jabe,tai data gulo user theke nile segulo number type datai convert kore nite hobe.
+// jeheto user theke multiple data newa lagbe & tai array & loop er maddome data gulo niye segulo jog biok korte hobe.
+
+
+    </script>
+1.
+2.
+3.
+
+<!-- syntex of topic 2 -->
+<pre class="syntex">
+<h3>syntex of topic 2</h3>
+
+</pre>
+
+
+</pre>
+
+<h4>topic2 JS example 1:  </h4>
+
+<h5> example 1</h5>
+<script></script>
+
+
+<h5> example2</h5>
+<script></script>
+
+
+<span>explaination</span>
+</div>
+
+
+
+<!-- #topic 3. -->
+<div class="topic3">
+                      <h3> user theke multiple data niye segulo loop & array er maddome jog,biok gon bak: </h3>
+<pre>
+
+    <script>
+// user theke multiple data niye segulo loop & array er maddome jog,biok gon bak
+
+
+        // var num1=[5,10,15,20,25,30];
+        // var gari= new Array();
+        
+        // gari[0]="bus0";
+        // gari[1]="bike2";
+        // gari[2]="minibus3";
+        // gari[3]="cycle4";
+        
+        // // for loop er maddome specific vabe print. 
+        // // jeheto loop multiple print korte pare so Array er variable er jaigai (for loop) er variable (x/y/z)ta boshai dilei array er varaible k ekta ekta kore serial ways multiple time print korbe.
+        // for(var x= 0; x<=5;x++){
+        //     document.write(gari[x]  + "<br>") ;
+        
+        //     document.write(num1[x]  + "<br>");
+        // }
+        //     // chaile array er data gulo jog,biok,gon bak kora jabe,tai data gulo user theke nile segulo number type datai convert kore nite hobe.
+        // // jeheto user theke multiple data newa lagbe & tai array & loop er maddome data gulo niye segulo jog biok korte hobe.
+        
+var user=new Array();
+
+        for(var i =1;i<=5;i++){
+         user[i]= parseInt(prompt("enter a number: "));
+        }
+
+        var sum=0;
+
+        for(var i=0;i<5;i++){
+
+            document.write(user[i]);
+            sum=sum + user[i];
+        }
+
+        document.write( "jugfol= "+sum);
+
+
+            </script> 
+
+1. chaile array er data gulo jog,biok,gon bak kora jabe,tai data gulo user theke nile segulo number type datai convert kore nite hobe.
+2. jeheto user theke multiple data newa lagbe & tai array & loop er maddome data gulo niye segulo jog biok korte hobe.
+
+
+
+
+<!-- syntex of topic 2 -->
+<pre class="syntex">
+<h3>syntex of topic 2</h3>
+
+</pre>
+
+
+
+</pre>
+
+
+<h4>topic3 JS example 1:  </h4>
+
+<h5> example 1</h5>
+<script></script>
+
+
+<h5> example2</h5>
+<script></script>
+
+
+<span>explaination</span>
+</div>
+
+
+
+<!-- #topic 4. -->
+<div class="topic1">
+            <h3>topic4 head</h3>
+<pre>discription of topic
+1.
+2.
+3.
+
+
+
+
+<!-- syntex of topic 2 -->
+<pre class="syntex">
+<h3>syntex of topic 2</h3>
+
+</pre>
+
+
+
+
+</pre>
+
+
+<h4>topic4 JS example 1:  </h4>
+
+<h5> example 1</h5>
+<script></script>
+
+
+<h5> example2</h5>
+<script></script>
+
+
+<span>explaination</span>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+div{
+padding: 10px;
+}
+
+.topic1{
+background: linear-gradient(rgb(185, 196, 130),rgb(130, 215, 130),skyblue);
+
+
+.syntex{
+color:rgb(255, 255, 255);
+background-color: rgb(131, 6, 58);
+}
+
+
+}
+
+.topic2{
+background: linear-gradient(to right,rgb(181, 170, 170),rgb(120, 228, 120),rgb(250, 165, 250));
+
+
+}
+
+.topic3{
+background-color: RED;
+
+}
+
+
+h3{
+display: inline-block;
+
+text-align: center;
+background-color: white;
+padding: 10px 20px;
+border-radius: 10px;
+position: relative;
+top: 50%;
+left:40%;
+}
+
+
+img{
+    width: 90%;
+    height: 90%;
+}
+p{
+text-decoration: underline;
+}
+
+span{
+display: block;
+background-color: NAVY;
+COLOR:white;
+}
+</style>
+</body>
+</html>
+              
+              

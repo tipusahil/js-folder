@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable</title>
+</head>
+<body>
+    
+<h1 style="text-align: center;">js Variable</h1>
+  
+  <h2>1. variable likar niom,(dinamic initialization) niome variable er vitore data store kore:
+
+  </h2>  
+<script>
+
+var jikir='subahanallah,alhamdulillah,allaho akbar,';
+
+/*
+  //1. variable likar niom, variable er vitore data store kore:
+
+important 1:                   
+1.ekane (jikir) word ta hocce variable & equal sign diye single quetion 
+er vitore ja store kore raka hoise ta hocce string data, & ; semiclone
+dewar maddome etake ekta function e rop dewa hoyece.
+2.ami jodi kuno function diye (jikir)variable ta call kori tokon jikir
+variable er modde store kore raka sob data show korbe.
+
+important 2:
+1.jesob valid keyword k variable banano jabe ta holo : 
+{ (A-Z), (a-z), (0-9), $, _ , - , } eshob
+keyword (string small/capital letter,number,doller sign,underscode)
+ chaile alada alada kore variable banano jabe, abr caile sob keyword
+  (ja ja mention kore hoyece)sob eksate milai variable bananu jabe. jmn: 
+var Tipu-367_$=('sob keyword string capital & small & number & underscode
+ & doller sign) sob eksate milai variable kora hoyece.';
+
+ warning:
+   (1.)variable er shurote digit use kora jabena. jmn: 2name= evabe shurote digit use kora jabena, but majkane
+       kinba sesh e use kora jabe.
+   (2.)digit chara baki sob valid keyword jmn:(stirng capital/small, doller sign,underscode) eshob diye 
+       variable er shurote lika jabe.jmn: $tipu,_sahil evabe lika variable banano jabe.
+   (3.)variable er majkane space/faka jaiga raka jabena. jmn var tipu 367= , tai faka na reke underscode use kora jabe,
+   (4.)kuno keywords k variable banano jabena, ekane ami keywords bolte bujacci js er kisu nirdisto defult keyword jmn:
+    (break,case,catch,continue,debugger,default, delete,do,else,finally,for,function,
+    if,in,instanceof,new,return,switch,this,throw,try,typeof,var,void,while,with.) eshob small
+     letter er keyword k variable banano jabena,tobe jodi eshob keyword pura word kinba 
+     ekta word k capital letter kore liki tahole ar seta keyword thakbena tkn setake variable hisebe use kora jabe.
+     jmn: 
+        BREaK='eta valid,& eta  defult keyword,kintu capital letter e likai seta ar keyword thakena, karon keywords er sob letter small letter';
+        break='eta wrong, & invalid, karon keywords k variable banano jaina.';
+        BREAK='eta right, & valid, karon jodio ba break js er ekta defult keywords gulor modde ekta ,but sob 
+        letter capital e likai eta ar js er defult keyword takbena.';
+
+2.variable er modde any kind of data store kore raka jabe,  joto rokom
+ keyword ase sob store kora jabe,space dewa jabe.
+
+3.eki name ekta variable nile tkn variable tar age (var) lika dite
+hobe, (var) mane bujai variable.& jodi eki name ekadik variable thake
+tahole eki namer protom variable tar age (var) ekbar likle hoye jabe,same
+name nise jotoi variable newa hokna keno (var) bar bar likte hobena.
+4.eki name ekadik variable nile pore/nise jeta lika hoi setar output dibe.agertar output dibena.
+5. kuno function er maddome variable call korar somoy parentecis bracket
+ er vitore  (single/double) quetetion dewa jaina, dile seta ekta data hoye jai ar tkn 
+variable call kora hoina.jmn:
+
+variable declare korar valid niom:
+document.write(jikir);     right niom
+document.write("jikir");   wrong niom. karon:
+evabe qutetion er vitore variable likle seta variable thakbena,seta ekta string 
+ data hoye jabe.tai variable k kuno function dhara call korle qutetion use kora jabena.
+
+*/
+
+                
+// kuno number type data k quetion er vitore likle seta k js compailar string hisebe dhore nei,karon number data type quetion er vitore likar proyojon hoina.
+
+
+
+document.write(jikir);
+
+var Tipu367$_="(sob keyword string capital (T) & small (ipu) & number (367) & underscode(_) & doller sign ($) ) sob eksate milai variable kora hoyece.";
+
+document.write(Tipu367$_);
+
+var firstName='js e kemelcase e variable kinba onno kisu declare korle sundor beshi dekai,kamelcase bolte ekadik word lagano thakbe,majkane kuno space takbena.& first word er sob letter small letter hobe & second kinba porer word gulor shuror letter ta capital letter er hobe, jmn:thisIsMyTitle,allhuAkbar. ekane akbar er A ta capital letter e liklm etake kamelcase niom bole.';
+document.write(firstName);
+   
+</script>
+
+
+<!-- variable alada alada kore likar niom -->
+<h2> 2.variable likar niom, variable er vitore data store na kore alada vabew variable declare kora jai.
+</h2>
+<script>
+
+//  2.variable likar niom, variable er vitore data store na kore alada vabew variable declare kora jai.
+
+
+ /* 1.eknae alada vabe variable likte caile 2vabe lika jai, 
+        (1.) var diye ekta ekta kore,& 
+        (2.)ekta var lika then equal sign na diye just ekta variable er pore koma(,) diye
+        arekta variable evabe eksate eki line e ekadik variable lika jabe & sesh e semiclone
+        dite hobe.  nise 2rkmi dekano hoise.
+
+ekta ekta alada kore declare korte caile evabe likte hobe jmn:
+var name;
+var age;
+var Class;
+
+ek line e ekta var lika ekadik variable eksate declare korte cail tkn evabe likte hobe.jmn:
+var name,age,Class;
+
+  2.alada alada vabe kinba eki line e multiple variable eksate declare korar pore kon 
+  variable er data ki hobe seta alada kore oi variable ta mention kore equal sign diye then variable ta store kore dite hobe.jmn:
+
+name='tipu';
+age=20;
+Class=10;
+ */
+ var name;
+var age;
+var Class;
+
+var name,age,Class;
+// ekane variable e small letter er class word ta likle seta js er defult keywords gulor ekta howai error dibe, so class word tar kuno ekta letter capital kore dile ar error dibena, & ar keyword thakbena, karon keywords gulo always small letter er hoye take.
+
+name='tipu' ;
+age=20 ;
+Class=10 ;
+document.write(name);
+document.write(age);
+document.write(Class);
+</script>
+</body>
+</html>

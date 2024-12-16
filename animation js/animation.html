@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to add and remove animation</title>
+    <link rel="stylesheet" href="anima.css">
+</head>
+<body>
+
+ video:45 <Br>
+ class:45 <br>
+ topic: How to add and remove animation    
+
+
+
+   <div class="syntex">
+    <h1>main syntex: </h1>
+
+<script>
+
+
+
+
+</script>
+
+</div>
+    
+
+
+   <!-- topic 1 full details -->
+<pre>
+<h1>audio jevabe add kora hoyece tik sevabei animation add kora hoi</h1>
+#1. audio er ketre audioplay name e ekta function newa hoyece ,kintu animaton er ketre animation er jonno ekta functon nite hote,
+1.
+#2. 
+
+1.
+2.
+3.
+</pre>
+
+
+<pre>
+
+    <h2>you have not any btn </h2>
+<button class="all_btn a ">a</button>
+<button class="all_btn b ">b</button>
+<button class="all_btn c ">c</button>
+
+<script>
+var len=document.querySelectorAll(".all_btn").length;
+
+    for(var t=0; t<len;t++){
+   document.querySelectorAll(".all_btn")[t].addEventListener("click", function(){// click = listener er event,& porer peramitar ta annonimous function jar kuno variable name nei.
+
+    var btn_text1=this.innerHTML;
+
+ 
+    document.querySelector("h2").innerHTML= btn_text1 + " is clicked";// variable (text) ta wuetion chara dite hobe,jeehto ota ekta variable tai.
+    animation1(btn_text1);
+});
+
+}
+
+
+
+function animation1(btn_text1){
+// animation er jonno ekta function newa hoyece jeta k uporer program theke call kore btn er value / vitore thaka text pass korte hobe,
+var rand=document.querySelector("."+btn_text1);
+/* uporer (btn_text1) variable theke jei value (a/b/c) pathano hobe setar sate jate ekta dot(.) add hoi.
+dot .a /.b / .c evane jkn result asbe tokon a/b/c name jei btn er class name ase ota select hoey jabe,
+ortat btn 1 click korle (btn_text1) variable theke a pass hoye ei function e asbe & jokon (dot .a) hoye jabe tkn oi btn 1 er classname (.a) select hoye jabe. 
+*/
+rand.classList.add("random_css");
+/*.a .b .c onujai jei button ta select hobe sei button e css er random class onujai style hoye jabe. 
+ ei style ta tik kotokkon thakbe seta fix kore dewar jonno nise 
+ (setTimeout) property use kora hoyece.
+ (setTimeout) property te 2 ta value pass kora jai,ekta holo annonimous function then function sesh e koma diye time set kore dewa hoyece.
+  */
+setTimeout(function() {
+
+    rand.classList.remove("random_css")
+} ,1000 );
+// settimeout property eta set kore dewa hoyece j css er random style ta tik kotokkon pore remove hoye jabe, eta ,protome annonimous function e classLISTremove property er modde random css ta 1st bracket e dewa hoyce, ortat remove howar jonno, the ntik kotkkon pore style ta remove hobe etar time fix kore dewa hoyece.
+
+}
+// animation1 function end.
+
+
+
+</script>
+
+</pre>
+
+
+
+
+
+
+
+
+
+<style>
+    .syntex{
+    background:linear-gradient(to left, rgb(227, 150, 150),rgb(127, 231, 127),rgb(194, 194, 241));
+    
+    }
+    
+    pre{
+        background:linear-gradient(to right, rgb(9, 235, 160),rgb(225, 130, 229),rgb(201, 242, 173));
+    
+    }
+    </style>
+    
+</body>
+</html>

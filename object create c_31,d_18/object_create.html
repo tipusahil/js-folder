@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>how to create and use object</title>
+</head>
+<body>
+  
+
+
+<h1 style="text-align: center;">bismillahir rahmanir rahim.</h1>
+<h2 style="text-align: center;">how to create and use object</h2>
+
+<pre>
+video no:31
+class no:31
+topic:how to create and use object
+part:
+
+
+
+</pre>
+
+
+
+<!-- socipotro part -->
+<h2>shocipotro</h2>
+<pre>
+<!-- #1.ekane ja ja ase.
+(1.How to create an object
+ 2.how to print the value of an object
+3.adding a constructor
+4.adding function inside a constructor
+) -->
+1.object er syntex
+2. ekadik object k sohoje control korar jonno template by (adding contructor) jevabe make korte hobe.
+3. TOPIC 3
+</pre>
+
+
+<h2>details of topic start from here.</h2>
+
+
+
+<!-- #topic 1. -->
+
+<div class="topic1">
+                       <h3>object diye bibinno dhororer data store koree easlily print kora: </h3>
+<pre>discription of topic
+1.object ek dhoroner variable bola jai.
+object use kore bibinno dhoronere multiple value/data eksate store kore raka jai, data type onujai alada kore variable declare korte hoina.
+2.
+3.
+
+
+<!-- syntex of topic 1 -->
+<pre class="syntex">
+  <h3>syntex of topic 1</h3>
+  
+  
+  object likar/make korar 8 step ase, prottek ta step er nise comment kore dewa ase kivabe object likte hoi.
+  <h3>object er normal syntex jmn, & jevabe likte hoi: </h3>
+
+  
+  var student1 = {
+  //1.. student1=object karon:  variable er moto kore likar pore (=) er pore curly bracket howai eta object,
+  //2..  object er body/curly bracket er vitore property use kore property er value dite hoi.
+  name: "tipu",
+      age: 21,
+      class: 13,
+      cgpa: 3.00,
+      langu: [ "html", "css", "js _ in sha allah"],
+  // 3..name,age,class,cgpa= property
+  // 4..tipu,21,13,3.00= property er value
+   
+  // 5..property er pore clone (:) dite hobe must,
+  //6.. property er value/data er pore koma (,) use korte hobe must..semiclone use kora jabena.
+  
+  }
+  
+  /* 7..object er property er value dekte caile:  jevabe print korte hobe.
+  1.document.write(object_name.property)
+  */
+  
+  document.write( "student1 er (xyz) property er value jeta ami dekte cai. seta holo:  = " + student1.age + "<br>");
+  document.write(student1.cgpa + "<br>");
+  document.write(student1.langu);
+  //8.. ekabe age object er name (student1) then dot (.) diye jei property er value/data dekte cacci (name/age/cgpa) sei property_name ta dite hobee.thle sei property  er data/value ta print kore dekabe.
+  
+  
+
+
+<!-- syntex of topic 1 -->
+<pre class="syntex">
+<h3>syntex of topic 1</h3>
+
+
+object likar/make korar 8 step ase, prottek ta step er nise comment kore dewa ase kivabe object likte hoi.
+<h3>object er normal syntex jmn, & jevabe likte hoi: </h3>
+<script>
+
+var student1 = {
+//1.. student1=object karon:  variable er moto kore likar pore (=) er pore curly bracket howai eta object,
+//2..  object er body/curly bracket er vitore property use kore property er value dite hoi.
+name: "tipu",
+    age: 21,
+    class: 13,
+    cgpa: 3.00,
+    langu: [ "html", "css", "js _ in sha allah"],
+// 3..name,age,class,cgpa= property
+// 4..tipu,21,13,3.00= property er value
+ 
+// 5..property er pore clone (:) dite hobe must,
+//6.. property er value/data er pore koma (,) use korte hobe must..semiclone use kora jabena.
+
+}
+
+/* 7..object er property er value dekte caile:  jevabe print korte hobe.
+1.document.write(object_name.property)
+*/
+
+document.write( "student1 er (xyz) property er value jeta ami dekte cai. seta holo:  = " + student1.age + "<br>");
+document.write(student1.cgpa + "<br>");
+document.write(student1.langu);
+//8.. ekabe age object er name (student1) then dot (.) diye jei property er value/data dekte cacci (name/age/cgpa) sei property_name ta dite hobee.thle sei property  er data/value ta print kore dekabe.
+
+
+</script>
+</pre>
+
+<h4>topic1 JS example 1:  </h4>
+
+<h5>fddsf</h5>
+<script> </script>
+
+
+</div>
+
+
+
+<!-- #topic 2. -->
+
+<div class="topic2">
+                       <h3>ekadik object k sohoje control korar jonno template  by (adding contructor) diye jevabe make korte hobe.</h3>
+<pre> ##1.object constructor hocce ekta bisesh dhoroner function ja diye object er jonno template banano hoi,jate ekadik object er kaj gulo aro sohoje kora jai..
+1.
+2.
+3.
+
+<!-- syntex of topic 2 -->
+<pre class="syntex">
+<h3>object contstructor diye template make korar syntex: </h3>
+
+</pre>
+
+<div class="theory">
+   
+
+
+function Students(name,age,cgpa,langu,xyz){
+
+    this.name=name;
+    this.age=age;
+    this.cgpa=cgpa;
+    this.langu=langu;
+    this.xyz=xyz;
+    /* 4..prottekta peramitar er jonno constructor er body/curly bracket er vitore (this.peramitar) diye variable declare korte hobe.
+    variable er value hisebew same property/(name,age,xyz) eshob data dite hobe.
+    5..body te variable declare korar pore semiclone (;) dite hobe.
+    */
+    
+
+    // studentx/y/z er all data print korar jonno parent function, 
+this.multiple_data = function () {
+
+  // eta print korar jonno obj const. er vitore ekta function diye student1/2/3 er all data print er jonno template kora hoyece. */
+  document.write(this.name);
+  document.write(this.age);
+  document.write(this.cgpa);
+  document.write(this.langu);
+}
+
+    }
+    // template creating end..
+    
+    // studentxyz er data variable er maddome constructor  e pass..
+    var student1= new Students("rahim",25,3.44,["bangla,english,hindi"]);
+    var student2= new Students("kalim",44,4.44,[",english,arbi"]);
+    /* student1 er data (Students) er template er pass korar jonno (student1/variable) er equal sign er pore (new) lika then constructor name(Students) er 1st bracker er vitore (korim,34,3,45) evabe  pass korte hobe (student1/variable) er data gulo.
+    */
+    document.write(student1.age);
+    document.write(student2.name);
+
+
+// student1/2/3 er all data print korar jonno j tempalte ta obj const er  vitore j funtion banano hoyece oi oi fhunction er (this.multiple_data) er shudo (multiple_data) ta ( student1/2/3.multiple_data(); ) evabei call korei all data print kore dibe.
+student3.multiple_data();
+  // ekane student2/1/3 lika dot(.) diye oi multiple data print korar jei function(this.multiple) ekane dot er pore multiple ta dilei student1 er all data print kore dibe.
+
+</div>    
+
+  <script>
+
+function Students(name,age,cgpa,langu,xyz){
+
+this.name=name;
+this.age=age;
+this.cgpa=cgpa;
+this.langu=langu;
+this.xyz=xyz;
+
+// studentx/y/z er all data eksate print korar jonno parent function creating, 
+this.multiple_data = function () {
+  /* eta print korar jonno obj const. er vitore ekta function diye student1/2/3 er all data print er jonno template kora hoyece. */
+  document.write( "name= " +this.name  + "<br>");
+  document.write("age= " +this.age  + "<br>");
+  document.write("cgpa= " +this.cgpa + "<br>");
+  document.write("langu= " +this.langu + "<br>");
+}
+
+}
+
+var student1= new Students("rahim",25,3.44,["bangla,english,hindi"]);
+var student2= new Students("kalim",44,4.44,[",english,arbi"]);
+var student3= new Students("ahmed" + 44,4,55,["bangla,urdo,arbi"] )
+
+document.write( "student1 = " +student1.age + "<br>");
+document.write( "student1 = " +student1.langu + "<br>");
+
+document.write( "student2 = " +student2.name + "<br>");
+document.write( "student2 = " +student2.cgpa + "<br>");
+/* evabe ekta ekta print korte onk smy lege jabe
+tai same obj contructor er vitore arekta function diye print er jonno template create korte hobe.
+*/
+
+// student1/2/3 er all data print korar jonno j tempalte ta obj const er  vitore j funtion banano hoyece oi oi fhunction er (this.multiple_data) er shudo (multiple_data) ta ( student1/2/3.multiple_data(); ) evabei call korei all data print kore dibe.
+student3.multiple_data();
+  // ekane student2/1/3 lika dot(.) diye oi multiple data print korar jei function(this.multiple) ekane dot er pore multiple ta dilei student1 er all data print kore dibe.
+
+  </script>
+
+</pre>
+
+<h4>topic2 JS example 1:  </h4>
+
+<h5> ekadik player er multiple datar program</h5>
+<script>
+
+function Players(name,run,wicket){
+this.name=name;
+this.run=run;
+this.wicket=wicket;
+
+this.all_combine= function (){
+  document.write("player name= " + this.name + "<br>");
+  document.write("player run= " +this.run + "<br>");
+  document.write("player wicket= " +this.wicket + "<br>");
+
+}
+
+}
+var player1=new Players("sakib",59,2);
+var player2=new Players("tamim",40,1);
+
+player1.all_combine();
+player1.all_combine();
+
+</script>
+
+
+<h5> example2</h5>
+<script>
+
+
+function Student(name,age,cgpa,langu) {
+this.name=name;
+this.age=age;
+this.cgpa=cgpa;
+this.langu=langu;
+
+
+this.all_data= function(){
+    document.write("name= " + this.name  +"<br>");
+    document.write("age= " +  this.age  +"<br>");
+    document.write("cgpa= " + this.cgpa  +"<br>");
+    document.write("langu= " +this.langu  +"<br>");
+}
+
+
+}
+
+var student1=new Student("sahillu ",43 ,3.44,[" arbi","bangla","english"]);
+var student2=new Student("tipu ",20 ,3.00,[" farsi","bangla","english"]);
+
+
+
+document.write( student1.name +"<br>");
+
+student1.all_data();
+student2.all_data();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+div{
+padding: 10px;
+}
+
+.topic1{
+background: linear-gradient(rgb(185, 196, 130),rgb(130, 215, 130),skyblue);
+
+
+.syntex{
+color:black;
+background-color: rgb(236, 147, 184);
+}
+
+
+}
+
+.topic2{
+background: linear-gradient(to right,rgb(181, 170, 170),rgb(120, 228, 120),rgb(250, 165, 250));
+
+
+}
+
+.topic3{
+background-color: RED;
+
+}
+
+
+h3{
+display: inline-block;
+color: black;
+
+text-align: center;
+background-color: white;
+padding: 10px 20px;
+border-radius: 10px;
+position: relative;
+top: 50%;
+left:40%;
+}
+
+p{
+text-decoration: underline;
+}
+
+span{
+display: block;
+background-color: NAVY;
+COLOR:white;
+}
+</style>
+</body>
+</html>
+              
+              

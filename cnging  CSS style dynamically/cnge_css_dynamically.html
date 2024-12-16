@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Changing CSS style dynamically</title>
+  <link rel="stylesheet" href="cnge_css_by_js.css">
+</head>
+<body>
+  
+
+
+<h1 style="text-align: center;">bismillahir rahmanir rahim.</h1>
+<h2 style="text-align: center;">Changing CSS style dynamically</h2>
+
+<pre>
+video no:41
+class no:41
+topic: kivabe js diye css select kora hoi.
+part:
+</pre>
+
+
+
+<!-- socipotro part -->
+<h2>shocipotro</h2>
+<pre>
+#1.ekane ja ja ase.
+1.TOPIC 1
+
+</pre>
+
+
+
+
+<!-- #topic 1. -->
+
+<div class="topic1">
+                       <h3>topic1 head</h3>
+<pre>discription of topic
+1. css er property gulo js use korar smy majkane kuno hypen use kora jabena,jevabe likte hobe.
+
+css:                 jacaScript:evabe hobe
+font-size        =   fontSize
+background-color = backgroundColor 
+font-style      =  fontStyle
+
+2.jei tag ta css er maddome style kore js er maddome run time e style korte cacci oi tag er sate css e selector hisebe classname tar mil  thakte parbena.
+ortat css e emn ekta (random/icce moto) ekta class name k selector banabe jeta html er oi tag tar sate mil nei emn ekta random name k selector baniye style korte hobe, 
+& oi css e random classname ta (dot .) bad diye shudo classname ta js er (variable.classList.add/remove('css random classname')); evabe js e  css er random name ta (vari.classList.add / remove('random css classname'); ) evabe select korte hobe.
+3.
+
+<!-- syntex of topic 1 -->
+<pre class="syntex">
+<h3>syntex of topic 1</h3>
+
+<button onclick="addstyle()" >add style</button>
+<p id="p_id_tag">add or remove style from me</p>
+<button onclick="removestyle()">remove style</button>
+
+<script>
+
+  function addstyle() {
+
+    var vari=document.querySelector('#p_id_tag');
+    vari.classList.add('random_style')
+
+  }
+
+  function removestyle() {
+
+    var vari=document.querySelector("#p_id_tag");
+    vari.classList.remove('random_style');
+
+  }
+
+</script>
+
+
+</pre>
+
+</pre>
+
+<h4>topic1 JS example 1:  </h4>
+
+<h5>  syntex with explanaation</h5>
+
+
+<button onclick="addStyle()">add style</button>
+<p class="for_style">tag for add / remove style</p>
+<button onclick="removeStyle()">remove style</button>
+
+
+
+<script>
+
+//  var stt= document.querySelector(".for_style");
+
+function addStyle(){
+
+var stt= document.querySelector(".for_style");// .style.color='blue'.style.fontSize='40px';
+// caile ek line e style kora jabe.uporer niome,jevabe innerHTML lika hoi tik ovabe just .style.property use korlei hobe.
+
+stt.classList.add("xyz");
+// css e style kore seta expernal way te js e link 
+// evabe css e jei name diye select kore style kora hoyece oi name ta classList.add property er vitore dite hobe. same to same
+// kintu css e jmn class hole . id hole # dela ogulo bad diye shudo name ta dilei hobe. dot hash egulo classList er 1st bracket er quetetion er vitore dite hobena.
+
+//  stt.style.color="green";
+//  stt.style.fontSize="30px";
+//  stt.style.fontWeight="500px";
+// evabe ekta ekta kore style korte onk smy cole jabe.
+// tai css e style kore css e jei name e select kora hoyece sei name ta niser ( variable.classList("teg/.class/#id"); ) evabe css er selector ta js link kore dewa jabe.
+
+}
+
+
+function removeStyle(){
+var stt= document.querySelector(".for_style");  
+ stt.classList.remove("xyz");
+}
+
+</script>
+
+
+<h5> example2</h5>
+<script></script>
+
+
+<span>explaination</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+div{
+padding: 10px;
+}
+
+.topic1{
+background: linear-gradient(rgb(185, 196, 130),rgb(130, 215, 130),skyblue);
+
+
+.syntex{
+color:black;
+background-color: rgb(236, 147, 184);
+}
+
+
+}
+
+.topic2{
+background: linear-gradient(to right,rgb(181, 170, 170),rgb(120, 228, 120),rgb(250, 165, 250));
+
+
+}
+
+.topic3{
+background-color: RED;
+
+}
+
+
+h3{
+display: inline-block;
+color:black;
+
+text-align: center;
+background-color: white;
+padding: 10px 20px;
+border-radius: 10px;
+position: relative;
+top: 50%;
+left:40%;
+}
+
+p{
+text-decoration: underline;
+}
+
+span{
+display: block;
+background-color: NAVY;
+COLOR:white;
+}
+</style>
+</body>
+</html>
+              
+              

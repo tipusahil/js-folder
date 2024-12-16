@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>topic</title>
+</head>
+<body>
+  
+
+
+<h1 style="text-align: center;">bismillahir rahmanir rahim.</h1>
+<h2 style="text-align: center;">for loop part of (controls statment.)  </h2>
+
+<pre>
+video no:18
+class no:18
+topic:for loop
+part: 1
+
+##1.loop control statment er modde ja ja ase
+1.(for) loop
+2.(while) loop
+3.(do while) loop
+##2. loop normally use hoi ekta jinish onkbar kora lagle/ onkbar print kora lagle tkn.
+</pre>
+
+
+
+<!-- socipotro part -->
+<h2>shocipotro</h2>
+<pre>
+#1.ekane ja ja ase.
+1.(for loop) loop control statment.
+2. TOPIC 2
+3. TOPIC 3
+</pre>
+
+
+<h2>details of topic start from here.</h2>
+
+
+
+<!-- #topic 1. -->
+
+<div class="topic1">
+                       <h3>for loop</h3>
+<pre>
+#1.for loop use er kaj: ekta jinish onkbar/ekadik bar korte hole kinba print korte hole (for)loop st. use kora hoi.
+#2.prottekta loop (for,while,do while) loop st. er 3ta condition (starting;condition;update) thake ar sei conditon 3ta loop er pashe parent bracket er vitore bole dite hoi. 3ta conditon er modde prottekta conditon er pore semiclone(;)dite hobe must.
+    1.for() loop use korar somoy (for) ta small letter er hote hobe.
+2. then for loop er sate parent bracket likte hobe 
+3.parent bracket er vitore 3ta jinish bole dite hobe.jmn: for(starting, condition; update) prottekta loop er pase bracket diye use kora 3ta condition er prottek ta conditon er pore semiclone(;) dite hobe.
+then
+{function for print}
+4.then parent bracket er pore second bracket diye tar vitore declaretion dite hobe.jmn: xyz.write(xyz);
+
+
+</pre>
+
+<h4>topic1 JS example 1:  </h4>
+
+<h5> example 1</h5>
+<script> 
+
+for(var x=1 ; x<=10 ; x=x+1 )
+/*1.(for) loop er modde var (var x=1) diye age variable (starting) korte hoyece.
+2.then starting point ta  (x<=10) 10 er soman kinba 10 theke kom bar print korbe.
+3.(x=x+1) eta hocce (update) ortat x er man +1 kore kore 10bar print korbe.
+
+##1.for loop er parent bracket er vitore thaka  3ta condition  er full meaning holo:
+1.(x) name variable ta (10bar) (+1) kore kore print korbe. ortat for loop purai jeheto ekta condtion
+seheto sei condtion onujai (document.write) property er value ta 10bar print korbe.
+*/
+{
+    document.write("<h1>allah </h1>");
+    // ei function tai muloto 10bar print korbe. (for loop)er condition onujai.
+}
+
+document.write("<h1>end </h1>" +"<br/>");
+</script>
+
+
+
+
+<h5> for loop function diye ( 1 theke 10 obdi number print korte caile) </h5>
+<script>
+
+for(var w=1; w<=10; w=w+1)
+{
+
+  document.write(" " +w+ ". i love you allah" +"<br/>");
+}
+
+</script>
+
+
+<h5>for loop diye (1,3,5,...99) obdi bejor sonka ber korar program</h5>
+
+<script>
+
+
+
+for (var D=1; D<=99; D=D+2)
+{
+  document.write(" " + D);
+  // curly bracket er vitore jetai deina keno seta loop conditon ways kaj korbe.
+  
+}
+
+document.write("   end");
+
+</script>
+
+
+<h5>(for loop) st. diye 1 thek 100 obdi donattok kinba rinattok man print kora jabe.
+  &   
+</h5>
+
+<script>
+
+var hablu=0;
+
+for(var x=1; x<=10;x=x+1){
+  hablu=hablu + x;
+document.write(sum + "<br/>");
+}
+
+</script>
+
+
+<h5>user theke input niye for loop er maddime program</h5>
+
+<script>
+
+  var a=prompt("Enter your 1st number: ");
+  var b=prompt("Enter your last number: ");
+  
+  for(var f= a; f <= b; f = f+1 ){
+  document.write(f);
+  }
+  
+  
+  </script>
+<span>explaination</span>
+
+</div>
+
+
+
+<!-- #topic 2. -->
+
+<div class="topic2">
+                       <h3>(while loop)</h3>
+<p>porttekta loop e 3ta point thakbei.(1.starting,2.condtion,3.update) ei 3ta point sob loop e (for,while do while) sob loop e thakbe.
+1.for loop & while loop 2ta loop preperty er kaj same ,kintu for er pashe j bracket er vitore 3ta condtion/point thake, (starting ,condtion ,update) ei 3ta point eksate (while)loop proeroty te bosehna.
+2.while loop 3ta point gulo starting point ta while loop er upore/age thakbe, & condtional point ta loop er satei parent bracket er vitore thakbe. & last update point ta curly bracket er vtiore thakbe.
+2.
+3.
+
+</p>
+
+<h4>topic2 JS example 1:  </h4>
+
+<h5>while loop  diye 1theke 10 obdi sonka nirnoi+ jor sonka nirnoi+ jog bioyk nirnoi kora:</h5>
+<script>
+// 1.. (1 theke 10 ) obdi serial ways sonka nirnoi
+var t=1;
+// while loop er starting point eta whilee loop er upore variable er moto kore dite hoi.
+while(t<=10) {
+  // while loop er condtiton point eta  while loop er pashe  parent bracket er vitore thake
+  t=t+1
+  // while loop er 3number update point  curly bracket er vitore hoi
+  document.write(t + "<br/>");
+//   t=t=1; ei updating point ta write()function er pore dile (1-10)obdi print korbe, 
+ // ar jodi t=t+1; ei updating point ta write()function er age dewa hoi (2-11)obdi print korbe, 
+
+}
+
+// 1.. (1 theke 10 ) obdi sonka gulor jugfol nirnoi
+
+var p=1;
+var sum=0;
+while(p<= 10) {
+
+sum= sum+p;
+p = p + 1;
+
+
+}
+document.write( "whie loop diye jog= " + sum + "<br/>");
+// ei document.write funtion ta baire print korai ekbar print hoccce, jodi curly bracket er vitore ditam thlee 10bar print hoto, 10barei conditon check kore ek ek rkm output dito.
+</script>
+
+
+<h5> example2</h5>
+<script></script>
+
+
+<span>explaination</span>
+</div>
+
+
+
+<!-- #topic 3. -->
+<div class="topic3">
+                      <h3>topic3 head</h3>
+<p>discription of topic
+1.
+2.
+3.
+
+</p>
+
+
+<h4>topic3 JS example 1:  </h4>
+
+<h5> example 1</h5>
+<script></script>
+
+
+<h5> example2</h5>
+<script></script>
+
+
+<span>explaination</span>
+</div>
+
+
+
+<!-- #topic 4. -->
+<div class="topic1">
+<h3>topic4 head</h3>
+<p>discription of topic
+1.
+2.
+3.
+</p>
+
+
+<h4>topic4 JS example 1:  </h4>
+
+<h5> example 1</h5>
+<script></script>
+
+
+<h5> example2</h5>
+<script></script>
+
+
+<span>explaination</span>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+div{
+padding: 10px;
+}
+
+.topic1{
+background-color: aquamarine;
+
+
+
+}
+
+.topic2{
+background-color: green;;
+
+}
+
+.topic3{
+background-color: RED;
+
+}
+
+
+h3{
+display: inline-block;
+
+text-align: center;
+background-color: white;
+padding: 10px 20px;
+border-radius: 10px;
+position: relative;
+top: 50%;
+left:40%;
+}
+
+p{
+text-decoration: underline;
+}
+
+span{
+display: block;
+background-color: NAVY;
+COLOR:white;
+}
+</style>
+</body>
+</html>
+              
+              

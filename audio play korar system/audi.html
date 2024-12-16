@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>how to play audio in javascript</title>
+</head>
+<body>
+
+ video:44
+ class:44
+ topic:  how to play audio in javascript  
+
+
+
+   <div class="syntex">
+    <h1>main syntex: </h1>
+
+    <h2>you have not play any audio.</h2>
+    <button class="all_cls">audio 1</button>
+    <button class="all_cls">audio 2</button>
+    <button class="all_cls">audio 3</button>
+
+<script>
+    var lengt= document.querySelectorAll(".all_cls").length;
+for(var x=0;x<lengt;x++) {
+
+    document.querySelectorAll(".all_cls")[x].addEventListener("click" , function (){//  addeventlistener e click event er  sate annonimous function nea hoyece,
+
+        var btn_text=this.innerHTML;
+        document.querySelector('h2').innerHTML= btn_text + " is played";// ekane h2 tag er innerHTML e (btn_text) variable ta dite hobe, but quetion use kroa jabena. karon ota ekta varaible, btn er varaible oi (btn_text) variable e store cole asbe. 
+
+        audioplay1("btn_text");
+
+    });
+
+}
+
+
+function audioplay1(btn_text){
+
+    switch(btn_text){
+        case "audio 1":
+        var sound= new Audio("audio/A-bubbly.mp3 ");
+        sound.play();
+        break;
+
+        case "audio 1":
+        var sound= new Audio("audio/B-fad.mp3");
+        sound.play();
+        break;
+
+        case "audio 1":
+        var sound= new Audio("audio/C-tune_type.mp3");
+        sound.play();
+        break;
+    }
+}
+
+
+</script>
+
+</div>
+    
+
+
+   <!-- topic 1 full details -->
+<pre>
+<h1>topic 1 use kivabe kore,syntex ta jmn full details:</h1>
+#1. 
+    1.protome js e btn er classname dhore select korte hobe. sob gulo btn er classnae eki rakte hobe jate eksate sob gulo select kora jai ,& index number er jaigai loop calano jai.
+    2.then select korar por select kora btn er sate/varaible er sate addEventListener(2PERAMIRAR) add korte hobe.
+    3.peramitar er function e arekta ekta variable niye btn er ivtor thaka text ta oi variable e nite hobe, innerHTML er maddome.
+    4.ei pura program ta .ortat btn select korar pore addlistener korar pore pora program ta ekta loop er vitore rakte hobe, 
+    5.loop ta totokkon obdi colbe (all_btn)class er length jototuk, jotota tag e ase sob ,protom ta k 0index number hisebe count kore oi class er length jototuk ase tototuk obdi loop er ta cholbe.
+    6.loop er jeheto index numbe hiseb kore 0 theke shuro hoi, tai loop er (/x/i/y)variable tavjs e class er index e dite hobe.
+
+#2. ekta tag nite hobe jetate shudo ta show korbe j ami btn 1 e click korle oi tag e btn 1 clicked show korbe, btn 2 te click korlew setaw oi tag e show korbe
+   1.eta korar jonno h2 tag k select koreci , h2 tag e default vabe kisu text thakbe.
+   2.but jokon ami btn 1 e click korbe seta ekta 
+
+1.
+2.
+3.
+
+</pre>
+
+<pre>
+<h2> you have not click any audio button</h2>
+    <button class="all_btn">A</button>
+    <button class="all_btn">B</button>
+    <button class="all_btn">C</button>
+<script>
+
+var leng= document.querySelectorAll(".all_btn").length;
+// 3.ei classname ta jeheto ekadik tag e ase tai queryselctor e All dewa hoyece. jate oi name joto gulo class ase sobgulo select hoye jai.
+// loop ta classname er length odi cholbe, ortat (all_btn)name class 3 ta ase, tai loop o ei class er length obdi cholbe.
+
+for(var i=0; i<leng;i++) {
+
+        //4. ei loop ta classname er length obdi cholbe, & loop er (I)variable ta niser index er jaigai boshai dewa hoyece, jate ,jei button click korbe oi btn er classname er index number i er maddome pass koredite pare.
+        document.querySelectorAll(".all_btn")[i].addEventListener('click' , function() { //  addeventlistener e click event er  sate annonimous function nea hoyece,
+        var btn_text= this.innerHTML;
+        //5. jei button click kora hobe sei button er vitore thaka text ta (btn_text)variable e chole asar jonno this.innerHTML;property use kora hoyece.
+        
+        document.querySelector('h2').innerHTML= btn_text+" is clicked"; 
+        //6. h2 tag ta js e select kora hoyece, & jokoni user kuno button e click korbe tokon oi button er vitore text ta (btn_text)varaible e cole asbe, ar seta ei (h2) tag er maddome print kora hobe.default vabe onno text thakbe,jkn kuno btn e click korbe tkni 2 te btn er text gulo dekabe.
+    //6.1. ekane h2 tag er innerHTML e (btn_text) variable ta dite hobe, but quetion use kroa jabena. karon ota ekta varaible, btn er varaible oi (btn_text) variable e store cole asbe. 
+        
+        audioplay(btn_text);
+         //7.  audioplay(btn er text pass) ei function k call kora hoyece, btn er vitore thaka text ei function e pass hobe.  
+        });
+}
+
+
+function audioplay(btn_text){
+            //8. audioplay er peramitar er value ta switch condi. st. te pass hobe.
+        
+            switch(btn_text) {
+// 9.switch er 1st bracket er vitore thaka (btn_text) er maddome btn er vitore thaka jei text ta pabe seta ekane pass hobe, ortat btn er vitore A,B,C ase jei button click korbe sei button er value ta 
+//10. switch er  (btn_text) e pass hobe. &  niser case condi. st. onujai compare kroe print korbe. jetar sate match hobe, seta print kore. dibe.
+
+        case "A":
+        var audio1=new Audio("audio/A-bubbly.mp3");
+        // 11.audio1 name ekta variable e  (Audio)object newa hoyece. & audio object er modde audio er link dewa hoeyce.
+        //12. switch er value er sate case er value jodi mile jai thle ei object e thaka audio link ta play hobe.
+        audio1.play();
+        //13. variable.play() ei play function er maddome audio ta play hobe, suer jokoni kuno btn e click korbe tkn jodi switch er kuno case condi. st. er sate mile jai tkn oi link ta play hobe.
+        break;
+// 13.jate kuno condi. st. ture hole /match hole jate break hoye jai, tar jonno break condi. st. use kora hoyece.
+// 14.jodi case er sate true/match na hoi tkn abr nijer condition e cole jabe, jeta te true hobe seta te giye theme/break niye nibe.
+        
+        case "B":
+        var audio1=new Audio("audio/B-fad.mp3");
+        audio1.play();
+        break;
+
+        case "C":
+        var audio1=new Audio("audio/C-tune_type.mp3");
+        audio1.play();
+        break;
+        }
+}
+
+
+
+</script>
+
+
+</pre>
+
+
+
+
+
+
+
+
+
+<style>
+    .syntex{
+    background:linear-gradient(to left, rgb(227, 150, 150),rgb(127, 231, 127),rgb(194, 194, 241));
+    
+    }
+    
+    pre{
+        background:linear-gradient(to right, rgb(9, 235, 160),rgb(213, 104, 217),rgb(201, 242, 173));
+    
+    }
+    </style>
+    
+</body>
+</html>

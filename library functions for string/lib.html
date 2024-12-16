@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>library function</title>
+</head>
+<body>
+  
+
+
+<h1 style="text-align: center;">bismillahir rahmanir rahim.</h1>
+<h2 style="text-align: center;">library functions for string in js</h2>
+
+<pre>
+video no:08
+class no:08
+topic:js er kisu string related  library function 
+part:
+</pre>
+
+<!-- socipotro part -->
+<h2>shocipotro</h2>
+<pre>
+#1.ekane ja ja ase.
+1. (text/STRING/VARIABLE.length)  ekane (.length)ta ekta js e string related library function etar kaj holo: string/variable.length evabe function ta lika enter dile string/variable tar total lenght/koita sonka/word ase seta bole dibe jmn:(bangladesh) word ta kuno variabl e store kore sei variable er sate (.length) dekle bangladesh word ta te koita letter ase seta bole dibe.
+
+2. (text/STRING/VARIABLE.charAt) ekane (.charAt)ta ekta js e string related library function etar kaj holo: kuno string er X number letter ta koto number position e ase seta ber kora,jeheto string count kora shuro hoi 0 theke tai 0 shuddo count korbe.
+3.(promPt) property er maddome user theke popup er maddme input newa hoi.
+4. (toUpperCase) & (toLowerCase) ei 2ta function er maddome kuno word/text k uppercase/lowercase kora hoi 
+5.(concat) function / concatenate strings same ,but concat library function diye alada kore concat kora jai.
+6.(slice) function
+</pre>
+
+
+<h2>details of topic start from here.</h2>
+
+
+
+<!-- #topic 1. -->
+
+<div class="topic1">
+                       <h3>length library function on string relatad of js</h3>
+<p>
+  #1.  
+1. (text/STRING/VARIABLE.length)  ekane (.length)ta ekta js e string related library function etar kaj holo: string/variable.length evabe function ta lika enter dile string/variable tar total lenght/koita sonka/word ase seta bole dibe jmn:(bangladesh) word ta kuno variabl e store kore sei variable er sate (.length) dekle bangladesh word ta te koita letter ase seta bole dibe.
+2.
+3.
+
+</p>
+
+<h4>.length library function er js example 1:  </h4>
+<script>
+// example 1:
+ var and=",,,,   ";
+var homeland="Bangladesh";
+var fulname="mohammad mustafa";
+// ekane mohammad & mostafa name er majkane seta shuddo 16 count kora hoyece nahoi 2ta namei letter ase 15 ta.
+// ekane ekta space thake setakew length hisebe count kora hoi.
+document.write(homeland.length +and);
+document.write(fulname.length +and);
+
+// example 2:
+// ekadik variable ekta function er maddome print
+// caile ekadik variable er length ekta (document.write) er madde print kora jabe. tobe majkane (,)dite hobe jmn:
+
+var ban1="sonar bangla";
+ var  name1="tipu vai";
+document.write(ban1.length + and + name1.length  +and);
+// ekane majkane koma diye 2ta variable er length eksate ekta declaretion er maddome print kora hoyece.
+
+
+
+// example 3: 
+// ekane ami concatenate string er sate librarry function use korar moaddome lenght property er value ber korlam.jmn:
+
+var your1="mostafa";
+document.write("mostafa name's length= " + your1.length);
+
+// example 3:   
+
+
+document.write("   ");
+// length property ta caile alada ekta variable er modde store kore then variable ta document.write function er vitore likew length ber kora jai.
+
+
+var madupok="mowmasi";
+
+var mowchak= madupok.length
+
+document.write("mowchak word's length= "+ mowchak);
+
+</script>
+
+
+<span>explaination</span>
+</div>
+
+
+
+<!-- #topic 2. -->
+
+<div class="topic2">
+                       <h3> charAt library function er use tricks</h3>
+<p>charAt property explaination:
+1.(charAt)function diye muloto kuno word/numbe/text er X number charecter/letter/digit ta ki seta dekar jonno (charAt)property use kora hoi.jmn:
+tipu word er 2number letter ta ki seta (charAt)property er maddome dekanu hoi.
+  tipu name ta 0 theke count kora hobe.chartAt er vitore joto number dibe toto number word ta show korbe, but 0 diye count kora shuro hobe jmn:<br>
+ tipu
+t=0
+ i=1
+ p=2
+ u=3
+
+3.
+
+
+</p>
+<br><script>
+var me="tipusahil";
+
+document.write((me.charAt(2))   + " charAt er maddome tipu name er 2number letter (p)ta ki seta nirnoi korlm");
+// ekane (charAt)property te bracket er vitore ami joto number dibo sei variable tar tik toto number word ta ki seta show korbe,jeheto 0 theke count kora shuro hobe tai seta mathai rakte hobe.
+
+</script>
+
+
+
+
+
+<h4>topic2 JS example 1:  </h4>
+<script></script>
+<span>explaination</span>
+</div>
+
+
+
+<!-- #topic 3. -->
+<div class="topic3">
+                <h3>( prompt) property diye popup er maddome user theke input newa hoi.</h3>
+
+  <p>  user theke input niye tar length dekate hole:
+  1.user theke input niye tar length kototuk seta dekar jonno prompt function ta jevabe likte hobe jmn: <br>
+  2.kuno ekta variable niye tar vitore equalsign er pore (prompt)property likte hobe, then bracket er vitore quetion diye <br>
+  tar vitore label ta likte hobe.<br>
+  3.then document.write function er bracket er vitore  variable.lenth function ta liklei output e<br>
+   ekta input fill asbe upore label takbe  bracketer vitore ja lika hoise ta.
+  
+  
+  </p>
+  
+  <script>
+  
+  var len=prompt("Enter Your Name: ");
+  
+   
+  document.write("Your Name's length is: "+ len.length + " and ");
+  
+  var hi=prompt("hey,i'm sahil ahmed, your name?  ")
+
+  document.write(hi+ "  my name is tipu.");
+
+  </script>
+  
+<h4>topic3 JS example 1:  </h4>
+<script></script>
+<span>explaination</span>
+</div>
+
+
+<!-- #topic 4. -->
+<div class="topic1">
+                  <h3>(toUpperCase & toLowerCase) function</h3>
+<p>
+
+1.toUpperCase & toLowerCase property/function er maddome  kuno text k uppercase/lowercase kora hoi.
+
+2.
+3.
+
+</p>
+
+
+<h4>topic4 JS example 1:  </h4>
+<script>
+
+var capi="touppercase function er maddome kuno text k uppercase kora hoi, document.write function er maddome variable call kore oi variable name then dot (.) diye(toUpperCase())";
+
+
+document.write(capi.toUpperCase());
+
+var smal= "lowercase function er maddome kuno text k lowercase kora hoi, document.write function er maddome variable call kore oi variable name then dot (.) diye(toLowerCase()) function call kore lowercase kora hoi.";
+
+document.write(smal.toLowerCase());
+
+
+</script>
+<span>
+  1.toupppercase/tolowercase jetai use korina keno tar sate parent bracket dite hobe, 7 bracket er vitore kisu likar proyojon nei. function er sate bracket na dile
+   function ta run hobena.tai kali bracket function er sate likte hobe tobe eta shudo toUpperCase ,& toLowerCase function er ketre use hoi.
+</span>
+</div>
+
+
+<!-- #topic 5. -->
+<div class="topic1">
+                                 <h3> concat function er maddome ekadik variable k add kora, jukto koa.</h3>
+<p>concat function: 
+1.
+2.
+3.
+
+</p>
+
+
+<h4>concat function er JS example 1:  </h4>
+<script>
+
+var creator= 'allah ';
+var mercy=" amr rob....  ";
+
+document.write(creator.concat(mercy));
+// ekane 2ta variable k  (concat) library function er maddome jukto kora hoyece. chaile library function use na kore +sign er maddomew concatenate strings add/jukto koa jai.
+
+
+document.write(creator+ " is "+ "super " +" mercy")
+
+</script>
+<span>ekadik variable/text /number eksate jukto korar 2ta concat way ase, ek hocce + sign use kore jukto kora jai arek hocce concat library function er maddome jukto kora jai.</span>
+</div>
+
+
+
+
+<!-- #topic .6 -->
+<div class="topic3">
+                             <h3>slice function er maddome kuno word/text er slice e mention kora ongsho kete newa hoi</h3>
+<p>
+1.mostafa word theke  slice(0, 3) ekabe 0 number m theke shuro kore 3ta word s obdi letter gulo slice/kete nibe.slice function use korai.
+2.
+3.
+
+</p>
+
+
+<h4>slice JS example 1:  </h4>
+<script>
+
+var main="mostafa";
+
+document.write(main.slice(3, 6) + "  ei value(taf) ta main variable er and ");
+// ekane mostafa name e total letter ase 7ta kintu ami chai 6ta letter theke shruor 3ta ad diye baki 3ta dekak,tkn dekabe (taf)ei 3ta letter output e dekabe.
+
+
+var ban="bangladesh  ";
+
+
+document.write(ban.slice( 4, 8)+ " ei value (lade) ta ban variable er  ");
+
+</script>
+<span>ekane bangladesh word ta te total 10ta letter ase kintu ami cailam bangladesh word er shuror 8ta word theke 3ta bad diye baki gulo output e show korte ejonno slice function e ami evabe liklm jmn:  document.write(ban.slice(3, 8);
+  <br>
+  
+</span>
+</div>
+
+
+
+
+
+
+
+
+<style>
+
+  div{
+    margin:20px;
+    padding:10px;
+  }
+.topic1{
+background-color: aquamarine;
+
+
+
+}
+
+.topic2{
+background-color: green;;
+
+}
+
+.topic3{
+background-color: RED;
+
+}
+
+
+h3{
+text-align: center;
+
+}
+
+p{
+text-decoration: underline;
+}
+
+span{
+  display: block;
+  background-color: NAVY;
+  color:white;
+}
+</style>
+</body>
+</html>
+              
+              

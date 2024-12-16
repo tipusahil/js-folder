@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>topic</title>
+</head>
+<body>
+  
+
+
+<h1 style="text-align: center;">bismillahir rahmanir rahim.</h1>
+<h2 style="text-align: center;">DOM Event | Event Object | onchange</h2>
+
+<pre>
+video no:47
+class no:47
+topic:DOM Event | Event Object | onchange
+part: part 1
+</pre>
+
+
+
+<!-- socipotro part -->
+<h2>shocipotro</h2>
+<pre>
+#1.ekane ja ja ase.
+1.TOPIC 1
+2. TOPIC 2
+3. TOPIC 3
+</pre>
+
+
+<h2>details of topic start from here.</h2>
+
+
+
+<!-- #topic 1. -->
+
+<div class="topic1">
+                       <h3> DOM EVENTS</h3>
+<pre>discription of topic
+  DOM EVENTS: 
+    1.event object: 
+      event type: change,submit,load,unload,open, play,canplay,pause,playing,progress,ended,resize,scroll,toggle etc.
+      - properties: type ,target,preventdefault()
+
+    2.mouseEvent Object 
+    3.KeyboardEvent Object 
+    4.FocusEvent Object 
+    5.clipboardEvent Object 
+    6.DragEvent Object
+
+
+
+<!-- syntex of topic 1 -->
+<pre class="syntex">
+<h3>1.DOM events er (event object er change) obejct er kaj: </h3>
+<!--1.event change object:  -->
+1.change event ta j j kaje,/j j tag e use kora hoi.
+
+1.input/> tag, er type jodi:  text,number,password,email,color, radio,
+checkbox,search,time,date,datetime,week,month,url,tel,file,
+ 
+eder modde kuno ekrkm input type hoye thake taile dom event er (change object) property ta eshobe use kora jabe.
+2.select> tag e change dom event niye kaj kora jabe.
+3.textarea/> tew cahnge event niye kaj kora jabe.
+
+
+2.
+3.
+
+<label for="name">Name: 
+  <!-- <input type="text" id="name" name="email" > -->
+  <input type="text" id="name_input" name="name" class="hablu_input">
+</label>
+
+<Script>
+
+// const input1=document.querySelector("input[name=email]");
+const input1=document.querySelector("input[name=name]");
+// evabew type er name dhorew select kora jai, tobe seta kon tag er  modde seta age likte hobe, the ntag er vitore er type ta 3rd bracker er vitorei likte hobe, tag name er pashe.
+// html e input fil niye seta js e select korte hobe. select kora hoye gele
+
+input1.addEventListener("change",changehandler);
+/*sei input er sate listener (addeventlistner) add korte hobe, then
+jeheto add event listner e 2 ta peramitar add korte hoi,protom ta hoccde kuno event,jeta ami input er sate add korte chai ,
+then 2ndly hoccce ekta function set annonimous kinba name wala kuno function hote pare,name wala function hole listner er bracket er vitore likle 1st bracket dwa jabena, shudo function er name ta dewa jabe. 
+ change event 1st peramitar hisebe use kora hoyece,& 
+html er tag er bitore inline way te likle (onchange)likte hoto ,kintu js e on ta bad diye shudo change ta lika hoyece.js e on ta likte hoina.
+*/ 
+function changehandler(ee) {
+// event peramitare jodi (change)event hoi thle function er ekta peramitar hisebe 
+// console.log(ee.type);
+
+// ee.target (target) diye html element k ki ki diye jmn( idname,class name, type name, tag name) ki ki diye access korte parbo eta show kore dei, tai ortat tag er vitore jodi kuno id theke thake taile ei ,ee.target(target) key word diye eshob dekte pawa jai.
+// jkn kuno input fil kuno text/xyz lika mouse tar focus soranu hole tik tkn change event ta triger hobe, & console e (changed) dekabe.
+// event er function( changehandler) er peramitar (ee) ta ( console.log(ee.xyz); ) dile type/target/xyz onk kisu deka jabe, tar karon change event use kora hoyece ,tai
+console.log("changed"); // eta dewar karon holo user input fil e kisu input dile seta jate console e (changed) dekai tar jonno function er vitore console diye changed lika dewa hoyece. 
+console.log(ee);// ekane console e shudo(peramitar name (ee)) dewar karon holo jeheto ee peramitar er function e change event use kora hoyece sheeto change event e tik ki ki ase seta dekar jonno dewa hoyece. & change event er modde target,type,xyz onk kisu ase ase output e deka jai, dekte  caile  shudo peramitar ta console e print kore dile hobe.
+console.log(ee.target.className);
+console.log(ee.target.id);//id name dekte caile (ee.target.id); id liklei hobe, id er sate name likar proyojon nei, tatei id name ta console show korbe.
+console.log(ee.target.type);
+
+console.log(ee.target.value);//input er vitore value hisebe password/name/email/ tik ki dewa hoyece seta dekte chaile console.log(ee.target.value) ;dilei hobe. oi input e ki value input dewa hoyece, seta dekabe.
+ /*
+ ee.target (target)er kaj:  kuno tag er vitore id,class thakle ogulor idname or classname ki seta console 
+e output e deka jai,ortat kuno tag e jodi classname/idname thake taile (ee.target.className /idName/typeName) evabe likle oi tag e jodi class thake taile class/id/type er name ta console e print kore dekabe.
+
+console.log(ee.target.className);
+console.log(ee.target.id); //id name dekte caile (ee.target.id); id liklei hobe, id er sate name likar proyojon nei, tatei id name ta console show korbe.
+
+console.log(ee.target.type);
+
+
+ console.log(ee.target.value); 
+jodi input er modde ki value dewa hoyece, jmn password,name,email ki dewa hoyece setaw target er maddome deka jabe, 
+tar jonno oi select kora id er console.log(peramitarname.target.value); shudo value likei oi input er value ta deka jabe, 
+  
+
+*/
+}
+
+
+
+</Script>
+
+</pre>
+
+</pre>
+
+<h4>topic1 JS example 1:  </h4>
+
+<h5> checkbox e change event kivabe kaj kore ,& target key word ta kivabe kaj kore </h5>
+
+<div class="group"                                              style="border: 2px solid;">  
+<!--1. erkm ekadik check box nile ekta div er modde sob gulo checkbox newa valo.group ways arki,jate handle korte easy hoi. -->
+
+<h4>programing language:</h4>
+<label for="java">java: 
+    <input type="checkbox" name="program" id="java_id" value="java"> </label>
+<!-- 2.ekane prottekta checkbox er classname similar/eki rakar karon jate js e select korte/handle korte  subida hoi.jmn: dom/(queryselectorAll) diye jate select kora jai,& index number er jaigai jate loop calano jai. -->
+
+<label for="php">php: 
+    <input type="checkbox" name="program" id="php_id" value="php"> </label>
+<!--3. ekane prottekta input tag er vitore (value) attribute use korar karon holo 
+jeheto checkbox e inputvalue hisebe shudo (right) symbol dewar option thake. se ketre change event er target
+ property diye value check korar smy kisui pabona, tai checkbox er input tag e attribute hisebe (value) dewa hoyece,
+  & value er name oi checkbox er name er sate mil reke jmn python er checkbox er (value) attribute er valuename o python dewa hoyece 
+  ,& php er checkbox er value attribute er valuename hisebe php dewa hoyece.  -->
+
+  <label for="python">python: 
+    <input type="checkbox" name="program" id="python_id" value="python"> </label> 
+    
+  <script>
+
+const programs = document.querySelectorAll("input[name=program]");//ekabe input er viture attribute hisebe name=program jei jei input gulote ase sob gulo select kora hoyece.
+// console.log(programs);
+
+Array.from(programs).map((program) =>{
+          /* 4.multiple item e listener add korte chaile prottekta item er parent varaible(programs)
+              take nodelist theke Array te convert kore nite hobe.& array take abr maping korte hobe, maping kora hoi array theke ekta ekta kore element gulo niye eventlistener add korbe.
+              jate kore array theke ekta ekta kore maping kore eventlistener add kora jai.
+              nodelist ki seta console.log(programs); diye parent variable ta  console e print korlei deka jabe.
+              */ 
+ program.addEventListener("change",program_handler)
+   } );
+
+  function program_handler(tt){
+            // console.log(programs);
+            // console.log("checked");
+            // console.log(tt.target.value);
+        
+      if(tt.target.checked){
+        // ekane tt permitar.change event er target key word. checked keyword
+        console.log("checked")
+      // ekane condition ta holo input type jodi check kora hoi thle check dekabe,jodi check kora na hoi thle uncheck dekabe.
+      }else{
+        console.log("uncheck");
+      }        
+ }
+
+
+  </script>  
+
+
+
+</div>
+
+
+<h5>select tag e change event add kore </h5>
+<div                                                                                 style="border: 2px solid">
+  <label for="department">Country: </label>
+
+    <select name="department" id="country_p">
+        <option value="bangaldesh" >Bangladesh</option>
+        <option value="pakistan" >Pakistan</option>
+        <option value="afganistan">Afghanistan</option>
+    </select>
+
+<script>
+const country_v = document.querySelectorAll("#country_p");
+// console.log(country_v);
+
+country_v.addEventListener("change",country_handler);
+
+function country_handler(xyz){
+  // console.log("selected");
+  console.log(xyz.target.value);
+}
+
+
+</script>
+
+ </div>
+
+
+<span>explaination</span>
+
+</div>
+
+
+
+<!-- #topic 2. -->
+
+<div class="topic2">
+                       <h3>topic2 head</h3>
+<pre>discription of topic
+1.
+2.
+3.
+
+<!-- syntex of topic 2 -->
+<pre class="syntex">
+<h3>syntex of topic 2</h3>
+
+</pre>
+
+
+</pre>
+
+<h4>topic2 JS example 1:  </h4>
+
+<h5> example 1</h5>
+<script></script>
+
+
+<h5> example2</h5>
+<script></script>
+
+
+<span>explaination</span>
+</div>
+
+
+
+<!-- #topic 3. -->
+<div class="topic3">
+                      <h3>topic3 head</h3>
+<pre>discription of topic
+1.
+2.
+3.
+
+
+
+
+<!-- syntex of topic 2 -->
+<pre class="syntex">
+<h3>syntex of topic 2</h3>
+
+</pre>
+
+
+
+</pre>
+
+
+<h4>topic3 JS example 1:  </h4>
+
+<h5> example 1</h5>
+<script></script>
+
+
+<h5> example2</h5>
+<script></script>
+
+
+<span>explaination</span>
+</div>
+
+
+
+<!-- #topic 4. -->
+<div class="topic1">
+            <h3>topic4 head</h3>
+<pre>discription of topic
+1.
+2.
+3.
+
+
+
+
+<!-- syntex of topic 2 -->
+<pre class="syntex">
+<h3>syntex of topic 2</h3>
+
+</pre>
+
+
+
+
+</pre>
+
+
+<h4>topic4 JS example 1:  </h4>
+
+<h5> example 1</h5>
+<script></script>
+
+
+<h5> example2</h5>
+<script></script>
+
+
+<span>explaination</span>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+div{
+padding: 10px;
+}
+
+.topic1{
+background: linear-gradient(rgb(185, 196, 130),rgb(130, 215, 130),skyblue);
+
+
+.syntex{
+color:black;
+background-color: rgb(236, 147, 184);
+}
+
+
+}
+
+.topic2{
+background: linear-gradient(to right,rgb(181, 170, 170),rgb(120, 228, 120),rgb(250, 165, 250));
+
+
+}
+
+.topic3{
+background-color: RED;
+
+}
+
+
+h3{
+display: inline-block;
+color:black;
+
+text-align: center;
+background-color: white;
+padding: 10px 20px;
+border-radius: 10px;
+position: relative;
+top: 50%;
+left:40%;
+}
+
+p{
+text-decoration: underline;
+}
+
+span{
+display: block;
+background-color: NAVY;
+COLOR:white;
+}
+</style>
+</body>
+</html>
+              
+              

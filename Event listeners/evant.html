@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="evant.css">
+</head>
+<body>
+
+<pre>
+video:42
+class:42
+topic: evant liseners
+
+
+1.jei button/tag e listener add korte hobe sei tag ta age js e select korte hobe, then oi tager sate addEventListener add kore then kon property (click/mouseover/mouseout) jei property use korte cai oi property 1st bracketer vitore quetetio ner vite 1st peramitar hisebe dite hobe,
+ then koma diye jei functionname dite cacci ota dite hobe, ba function chailei add kora jabe, functionname er sate j 1st bracket dite hoi ota dewa jabena.
+
+1.kuno tag/button k js e select korte hobe.& ekta variable (xyz) e rakte hobe.
+2.xyz varaible er sate addEventListener property use korte hobe.jmn: 
+( xyz.addEvenListener('click'/mouseover/mouseout, my function); ) & 2ta peramitar add korte hobe. ami jei kaj ta add korte cacci seta tik kkn hobe, click korle naki mouseover korle naki mouseout korle
+2ta peramitar er modde ekta hobe click/mouseover/mouseout egulor modde ekta then koma diye arekta jeta hobe ota hocce functionname ba function.
+1. ei property diye ( variable.addEvenListener('click'/mouseover/mouseout, my function); )
+uporer interactive evant listener kaj gulo kora jai.
+2.
+3.
+
+</pre> 
+
+<button>click me </button>
+
+<script>
+// evabe variable.addEventListener('click/mouseover/mouseout' , function_name) ; ei function er maddome onk kisu kora jai, onclick function use kora charai , 
+
+var evant1= document.querySelector('button').addEventListener("click",myfun);// normally function name use korle 1st bracket use kori ,kintu evantLisener er peramitar er modde function name er sate 1st bracket dewa jabena, c
+
+function myfun(){
+    alert("hi evant listener");
+}
+
+// ekane btn tag ta select korar pore addevenlistener('1st peramitar', '2nd peramitar') er modde 1st peramitar hisebe click property use kroe hoyece.then koma (,) diye 2nd peramitar hisebe functionname dewa hoyece.functionname er 1st bracket dewa jabena. but emne chaile function name chara pura ekta annonimous function 2nd peramitar er jaigai boshai dewa jabe, tobe keyal rakte hobe.
+// addevantlistener er  er 1st bracket jekane property & function nmae peramitar hisebe dea hoi ,oi bracket er vitore rakte hobe.
+
+</script>
+
+
+
+<h3>name chara anonimous function direcly addevantlisener er peramitar hisebe  use kora jabe, jmn: </h3>
+<pre>
+<button class="annoni">click me fo annonimous</button>
+
+
+
+
+    <script>
+
+var anno=document.querySelector(".annoni").addEventListener("click" , function(){
+    alert('for annonimous');
+})
+// ekane function ta kuno variable e na niye direct click property er pore function ta 2nd peramitar hisebe use kora hoyece.
+
+
+
+
+    </script>
+</pre>
+
+<h3>addevantlisener er maddome css er style o add kora jai</h3>
+
+<pre>
+
+<p  id="hablu"> css add kora, addevantlisener er maddome</p>
+
+<script>
+
+var select= document.querySelector("#hablu");
+// jei tag e addevanlistener add korbo oi tag ta select kora hoyece.
+
+select.addEventListener("mouseover", style1);
+// oi tag ta jei variable e select kora hoyece sei variable name dot diye add even listener add kora hoyece, & 1st bracketer vitore quotetion diye peramitar hisebe mouseover porpery use kroa hoyece jate user oi tag e mouseover korlei style ta dekte pawa jai ,&
+// function name ta 1st bracket chara peramitar hisebe property er pore koma diye dwa hoyece.
+
+
+function style1(){
+    select.classList.add("random_css");
+    // css e randomname diye ekta classname banai tar vitore bibinno style dewa hoyece.
+    // sei random name ta ClassList.add("dot chara random css name ta") add kora hoyece.
+}
+
+
+
+// mouse out kore felle jate style taw remove hoye jai tar jonno abr addevenlistener funcation ta use kore hobe, but property mouseover er jaigai mouse out dite hobe.
+select.addEventListener("mouseout", style2);
+// mouseout kore dewa hoyece, jate mouse soralei style taw remove hoye jai,
+function style2(){
+    select.classList.remove("random_css")
+    // ekanew add er jaigai remove property use kroa hoyece.jate mouseout/soralei style taw remove hoye jai.
+}
+
+
+</script>
+
+
+
+</pre>
+
+</body>
+</html>

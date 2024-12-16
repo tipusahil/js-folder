@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>math object</title>
+</head>
+<body>
+    <pre>
+   video: 32
+   class:32 
+    topic: math object er bebohar: 
+
+    1.math object likar smoy math.xyz() er (M) ta  capital letter er hbe
+    2.console e giye math.xyz() function gulo easily print kora jai, kuno variable er proyjon hoin.
+    3.math.xyz() obj  emne HTML/JS file theke print korte caile  age variable e store kore then varaible name dhore print korlei print hobe,nahoi hobena.
+
+    
+    <script>
+
+
+// 1
+ Math.sqrt(25); // output: 5
+//  math.sqrt() object diye kuno number er square bitti ta boshanu hoi, 
+Math.sqrt(4); // output:2
+// jei man ta braket er vitore dewa hobe tar square rop ta dewa hbe.
+// 2
+Math.abs(-4);// output:4 //abosulte mantai print korbe.
+/* -4 er abs=absolute value holo just 4 positive man, kuno negative man dile setar positive man print korai abs/ math.abs() obj er kaj.
+    Math.abs() obj diye kuno maner abosulute man ortat negative man dilew setar absoulte man print kore dibe. */
+// 3
+Math.pow(2,3);// output: 8 // 2 hocce bitti, & 3 hocce 2 er power,tai 2 er upore 3 power thakle 8 hoi
+Math.pow(5,2);//output: 25 //5 er upore power 2 mane holo ( 5*5)=25
+//Math.pow(x,y) kuno sonkar power power man ber korte caile x er jaigai bitti ,& y er jaigai power value ta dilei power man print kore dibe.
+
+// 4
+Mate.sin(45);//output: 
+ // sin,cos,cosec,etc man o ber kora jabe, shudo bracket er vitore man boshaile otar sin,cos,cosec,xyx er man koto seta print kore dibe,
+// 5
+Math.floor(3.6);// output: 3 // ekane (3.6)ei number tar floor/niser purno sonka 3, (5.676) ei number tar floor/niser purno sonka 5
+// math.floor() er kaj holo kuno maner floor/niser purno sonka print korbe niser bolte bam diker jmn: (7.5) ei number tar floor sonka 7
+// 6
+Math.ceil(4.7); // output: 5  // ekane (3.6)ei number tar ceil/uporer purno sonka 4, (5.676) ei number tar ceil/uporer purno sonka 6
+Math.ceil(6.1); // output: 7
+/* math.ceil() obj ta Math.floor() obj er tik biporit kaj kore:
+ ceil obj ta kuno number er uporer diker purno sonka print kore ,
+ar floor obj ta kuno number er niser purno sonka print kore. */  
+  
+// 7
+  Math.round( 3.4); // output: 3 // ekane round er ketre float number jodi dosomik er pore jodi (1-4) obdi thake taile niser diker purno sonka ta round kore print kore dibe. ar jodi dosomik er pore( 5-9) obdi sonka take taile uporer diker sonkar sate round kore print kore dibe.
+  Math.round( 3.5); // output: 4
+/* Math.round(); obj er kaj holo :
+ kuno dosomik wala number (x.4) jodi dosomik e pore (1-4)obdi kuno sonka hoi taile floor/niser purno sonka ta round value hisebe print kore dibe,
+  & jodi dosomik wala number (x.5) dosomik er pore (5-9)obdi kuno sonka hoi tahle ceil/uporer purno sonka round value hisebe print kore dibe. */
+ 
+
+// 8
+Math.random(); //output: 0 theke 1 er modde sonka genarate korbe, random bolte jekuno sonka genarate korbe,jeheto bracket er vitore value dewa hoini. tai (0 theke  1) er moddei genarate korbe.
+// Math.random() obj ta default vabe float sonka genarate korbe.tai chaile  etake floor obj er maddome niser purno sonkai convert kore nile random er output ta kmn seta buja jabe.
+Math.random(5); //output: 0 theke 5 er modde number genarete korbe,
+// 
+Math.floor(Math.random(5)); //output: 0 theke 4 obdi jeheto floor obj use kora hoise tai niser sonka 4 obdi jekuno sonka print korbe.
+Math.floor(Math.random(5) +1); // output: 0 theke 5 obdi print korbe, random sonka 0 theke 4 obdi print korbe, jeheto random er vitore value 5 dewa hoyece,then oi random sonkar sate floor obj er 1 value ta add hoye jabe, random jekuno ramdom sonka genarete koruk na keno tar sate floor er 1 add hoye jabe.
+Math.floor(Math.random()*10) +10;
+Math.floor(Math.random() *5)+1;
+Math.floor(Math.random() *x)+y; //output: x theke y obdi purno random sonka ber korte caile evabe likte hobe.
+/*random sonka purno sonkai genarate korte chaile random er bracket er vitore kuno value dewa jabena, value dile floor er bracket er vitore random obj er pore  star(*x) evabe gon kore dite hobe, & jodi x thek y obdi print korte hoi taile y ta floor er bracket er baire (+y;) evabe add kore dite hobe jmn:
+
+Math.random()obj diye jodi purno sonka generate korte cai taile randod obj ta ceil/floor obj er bracket er vitore reke print korte hobe.
+floor er virore random obj er pore jei man ta dewa hobe oi maner vitorei random sonka genarte hobe,
+ & floor obj er baire (+10) jei man ta dewa hoyece otar sate genarate howa sonka ta jog hoye then print korbe.
+
+*/
+
+
+
+
+// 9
+ Math.max(3,4,1,12,4,7,2); //output: 12 // ekane value hisebe joto number kinba digit dewa hokna keno ,jeta sob ceye max/boro otai print kore dibe.
+/*   */
+
+
+
+</script>
+<script>
+
+    // user theke input niye (Math object) er maddome maximum numbe ber kora.
+var num1= parseInt( prompt("enter your 1st number: "));
+var num2=parseInt(prompt("enter your 2nd number: "));
+var num3= parseInt(prompt("enter your 3rd number: "));
+var max_number= Math.max(num1,num2,num3);
+document.write(max_number);
+
+
+
+</script>
+
+
+</pre>
+
+</body>
+</html>

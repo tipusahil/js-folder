@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practise</title>
+</head>
+<body>
+    
+<div>
+<h1> hi , i am sahil
+
+</h1>
+<script>
+
+
+var y=0;
+var x=1;
+while(x<=100){
+
+var sum= y+x;
+document.write( "  "+sum + "  ");
+x++;
+
+}
+document.write("end"+" <br/>");
+</script>
+
+
+<script>
+
+    var p=0;
+    var q= 1;
+    while(q<=100){
+   
+  
+  if(q%3==0 && q%5==0){
+   
+      document.write("  "+q);
+       sum=p+q;
+  } 
+  
+     q++;
+  
+    }
+  
+  
+    document.write("<br/>  "+ "sum1= " +sum + "<br/>");
+  </script>
+  
+  
+  <script>
+  
+    var e=0;
+    var t=1;
+    while(t<=100){
+    
+        if( t%3==0 && t%5==0){
+            document.write(" "+  t);
+            sum= e+t;
+        }
+    
+        t++;
+    }
+    
+    document.write( "<br/>  " +"sum2= " + sum +"<br/>");
+    </script>
+   
+
+   <!-- do while loop er syntex -->
+
+   <script>
+document.write("do while loop er example= ")
+
+var x=3;
+// do while loop er starting point
+do{
+
+document.write("  " + x);
+    x=x+2;
+// updating part.
+
+}while(x<=30);
+
+   </script>
+
+
+<!-- break & continue keyword er use kora hoi condidion er upor bitti kore. -->
+
+<script>
+    document.write("<br/>"+ " break & continue keyword 2ta condition eer upore bitti kore kaj kore.jmn: " +"<br/>")
+var g=1;
+for(x=1;x<=10;x++){
+    if(x==7)
+    break;
+    document.write(" "+ x);
+
+
+    // ekane body er vitorer write function ta write/output dewar age conditon check korbe.
+    // 1 thek 10 obdi print korar smy  x=7 howar agei break niye nibe, karon (break er condition)ta write function er age ttai
+    // jodi (break er condi.)ta write function er pore thakto taile 1 thek 10 obdi print korar smy x=7 seta print kore then break nibe, karon write function ta (break er condi.) er nise lika hoyece tai.
+}
+
+
+document.write("<br/>"+ " write function er pore ( break key .condi.)dile age print 7 obdi print kore then breek nibe.karon condi. ta write function er pore lika hoyece. tai. "+"<br/>")
+var g=1;
+for(x=1;x<=10;x++){
+
+    document.write(" "+ x);
+       if(x==7)
+    break; 
+}
+</script>
+</div>
+
+
+<div>
+<h1>function keyword</h1>
+
+
+<script>
+
+// function creating..
+function sahillu(peramitar,x,y,z){
+var hablu=peramitar+x+y+z;
+document.write("print= "+ hablu)
+}
+
+// function calling..
+sahillu(peramitar_er_value_ekan_theke_pass_kore,xa,yb,zc);
+shaillu(23,3,2,3);
+// function er nameee dhore hoto icce call kora jabe.
+</script> 
+
+
+
+<!-- switch conditional control st. diye digit spelling check -->
+<h1> switch condi con. st. diye digit spelling check program.</h1>
+
+<script>
+
+// var digit=prompt("enter any digit: ");
+
+document.write("the digit is: " );
+
+switch(digit){
+    case "0":
+        document.write("zero");
+        break
+    case "1":
+        document.write("one");
+        break
+     case "2" : 
+     document.write("two");
+     break
+
+     case "3" : 
+     document.write("three");
+     break
+
+     case "4" : 
+     document.write("four");
+     break
+
+     case "5" : 
+     document.write("five");
+     break
+
+     case "6" : 
+     document.write("six");
+     break
+
+     case "7" : 
+     document.write("seven");
+     break
+
+     case "8" : 
+     document.write("eight");
+     break
+
+     case "9" : 
+     document.write("nine");
+     break
+
+ default :
+     document.write("not a digit");
+}
+
+
+</script>
+
+<!--  (switch condi. con.st.)diyletter vowel naki consonant check -->
+<h1>(switch condi. con.st.)diyletter vowel naki consonant check</h1>
+<script>
+// var letter=prompt("enter a letter: ");
+
+switch(letter){
+    case "a":
+    case "e":
+    case "i":
+    case "o":
+    case "u":
+   document.write("the letter is: "+ "vowel");
+break
+   default:
+    document.write("the letter is: "+ "consonant"); 
+}
+
+
+</script>
+
+<pre>
+1.for/while / do while er kaj prai same,kintu syntex e kisu diffrent ase.
+
+
+for(starting,condition;update){
+    jeta ekadik bar print korte cai seta ekane likt hobe.
+    & eta loop er condition onujai  print hobe.
+}
+
+
+    <!-- loop er syntex & use -->
+<h1>loop st.  diye ekadik sonka print, kuno kaj ekadik bar korar jonno loop use kora hoi</h1>
+
+
+<script>
+    for(var x=1;x<=10;x++){
+        document.write(x + " ");
+    }
+</script>
+<h4>bejor sonka ninnoi,loop er update point e shudo value change korlei hobe</h4>
+<script>
+
+    // bejor sonka print korte caile loop er update point e giye just
+// value ta 2dite hobe.
+for(var y=1;y<=20;y=y+2){
+    document.write(y + " ");
+}
+
+
+</script>
+<h2>// user theke  x theke y obdi 2ta number input niye sei sonka gulor jugfol nirnoi: 
+</h2>
+<script>
+// user theke  x theke y obdi 2ta number input niye sei sonka gulor jugfol nirnoi: 
+
+// var m=parseInt(prompt("enter 1st num= "));
+// var n=parseInt(prompt("enter 2nd num= "));
+
+var sum=0;
+
+for(var p=m;us<=n; p++){
+ sum=sum+p;
+}
+document.write( "user theke input newa number er jugfol= " +sum);
+
+
+</script>
+<h3>while loop diye program, sob kisu for loop er motoi but ekto edik sedik kore likte hoi.</h3>
+1.while loop er ketre starting point/variable ta while loop er age declare korte hoi,
+2.& conditional point ta while loop er 1st bracket r vitore likte hobe.
+3.& updating point ta while loop er body/curly bracket er vitore likte hobe.
+4. loop er sob loop (for,while, do while) sob kisu diye same kaj kora hoi, but likte ekto binnota ase.
+
+<script>
+var w=1;
+while(w<=10){
+
+    document.write(w);
+w++;
+    //   w++; ei updating point ta write()function er pore dile (1-10)obdi print korbe, 
+    // ar jodi w++; ei updating point ta write()function er age dewa hoi (2-11)obdi print korbe, 
+
+}
+
+</script>
+<h3>1 theke 100 obdi sonka gulo (3 & 5) diye bak kore baksesh jodi 0 er soman hoi sei sonka gulor jugfol</h3>
+<script>
+    var sum=0;
+var x=1;
+while(x<=100){
+
+    x++;
+
+    if(x%3==0 && x%5==0){  
+    sum = sum+ x;
+
+    document.write(x + "  ");
+ //  kon kon sonka 3,5 diye bak kore baksesh 0 er soman hocce sei sonka gulo dekar jonno write function ta if condi. st. er modde print kora hoyece.
+    }
+
+}
+
+document.write( "<br>" +"1 theke 100 sonka gulo obdi (3 & 5) diye jei sonkar baksesh 0 hoi sei sonka gulor jugfol= " +sum);
+
+</script>
+<h3>do while loop er kaj o tar syntex:</h3>
+
+<script>
+var x=1;
+// strating point
+do{
+    document.write(x);
+  x++;
+//   updating point..
+//   do-while loop condition check korar agei print kore then conditin check kore, syntex ta emni j age print/do then condition cehck/while
+// do-while er ketre condition false holew ekbar print kore felbe, then condition check kore false dekle tkn ar print korbena
+}while(x<=10); //conditonal point
+
+
+</script>
+
+
+<h3>ternary op. er sahajje positive sonka,negative sonka & zero nirnoi:</h3>
+
+<script>
+// var num=parseInt(prompt("enter your number: "));
+ var result= num>0 ?"positive" : num<0? "negative" : "zero";
+
+
+ document.write("the number is:  " + result);
+
+</script>
+
+<h3>1D array diye ekadik variable er hightest number ninoi: 
+</h3>
+
+ <script>
+ function hi_score(marks){
+
+    var index0= [0];
+
+    for( var x=1; x<marks.length; x++){
+        if(index0<marks[x]){
+            index0 =marks[x];
+        }
+    }
+
+return index0;
+
+ }
+var scores=[3,2,343,433,2224,54,334,32,2];
+
+  var big_score= hi_score(scores);
+
+document.write(big_score);
+
+ </script>
+
+
+
+<h3>2D array diye program</h3>
+<script>
+// 2D array diye program
+function play_run_score(playerinfo_s){
+
+var top_runner_name=playerinfo_s[0][0];
+       var hi_run=playerinfo_s[0][1];
+
+
+       for(var x=1; x <playerinfo_s.length ; x++){
+        if(hi_run<playerinfo_s[x][1]){
+            hi_run=playerinfo_s[x][1];
+            top_runner_name=playerinfo_s[x][0];
+        }
+       }
+
+return top_runner_name;
+
+}
+
+// 2D array
+var playerinfo=[
+['sakib',33],
+["tamim", 87],
+["musfiq", 69],
+["mashrafi", 50]
+];
+
+
+ var topper=play_run_score(playerinfo);
+
+ document.write("the top runner name is =" + topper);
+
+</script>
+
+
+
+
+
+
+<script>
+
+ function student_data(studentdata){
+
+    var topper_name=studentdata[0][0];
+    var top_mark=studentdata[0][1];
+
+    for(var x=1;x<studentdata.length;x++){
+        if(top_mark<studentdata[x][1]){
+            top_mark=studentdata[x][1];
+            topper_name=studentdata[x][0];
+        }
+    }
+    
+return topper_name;
+}
+
+var studentdata= [
+["sabbir", 39],
+["tashfiq",55],
+["rahim",3],
+["jabbar",43],
+
+];
+
+var topper= student_data(studentdata);
+
+document.write( "the topper name is = "+ topper );
+</script>
+
+<h3> how to create object</h3>
+
+<script>
+
+var student1= {
+    name : "tipu",
+    age: 45,
+    cgpa:3.44,
+    langu:["bangla","hindi", 'urdo ']
+}
+
+
+document.write(student1.age);
+</script>
+
+<h3>object template mak by function obj</h3>
+<script>
+// template maek kore just student1/2/3 evbe bole valueta templatee e pass, & 
+function Student(name,age,cgpa,langu){
+   this.name=name;
+   this.age=age;
+   this.cgpa=cgpa;
+   this.langu=langu;
+   
+this.writee= function (){
+
+    document.write(this.name);
+    document.write(this.age);
+    document.write(this.cgpa);
+    document.write(this.langu);
+}
+
+
+}
+
+var student1=new Student("tipu ", 32, 5.66 ,[",hindi","arbi","banlga"]);
+var student2=new Student("sahil",19,3.44,["arbi","bangla","urdo"]);
+var student4=new Student("sahil",19,3.44,["arbi","bangla","farsi"]);
+
+document.write(student4.age);
+
+student1.writee();
+</script>
+
+<script>
+
+
+var collage={
+
+    class:"nine",
+    students:50,
+    topper: 45,
+    subject:"bangla"
+
+}
+
+document.write(collage.class);
+</script>
+
+
+<script>
+
+function Student(name,age,cgpa,langu) {
+this.name=name;
+this.age=age;
+this.cgpa=cgpa;
+this.langu=langu;
+
+
+this.all_data= function(){
+    document.write("name= " + this.name  +"<br>");
+    document.write("age= " +  this.age  +"<br>");
+    document.write("cgpa= " + this.cgpa  +"<br>");
+    document.write("langu= " +this.langu  +"<br>");
+}
+
+
+}
+
+var student1=new Student("sahillu ",43 ,3.44,[" arbi","bangla","english"]);
+var student2=new Student("tipu ",20 ,3.00,[" farsi","bangla","english"]);
+
+
+
+document.write( student1.name +"<br>");
+
+student1.all_data();
+student2.all_data();
+</script>
+
+<h3>guasing game</h3>
+ 
+<script>
+
+
+var win_num=0;
+var lose_num=0
+
+for(var a=1; a<=5;a++){
+
+// for loop /do while loop korew eta kora jabe.
+// var x=parseInt(prompt("enter your number= "));
+var y= Math.floor(Math.random() *4) +1;
+// random ta 0 thek 1 obdi sonka genarate kore seta 4 er sate jog hoye jabe, tkn (0 theke 4)obdi sonka genarate hobe, & floor er baire thaka 1 er sate jog hoye jabe tkn hobe ( 1 theke 5)obdi random sonka genarate.
+
+
+
+    if(x==y){
+        document.write("you win = "+ x +"<br>");
+        win_num++;
+    }else
+    {
+        document.write("your lose ! the number was=" + y +"<br>");
+        lose_num++;
+    }
+
+// x>y ? document.write("you win = "+ x +"<br>")(win_num++) : document.write("you lose ! the number was=" + y +"<br>") (lose_num++);
+ 
+
+}
+
+document.write("you win "+win_num+ " time!" +"<br>")
+document.write("you lose "+lose_num+ " time!" +"<br>")
+
+</script>
+
+
+<h3 >dom ( document object method)</h3>
+<p id="abdul">Lorem ipsum dolor sit amet.</p>
+<p class="tikku">Lorem ipsum dolor sit amet.</p>
+<p>Lorem ipsum dolor sit amet.</p>
+
+<script>
+
+document.getElementById("abdul").innerHTML="xyz";
+//1. teger id diye js e teg select
+
+// innerHTML diye oi teg er vitorer text change kora hoi. chaile naw kora jabe.se ketre semiclone diye select ta sesh korte hobe.
+
+document.getElementsByClassName("tikku")[0].innerHTML=" class er dik diye jei teg ta index number 0 te ase ota select by (document.getelementsbyclassname)";
+// class name dhore teg select,but index number o dite hoi karon class jeheto eki name ekadik thake tai tik koto kon class er/ koto number index er class ta select korte cacci seta jate sohoje define kora jai tar jonno index number soho dite ho.
+
+
+document.getElementsByTagName(p)[2].innerHTML="index number 2 te jei p teg ta ase ota select by (document.getelementsbytegname)";
+// 3.teg jeheto eki name ekadik thake tai index number dite hoi same vabe class name dhore select korar ketrew index number dite hoi karon class o eki name ekadik thake.
+
+</script>
+
+
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>

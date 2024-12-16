@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- <script>
+
+// prottekta array method er tik kmn kaj kore seta dekte caile baki method gulo comment kore diye then jeta dekte cai ota run korte hobe.
+var names=["jabbar1","salam2","rahim3","al jabbar"];
+
+// names.shift(); //1.multiple datar sesh er dik theke data remove korte chaile.
+// names.unshift(123,3,4," xyz"); // 2.kuno variable er datar shurorer dike new data add korte caile
+// names.splice(1,0,"al kaiom","as salam")
+ //3.line er jekuno jaigai kuno new data add korte caile  splice() method use korte hobe. & splice()method er bracket er vitore digit dewa hoi ota mutoto index number ,2ta index number dite hoi, ortat protot index number ta hocce koto numbe rindex number er jaigai boshbe seta bujanor jonno, & 2nd index ta hocce, kuno data remove korte caile 1,3,4,jotota remove korte cai seta ,ar rmove korte na chaile 0 dite hobe, & koma diye kon kon nam/data add korte cai seta dite hobe.
+// names.reverse(); //4. reverse()method er kaj holo kuno multiple data defualt/jeta thake ota ke utlo/reverse kore dewa.
+
+// names.sort(); // 5.sort()method er kaj holo array er modde joto gulo string type multiple data store kora ase segulo k alphabetly (ortat a,b,c,d) evabe prottekta word er protom letter ta check kore alplabety sajabe.
+
+// sort()method ta default vabe string er upor kaj kore kintu number type data k jodi sorting / sort()method diye organize korte cai thle ekta way ase.
+// sort(function) method er bracket er vitore ekta function create kore value return kore nite hobe.
+
+// document.write(names);
+/*  sort() mehtod apply in number data.
+var number1= [1, 23, 2,1,0,5,3,2];
+number1.sort( function (a,b){
+ var  x= a-b;
+    return x;
+});
+
+*/
+
+document.write(number1);
+</script> -->
+
+
+<!-- 1D array diye function -->
+<!-- <script>
+
+function hightScore(scores){
+
+    let max=scores[0];
+
+    for(let x=1;x<=scores.length; x++){
+
+        if(max<scores[x]){
+            max=scores[x];
+        }
+    }
+ return max;
+}
+
+var scores=[332,43,22,342,333];
+var maxscore= hightScore(scores);
+
+// document.write(maxscore);
+
+</script> -->
+
+<!-- 2D array diye program. -->
+<!-- 
+<script>
+
+function highestRunScorer(playinfo){
+
+    var max_runner=playinfo[0][0];
+    var highest_score=playinfo[0][1];
+    
+
+        for(let x=1; x<playinfo.length;x++){
+
+            if(highest_score<playinfo[x][1]){
+                highest_score= playinfo[x][1];
+                max_runner= playinfo[x][0];
+            }
+
+        }
+
+        return max_runner;
+
+}
+
+var playinfo= [
+        ['sakib',984],
+        ["tamim",68],
+        ["masraf",94],
+        ["sahil",78],
+    ];
+
+var big_runner=highestRunScorer(playinfo);
+
+document.write(big_runner);
+
+</script> -->
+
+<!-- <script>
+
+function students(stuinfo){
+
+    var topper_name= [0][0];
+    var high_mark= [0][1];
+        
+    for(var x=1; x<stuinfo.length;x++){
+        
+        if(high_mark < stuinfo[x][1]){
+            high_mark=stuinfo[x][1];
+            topper_name=stuinfo[x][0];
+        }
+    }
+
+ return topper_name;
+}
+
+var stuinfo= [
+    ["hijbullah",43],
+    ["atikullah",56],
+    ["sayem",54],
+];
+
+var topper= students(stuinfo);
+
+document.write(topper);
+
+
+</script> -->
+
+
+
+
+<!-- object in js -->
+
+<!-- <script>
+
+// obejct niom 1: 
+
+    // var student1 ={
+    //     name: "tipu",
+    //     roll: 1,
+    //     cgpa: 3.22,
+    //     langu: ["html","css","js"],
+    // }
+
+    // document.write(student1.name);
+// evabe ekta varaible declare korar pore vitore object er data gulo die ekta ekta kore print kora jabe, uporer kaj gulo aro sohoje niser niyome korte hobe.
+
+
+// multiple student er data store korar jonno tamplete: 
+// function  Student(name,roll,cgpa,langu){
+
+//     this.name=name;
+//     this.roll=roll;
+//     this.cgpa=cgpa;
+//     this.langu=langu;
+  
+
+
+// }
+//  var student1= new Student('tipu',33,3.43,["html,css,js"]);
+//  var student2= new Student('sahil',4,3.22,["html,css,quran"]);
+//  var student3= new Student('muhammad',1,3.53,["html,css,jas"]);
+
+
+//  document.write(student2.cgpa); // single data deka jai evabe jodi student1/2/3 er full data dekte chaile thole template er vitore arekta function banate hobe.
+//  document.write(student1.name);
+
+// templete er vitore ekta function make kore kuno student er all data eksate output e dekte chaile niser niome dekte hobe, ar jodi etka ekta dekte cai taile uporer niome dekte hobe.
+function  Student(name,roll,cgpa,langu){
+
+    this.name=name;
+    this.roll=roll;
+    this.cgpa=cgpa;
+    this.langu=langu;
+  
+               this.alldat = function(){
+                   document.write(this.name) ;
+                   document.write(this.roll) ;
+                   document.write(this.cgpa) ;
+                   document.write(this.langu);
+                    // this.alldata = diye ekta annonimous function make kora hoyece, jeta te jekuno student er all data store thakbe, 
+                    // ekn ei function name ta dhore print korle kuno student er all data eksta print kore dekabe.
+                    //  
+                }
+
+}
+ var student1= new Student('tipu ',35 , 3.43, ["html,css,js"]);
+ var student2= new Student('sahil ',4 , 3.22, ["html,css,quran"]);
+ var student3= new Student('muhammad ',1,3.53, ["html,css,jas"]);
+
+ document.write(student1.alldat() +"<br>");
+ document.write(student2.alldat()+"<br>");
+ document.write(student3.alldat()+"<br>");
+
+</script> -->
+
+
+
+<!-- Date object in js -->
+<!-- <script>
+var date=new Date(); //main Date object evabe ekta variable er modde assingment er pore (new)keyword like then objectname() likte hobe, obsso object er protom letter capital hote hobe.
+document.write(date); //j
+
+var month=date.getMonth();// main object.getXYZ  evabe main object ta jei variable e ase sei variable theke main ojbect er joto (date,time,hour,second,xyz)property ase sobi use kora jabe. niser niome.
+document.write(month);
+
+var day= date.getTime();//object er main variable.getxyz(); 
+document.write(day +"<br/>");
+
+var hour=date.getHours();
+document.write(hour +"<br/>");
+
+var year=date.get.year();
+document.write(year +"<br/>");
+
+var second=date.getSeconds();
+document.write(second +"<br/>");
+
+
+</script>
+ -->
+
+
+ <!-- DOM (document object model) kivabe html er element select korte hoi  -->
+ <!-- <h1 id="id1"> heading1 </h1>
+ <h1 class="class1">heading1</h1>
+ <h1>heading1</h1>
+  -->
+
+ <!-- <script>
+
+document.getElementById("id1").innerHTML="selected by idname";
+document.getElementsByClassName("class1")[0].innerHTML="selected by class name";
+// ekane tag/class name jeheto plural tai index number dite hoi,other wise error dibe.
+document.getElementsByTagName("h1")[2].innerHTML="selected by tagName";// ekane index number diye select korar karon holo jeheto h1 tag ekadik ase tai index number hiseb kore index number 2 e jei tag ta ase seta select kora hoyece.
+
+/*ekane ja ja bisoy keyal rakte hobe.
+1.speling tik ase kina dekte hobe.
+2.bracket er vitore quetion use kore then class/id/tag name dite hobe.
+3.class/tag name dhore select korar somoy index[xyz] use korte hobe. jeheto eta elements sesh e (s) thake ortat ekadik class/tag eki name e thakte pare eta index number use hoi.
+
+*/
+
+ </script> -->
+
+
+ <!-- querySelector er maddome id/class tag select -->
+<!-- <h2 id="idname">query class example1</h2>
+<h2 class="cls">query class example2</h2>
+<h2 >query tag example1</h2>
+
+<ul>
+    <li>hablu</li>
+</ul>
+
+<p>multi p tag1</p>
+<p>multi p tag2</p> -->
+<!-- 
+<script>
+// query selector e css er niome select korte hoi, ortat bracker er quetion er vitore id select korle shurote #,class select korle shurote dot(.) & tag select korle just tag name,
+// kuno parent tag er class select korte caile css e jemne age parent tag name then child tag name dei sevabei select korte hbe.
+document.querySelector("#idname").innerHTML="query selector er maddome id select"
+document.querySelector(".cls").innerHTML=" querySelector e maddome class name dhore select";
+document.querySelector("h2")[2].innerHTML="jeheto h2 name ekadik tag ase tai specific vabe konta select korte cai setar index number diyeci jate sohoje find kore select korte pare.";
+document.querySelector("ul li").innerHTML= " parent tag er vitore thaka child tag evabe select kore.";
+document.querySelectorAll("p")[1].innerHTML= " queryselector (All) use korle index number dite hoi.";
+
+</script> -->
+
+
+<!-- onclick er bebohar -->
+ <!-- <div>
+ html tag er vitore inline way te add kora jai. -->
+<!-- <button onclick="alert('inline way te alert result')">click me  ( inline way te onclick function er bebohar)</button> -->
+
+
+
+<!-- internal way tew onclick property use kora jai,nise dekanu holo -->
+<!-- <button onclick="clicky()">click me 1</button>
+<p onclick="tag1()"   style="cursor: pointer;">click me i am p tag for alert</p> -->
+<!-- <script>
+// onlick property ta html er jekuno tag e use kora jai, 
+
+function clicky(){
+    alert("you clicked button 1");
+}
+
+function tag1(){
+    alert("you clicked p tag");
+}
+
+
+
+</script> -->
+</div>  
+
+
+<!-- // onclick function er output alert e na deke onno kuno tag/ box e show korate caile ,niser niome likte hobe. -->
+
+<!-- <button  onclick="mymas1()" > btn 1</button> -->
+<!-- btn 1 click korle mymas1 name function er program ta korbe, then
+ jodi btn 2 te click kora hoi taile mymas2 name function er program ta kaj korbe. -->
+<!-- <button  onclick="mymas2()" > btn 2</button> -->
+
+<!-- <p class="cls_p">you have not click any btn</p> -->
+<!-- default vabe p tag e ja content ase ta show korbe.
+ & jodi kuno function e click kora hoi taile oi btn er onclick attribute e thaka function ta run hobe, & oi funtion onujai p tag er content gulaw change hoye jabe. -->
+
+<!-- <script>
+
+var p_tag= document.querySelector(".cls_p");
+// p tag ta age select kore ekta variable e store kore raka hoyece. & 
+// variable name ta dhore p tag e innerHTML er maddome vitorer taxt ta change kore dewa hobe. eta tkni hobe, jkn ei function ta jei btn e ase seta click kora hobe.
+function mymas1(){
+ p_tag.innerHTML="11 you clicked button 1"   
+}
+
+function mymas2(){
+ p_tag.innerHTML="22 you clicked button 2"   
+
+}
+
+
+</script>
+ -->
+
+<div>
+<!-- onclick function er maddome btn click korle ek ek rkm image dekabe, tar bebohar. -->
+<!-- <img src="image/fol.jpg" alt=""  width="400px"; height="300px";> -->
+<!--1. img tag e chaile defualt vabe ekta image raka jabe, abr khaliio raka jabe, jkn btn e click kora hobe. tkn oi btn er functon e thaka image ta show korbe.
+ 2.img tag er vitore image er jonno width,height inline way te diye dewatai recomended -->
+<!-- <button onclick="btn_1()"> space btn 1</button> -->
+<!-- 2ta img er jonno 2ta btn niye 2ta onclick property e function name dite hobe with bracket() -->
+<!-- <button onclick="btn_2()"> purple sky btn 2</button> -->
+
+<!-- <script>
+var imgg= document.querySelector("img");
+// img tag ta select kore ekta variable e rakte hobe.
+function btn_1(){
+    // btn 1 e click korle ei function ta run hobe, & function er vitore thaka image ta img tag show korbe, same vabe btn 2 te click korle btn 2 er jonno jei function newa hoise oi function run krobe.
+imgg.src="image/space.jpg";
+// img er variable name dhore dot.src diye (imgg.src="xyz_img _link"); dite hobe.
+}
+
+function btn_2(){
+    imgg.src="image/purple_sky.jpg";
+}
+</script> -->
+</div>
+
+
+<div>
+<!--tag  Find,notun tag create,tag/text add, tag /text remove in html elements -->
+
+<div class="s_div" class="cls2">
+    <p> p tag</p>
+
+    <h2>heading tag1</h2>
+    <h2>heading tag2</h2>
+</div>
+
+<script>
+
+//js er maddome html e notun tag create korte caile
+// age parent tag select korte hobe, 
+s_div=document.querySelector(".s_div");
+// parent tag select kora hoyece ,jetar vitore new tag nite cai
+var new_tag=document.createElement("h3");// notun j tag nite cai sei tag er name jmn: p tag, h1,h2 xyz tag niye ekta varaible e rakte hobe.
+var text1=document.createTextNode(" created by js heading tag 3");//new tag tar jonno vitorer content/text/img/xyz ja nite cai seta ( document.createTextNode("xyz content"); evabe likte hobe. )
+new_tag.appendChild(text1);// tag er variablename.appendChild("oi tag er text/content er varaiblename"); dite hobe.
+// ekane new tag ar new tag er jonno content appendchild() method er maddome add korte hobe. then
+s_div.appendChild(new_tag); // parent tag er variablename er sate append.child() method diy new tag ta parent tag er sate add korte hobe.
+// appendchild() method diye kuno tag add korte seta nise add hoi kintu jodi ekdm shurote add korte cai tkn insertBefore() method er madddome add korte hobe.jmn: 
+
+
+// insertBefore() method er maddome kuno element add korte chaile bracket () er vitore 2ta value dite hobe,protom ta hocce ami ki/ki tag add korte cacci, then 2nd hocce ami kar age add korte  cacci seta,nahoi kaj korbena.
+
+var heading0 = document.createElement("h1");
+var text0= document.createTextNode("heading tag0,created by insertBefore() method");
+heading0.appendChild(text0);
+
+var heading1= document.getElementsByTagName("h2")[0];// 0number index e jei heading (h2)tag ta ase setar agei ekta heading h1 tag add korte cacci. tai ei tag ta select kore ekta varaible e store kore nilm
+
+s_div.insertBefore(heading0 , heading1);
+
+
+// kuno tag remove korte caile.seta age select kore ekta varaible e rakte hobe then parenttag.removeChild(remove korte jei tag ta niye variable e rakte caici ota);
+
+var heading2 =document.getElementsByTagName("h2")[0];
+s_div.removeChild(heading2);
+
+
+// <!-- kuno tage e style add korte caile niser niome korte hobe. -->
+heading0.style.color= "red";
+s_div.style.background="navy";
+s_div.style.color="white";
+s_div.style.textDecoration="underline";
+a_tag.href="http://www.google.com/";
+a_tag.style.color="green";
+var a_tag= document.getElementsByTagName("a")[0];
+
+
+</script>
+<a href="#" target="_blank">google</a>
+</div>
+
+
+</body>
+</html>
