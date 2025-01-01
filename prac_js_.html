@@ -581,101 +581,706 @@ switch(letter){
     <!-- loop (for) er maddome 2 theke 100 obdi  jor sonkar jugjol &   -->
 
     <script>
-/*jor sonakar jugfol er  program.
-var sum=0;
+        /*jor sonakar jugfol er  program.
+        var sum=0;
+        
+        for(var x=2; x<=100; x=x+2){
+        
+            document.write(x +" ");
+         sum= sum+x;
+        
+        }
+        
+        document.write("<br/>" + " 2 theke 100 obdi sonkar jugfol = " +sum);
+        // document.write(sum);
+        */
 
-for(var x=2; x<=100; x=x+2){
-
-    document.write(x +" ");
- sum= sum+x;
-
-}
-
-document.write("<br/>" + " 2 theke 100 obdi sonkar jugfol = " +sum);
-// document.write(sum);
-*/
-
-/*
-// bejor sonkar jugfol er program
-
-
-var sum =0;
-
-for (var x=1; x<99; x=x+2){
-    sum= sum+x;
-
-    document.write(x + " ");
-}
-
-document.write("<br/>"+"1 thek 99 obdi  bejor sonkar jugfol = "+ sum);
-*/
-
-
-/* user theke 1st & last number input niye sei number gulor jugfol/ 1st number theke last number obdi loop ta colbe etar program ,,jevabe loop er vitorelikte hobe ,Jmn:  for(var x=1st_number; x<= 2nd_number) evabe boshate hobe.jmn: 
+        /*
+        // bejor sonkar jugfol er program
+        
+        
+        var sum =0;
+        
+        for (var x=1; x<99; x=x+2){
+            sum= sum+x;
+        
+            document.write(x + " ");
+        }
+        
+        document.write("<br/>"+"1 thek 99 obdi  bejor sonkar jugfol = "+ sum);
+        */
 
 
-
-var first_number= prompt("enter your 1st number ="); 
-var last_number= prompt("enter your last number ="); 
-
-for( var x= first_number; x<=last_number; x++){
-    document.write(x + " ");
-
-}
-
-document.write( "1st number ="+ first_number+  "<br/> , last number = " + last_number)
-*/
-
-
-
-// while loop er bebohar..
-
-var i=0; //1. while loop er ketre starting/variable point ta while er age dite hoi evabe.
-
-while(i<=9){//2. & condtional point ta while loop er pase bracket er vitore evabe dite hoi
-
-    i++;//3. 3number (updating) point ta while loop er body er vitore dite hoi. evabe..
-
-    document.write(" "+ i);
-
-    
-// while loop er ketre arekta importat bisoi hocce while loop index number er moto count kore cole , ortat 0theke count kora shuro kore. 
-
-}
+        /* user theke 1st & last number input niye sei number gulor jugfol/ 1st number theke last number obdi loop ta colbe etar program ,,jevabe loop er vitorelikte hobe ,Jmn:  for(var x=1st_number; x<= 2nd_number) evabe boshate hobe.jmn: 
+        
+        
+        
+        var first_number= prompt("enter your 1st number ="); 
+        var last_number= prompt("enter your last number ="); 
+        
+        for( var x= first_number; x<=last_number; x++){
+            document.write(x + " ");
+        
+        }
+        
+        document.write( "1st number ="+ first_number+  "<br/> , last number = " + last_number)
+        */
 
 
-var x= 2;
-// jor_sonkar_jugfol=0;
-// bejor_sonkar_jugfol=0;
 
-var sum=0;
-while(x<=20){
-    x++;
+        // while loop er bebohar..
 
-    if(x%2 ==0 && x%5 ==0){
-       sum= sum+x;
-       document.write(" " + x + "<br/>");
-    }
+        var i = 0; //1. while loop er ketre starting/variable point ta while er age dite hoi evabe.
 
-    // jor_sonkar_jugfol= x%2==0;
-    // bejor_sonkar_jugfol= x%2 !=0;
-  
-    // document.write(jor_sonkar_jugfol + " ");
-    // document.write(bejor_sonkar_jugfol + " ");
+        while (i <= 9) {//2. & condtional point ta while loop er pase bracket er vitore evabe dite hoi
 
-}
+            i++;//3. 3number (updating) point ta while loop er body er vitore dite hoi. evabe..
 
-document.write( " " + sum);
+            document.write(" " + i);
 
-// document.write("jor_sonkar_jugfol = "+jor_sonkar_jugfol);
-// document.write("bejor_sonkar_jugfol = "+bejor_sonkar_jugfol);
+        }
 
+        document.write("<br>");
     </script>
 
+    <!--   while & do while loop er use  
+<script>
+
+var t= 1;
+do {
+
+    document.write("<br>" +" "+t);
+    t++;
+}while(t<=10);
+
+r=1;
+while(r<=10){
+
+    document.write(" "+r);
+    r++;
+}
+
+</script> -->
+
+
+    <!-- break & continue keyword 2ta kuno condition er upore bitti kore kaj korbe,jmn: jodi kuno loop e kuno break & continue keyword use korte cai thle jevabe korte hobe.
+
+<script>
+document.write("<br>"+"  break keyword er example: " + "<br>");
+for(let i=1;i<=100;i++){
+
+if(i==10){// ekane ei condion e bola hoise j jodi loop er i er value 10 er soman hoi tahole loop ta break niye nibe ,ar pirnt korbena.ar break er jaigai (continue) keyword use korle 10 ta print na kore loop ta 11 theke calato karon i er value 10 er soman hole continue ortat gurai dibe, 10 bad diye 11 theke print korbe.
+    break;
+}
+        
+
+    document.write(" " +i);
+}
+
+document.write("<br>" +"continue keyword er example: " + "<br>");
+
+for(let i=1;i<=20;i++){
+
+if(i==10){//  (continue) keyword er kaj holo if er condition onujai jodi loop er i er value  10 er soman hoi, tkn loop 10 theke continue kore dibe,ortat loop e piriye dibe, 10 bad diye 11 theke baki gul o pirnt korbe
+    continue;
+}
+
+
+    document.write(" " +i);
+}
+
+for(let x=1; x<=20;x++){
+
+
+    if(x%2==0){// ekane condition ta holo jodi loop er x variable er value k 2 diye bak korar pore baksesh jodi 0 er soman hoi tkn continue keyword ta kaj korbe. jeheto x er man 1 1 kore 20 obdi colbe tar modde jei sonka gulo 2 diye bak korar pore baksesh 0 er soman hobe segulo print korbena. continue keyword er karon baksesh soman holei continue keyword oi sonka bad dibe, & loop colbe er pore theke.
+      continue;
+    }
+
+
+    document.write(x);
+}
+
+</script>
+  -->
+
+    <!--ternary(mane 3):  conditional control st. er kaj gulo ternary(3) op. er maddome kivabe kora jai ta nirnoi. 
+<script>
+
+var num=prompt("enter a number: ");
+
+// termary op diye: 
+
+num > 0 ? "positive":"negative";
+/*ekane uporer ternary te 3ta part ase 
+1st part: (num > 0 ?) num varialbe er man jodi 0 theke boro hoi?
+
+2nd part: ("positive") 1st part true hole 2nd part print korbe, ortat "positive" print korbe.
+
+3rd part: ("negative") jodi 1st part false hoi, ortat num varibler er man 0 er soman na hoi tkn 3rd part ortat( "negative") print korbe.
+*/
+
+//  jodi 2 e odik condition niye ternary function korte hoi tahole niser niome likte hobe.
+// 3ta conditon hole evbe hobe
+num > 0 ? "positive"  : num <0 ? "negative": "zero";
+/* ekane bola hoise jodi:
+num er man jodi 0 theke boro hoi taile positive print korbe, baki condtion check krobena, jodi 1st cond. false hoi tkn 2nd condition e e jabe, 2nd  condition ture hole negative print korbe, otherwise  zero print korbe.
+
+
+3 er odik cond. k jodi ternary  er maddome korte hoi tkn jevabe likte hobe: 
+
+
+ */
+ var multi_3_tertary= num > 9 ? "it's a number":num> 0 ? "it's a positive digit" : num<0 ? "its a negative digit":"zero";
+
+// ekane bola hoise j 9 theke num  er value boro hole (its a number) likata dekabe. & jodi eta false hoi tkn porer condi. e asbe, then 0 er theke jodi num er value boro hoi taile bolbe posi. digit eta. ar jodi 2nd condi. taw false hoi tkn 3rd condi. e jabe, joid num er value 0 theke chuto hoi tkn bolbe negative value eta, jodi ekta condi . true na hoi tkn bolbe zero
+
+document.write("<br/>"+"3 er ceye beshi condion diye ternary er example er results: " +multi_3_tertary);
 
 
 
 
+</script>
+ -->
+
+
+    <!-- function kivabe lika hoi kivabe call kora hoi
+ <script>
+// jog korar function: 
+function  jog(x,y){
+    var sum=x+y;
+    document.write( " the sum result is: " + sum + "<br>");
+}
+
+jog(2,3);
+
+// biyok korar function: 
+function biyok(a,b){
+
+    var sub= a-b;
+    document.write(" the sub result is: "+ sub + "<br>");
+}
+
+biyok(5,2);
+
+
+function gon(w,s){
+    var gon=w*s;
+    document.write(" the gon result is: "+gon );
+}
+
+gon(5,6);
+ </script>
+-->
+
+
+    <!-- IIFEs (immedietly invokeable function expresstions) ortat function k immedietly call korar syntex/niom:  -->
+    <!-- immedietly function call korte hole pura function ta parent bkct er vitore rakte hobe ,& erpore  abr parent bracket dite hobe ,tar vitore caile value pass kora jabe. then ; semiclone dite hobe. 
+
+<script>
+
+(function joruri(){
+    document.write("<br>"+" immedietly function call korar syntex: "+joruri);
+})("ei mama na pls");
+
+
+// aro ekta example : 
+(function important1(value1,value1){
+   var value=value1+value2;
+    document.write(value);
+})(kofil,tiya);
+
+
+</script>
+-->
+
+
+    <!-- funciton exprsstion holo -->
+    <!--  kuno funciton k ekta variable e store kore reke then oi variable name dhore call koratai hocce function expresstions  emen normally function name dhore  call korle oi function ta print hoi, kintu expresstion er ketre just variable e pura function ta reke then variable name ta call korle hobe, & oi variable call korar smy must parent bracket use korte hobe. jevabe kuno fucntion call kora hoi tik sevabei function exp. er ketre variabla ovabei call krote hobe.
+
+<script>
+
+var express= function func_express(msg){
+    document.write(msg)
+};
+
+express("funciton expresstions er value pass");
+// ekane just function ta var variable e reke oi variable name ta call korlei hobe, pirnt kore dibe, notun kore document.write() functon o use korte hobena;
+
+</script>
+ -->
+
+    <!-- array likar bibinno niom: 
+ <script>
+//1. normal array likar niom1 eta:
+var names= new Array();
+names[0]='anis';
+names[1]="shipa";
+names[2]="hablu";
+names[3]="sohan";
+
+document.write(names);// array er all data print korte caile direct array name  ta dite hobe, ar jodi array er kuno indibitual data print korte cai tkn array name er sate index number dike oi index number e jei data ase seta dekabe jmn: 
+document.write(names[3]);
+document.write(names[0]);
+
+ </script> -->
+
+    <!--1D array likar  shorthand  niom:
+
+<script>
+
+var students= ["sipon", "kispa", "sima","ratul","simpa"];
+
+document.write(students);// array er sob variable eksate pirnt korte caiel direct array name t pirnt kore dile hobe, ar jodi specific kuno data print korte hoi tkn array name er sate index number dite hobe.jmn: 
+document.write(students[0])
+document.write(students[4]);//evabe
+
+
+</script>
+ -->
+
+    <!-- loop e array er bebohar:
+
+    <script>
+// example 1:
+var arr_num=new Array();
+var sum1=0;
+for(let i=0; i<5;i++){
+arr_num[i]=parseInt(prompt("enter your number: "));
+var sum1= sum1+arr_num[i];
+}
+
+
+document.write(" user theke loop er maddome array er value input niye tar jugfol: "+sum1 + " ");
+
+// example: 2
+var p= new Array();
+var numm=0;
+for(let r=0; r<5;r++){
+    p[r]=parseInt(prompt("enter your value: "));
+
+var numm=numm+p[r];
+}
+
+document.write( "loop er maddome user theke multple array er value newa: " +numm);
+
+
+
+
+
+
+
+
+// example 2: 
+        // var names = ["anis", "sohan", "hablu", "sijan", "karin"];
+        var num=[10,20,30,40,50];
+        var sum=0;
+        for (let x = 0; x <= 4; x++) {
+
+            // document.write(num[x]);
+            var sum=sum+num[x];
+            
+
+
+            // document.write(names[x] + " ");
+        }
+
+
+        document.write("sum= " +sum);
+    </script>
+  -->
+
+    <!-- array te new data add & remove korar js er building kisu method 
+
+<script>
+
+var country=["bangla","pak", "ind",'afgan',"usa"];
+
+document.write(country.length + "<br>");// normally ekane country array er length holo 4 obdi,
+document.write(country + "<br>");
+
+country.push("japan");
+document.write( 'push method er maddome array er sesh er dike new data add korar pore : ' +country + "<br>");/*push korar pore country array er
+ modde japan  data ta add hoise, push method er maddome array er 
+ seshe new data add kora hoi,& pop method er maddome array er data
+  sesh er dik theke remove kora hoi.
+  pop er ketre autometic seshe jei data thakbe seta remove korbe, define kore dite hobena, kintu push korar ketre bracket er vitore eta deifne kroe dite hobe j ki push/add kora hobe seta ,
+  */
+
+  country.pop();
+  document.write( "pop method er maddome sesh er dik theke data remove korar pore: " +country)
+
+</script>
+-->
+
+    <!-- array er library methods:
+
+<script>
+
+
+var names=["rabeya  ","shaty  ","kolpona  ","jinku  ",'PINKU  '];
+
+document.write("data remove/add korar age: "+names + "<br>");
+
+/*1. shift() oppsite of pop() :ortat pop() method er maddome array er sesh er dik theke data remove kora hoi,& shift() method diye array er ekdm shuro theke data remove kora hoi */
+
+names.shift();
+document.write("shift() method er maddome array er shuror dik theke data remove korar pore: " + names + "<br>");
+
+/*2. unshift() oppsite of push(): ortat push() method er maddome array er sesh er dike data add kora hoi,& unshift() method diye array er ekdm shuror dike  data add kora hoi */ 
+
+names.unshift("add_by_unshift");
+document.write('unshift() method er maddome arrray er shuror dike data add korar pore: ' + names + "<br>");
+
+
+/* 1.splice() method er maddome array er jekuno jaigai data add & remove 2tai kora jai, se ketre add/remove krote gele index number bole dite hoi, add korte gele tkn koto number index e add korte cacci sei index number er sate ki add korte  cacci xyz name ta dite hobe, jmn:  */
+
+names.splice(3,0 ,"splice-add1","splice-add2");
+document.write("splice()method er maddode add korar pore   :" + names + "<br>")
+/*1. ekane bola hoise j:  3number index theke add hobe, & 0 er mane holo ektaw remove korte caina seta, ar jodi 0 er jaigai 1/2 ditam taile 3number index theke 1/2ta data remove kore felto, add korbe tiki ,kintu jodi 2nd value te kuno positibe value ditm taile oita mane bujai holo remove korte hobe seta.*/
+
+
+
+
+
+// 2. splice method er maddome jekuno jaiga theke remove kroa jai , & kuno tobe bole dite hoi j koto number index theke koita value remove korte cacci seta. ejonnoi brackete er vitore 2ra value dewa hoi, obssoi koma use korte hobe.
+names.splice(2,1);
+document.write('splice() method er maddome data remove korar pore  :'+ names + " <br>");
+// 2.etar mane holo 2number index  posititon theke 1ta data remove krote hobe, jmn: 
+
+
+
+/*1. sort() method er kaj holo array er data gulo k datar porotom letter onujai alphabetly sajabe.ortat jei datar protom letter a/A thakbe sta ekdm shurote erpore jei datar protom letter b ase seta a erpore evbe alpabetly sajai bosabe. array er modde ogucalo thakle eta sort() method er madddome sajano hoi. 
+2.ar jodi cai j sort() mehtod er maddoem alpabetly sajanur pore seta reverse krote ortat ulto dik theke  sajate ,mane array er jei datar protom letter a,b,c egulo utlo dik theke boshbe, eta kora hoi h occe  sort() korar pore reverse() method er maddome ultai dewa hoi.
+
+*/
+
+var stu= ["hablu","ball","tipu","apple"];
+
+document.write("sort() method er maddome sorting kroar age  :"  +stu + "<br>");// sort() korar age
+
+
+stu.sort();
+document.write("sort() method er maddome sorting kroar pore  :"  +stu + "<br>");// sort() method er maddoem sorting korar pore.
+
+stu.reverse();
+document.write("reverse() method er maddome reverse korar pore:"  +stu + "<br>");// sort() method er maddoem sorting korar pore.
+
+
+
+/* number data type  sorting korte caile ekta tricks follow kore then number type data k sorting kora hoi,,,karon sort() method ta default vabe string data type er upore kaj kore orat a,b,c evabe sajai, kintu jodi number k 1,2,3,4,.. evabe sorting korar proyojon hoi tkn sort() method er parent brakcet er vitore ekta funciton  create kort hobe then kaj korbe.jmn:  */
+
+var  num=[76,34,2,,21,5,1,65];// number type array's data k sorting
+
+num.sort(function(a,b){
+    return a-b;
+
+//  return b-a; b age likle ulto dik theke number type data sorting hobe.
+});
+
+
+/* etai holo number sort korar function, & function ta jevabe kaj korbe:
+1.num array er 0 number index e jei value ta ase ota k (a) peramiter e reke baki jei index e number type data ase ogulo compare korbe, ortat a er value jodi 76 theke 34 biyok korar pore jodi positive man ase tkn 34 ta age cole asbe, ar jodi negative man asto taile 34 ta jekane ase okanei thakto, & porer sonka k b er jaigai bosai abr a/76 theke biyok kora hobe, jodi abr positive man hoi tkn agecole asbe evabe kaj kore,
+
+*/
+</script>
+
+
+
+
+
+
+sort(compareFn?: ((a: number | undefined, b: number | undefined) => number) | undefined): (number | undefined)[]
+Function used to determine the order of the elements. It is expected to return
+a negative value if the first argument is less than the second argument, zero if they're equal, and a positive
+value otherwise. If omitted, the elements are sorted in ascending, ASCII character order.
+```ts
+[11,2,22,1].sort((a, b) => a - b)
+``` 
+-->
+
+
+
+    <!-- 1D array er maddome function program -->
+
+    <!-- <script>
+
+function topRun(scores){
+
+
+    var index0_value=scores[0];
+   var highrun = scores;
+  for(let x=1; x<=scores.length; x++){
+     if(index0_value<scores[x]){
+
+        index0_value = scores[x];
+        highrun= scores[x];
+     }
+  }
+  return highrun;
+}
+
+var scores = [23,22,6,87,3,99];
+// scores = ["mushfiq",'tamim', "rafsan",'tawhid'];
+
+topRun(scores);
+document.write(topRun);
+</script> -->
+    <!-- 
+    <script>
+
+        function highestRun(run) {
+
+            var max0 = run[0];
+
+            for (let x = 1; x <= run.length; x++) {
+                if (max0 < run[x]) {
+                    max0 = run[x];
+                }
+
+            }
+
+            return max0;
+        }
+
+        var run = [43, 55, 23, 77, 23, 20];
+       var bigrun= highestRun(run);
+
+       document.write(bigrun);
+    </script> -->
+
+
+
+
+    <!-- 2D dimensional array er compareing funcion
+
+    <script>
+
+
+// function goot_stu(marks){
+
+//     var topper_name=marks[0][0];
+//     var topper_mark=marks[0][1];
+//     for(let x=1; x<marks.length;x++){
+
+   
+//         if(topper_mark<marks[x][1]){
+//             topper_mark=[x][1];
+//             topper_name= marks[x][0];
+//         }
+//     }
+
+//     return topper_name;
+// }
+
+// var marks=[
+// ["sahil",43],
+// ["totol",32],
+// ["tikku",33],
+// ["siham",98],
+// ];
+
+// var topper= goot_stu(marks);
+
+// document.write(topper);
+
+ 
+<script>
+function sheets(marks) {
+
+var topper_name =marks[0][0];
+    var top_mark =marks[0][1];
+
+    for(let x=1; x<marks.length; x++){
+        // ekane marks.length =4; tai < dite hoise jeheto index ase 0 theke 3obdi , 
+        if(top_mark<marks[x][1]){
+            top_mark = marks[x][1];
+            topper_name = marks[x][0];
+        }
+    }
+
+    return topper_name;
+}
+
+var marks = [
+["sihab",689],
+["sayem",55],
+["munna",23],
+["hasib",76],
+
+];
+
+ var topper= sheets(marks);
+ document.write(topper);
+  </script>
+
+
+    <script>
+
+        function students(stu_info) {
+
+           var topper_name= stu_info[0][0]; //index0  er name;
+           var max_mark= stu_info[0][1];// index0 er mark;
+
+           for(var a=1; a<stu_info.length; a++){
+  // ekane stu_info.length =5; but index hisab number ase (0 theke 4)obdi tai length use korle  < dite hoise jeheto index ase 0 theke 4obdi but length to 5 tai,
+
+            if(max_mark<stu_info[a][1]){
+                max_mark = stu_info[a][1];
+                topper_name = stu_info[a][0];
+            }
+           }
+
+           return topper_name;
+
+        }
+
+ stu_info = [
+                ["hablu", 65],
+                ["sinu", 93],
+                ["montu", 32],
+                ["farhad", 54],
+                ["sayan", 323],
+            ];
+
+  var topper=students(stu_info);
+document.write(topper);
+    </script>
+-->
+
+    <!-- object in js 
+
+<script>
+/* 1.object er normal niom etai
+var student1 = {
+   name : "sahil",
+   age  : 22,
+   roll :2,
+   lang : ["html","css","js"]
+};
+
+console.log(student1.age);
+ */
+
+
+/* constructor er maddome object er man nirnoi:
+1.contructor object er syntex holo emne normal funciton jevabe likhe ovabei lika hoi, kintu function name er protom letter capital hote hoi.. baksob normal function e jmn omni hobe. tobe multiple value store kore rakte caile this.xyz = xyz; evabe likte hobe,  */ 
+
+function Student(name,age,roll,lang) {
+    this.name = name;
+    this.age = age;
+    this.roll = roll;
+    this.lang = lang;
+
+    this.all_data = function (){
+        console.log(this.name);
+        console.log(this.roll);
+        console.log(this.age);
+        console.log(this.lang);
+    }
+}
+
+// jevabe contructor obj e value pass kora hoi. jmn: 
+var student1 =new Student("hablu",22,3.2,["html","css","js"]);
+
+var student2 = new Student("sahil", 33, 3.53,["js,html,css"])
+console.log(student1.name);
+console.log(student1.age)
+
+student1.all_data();
+student2.all_data();
+
+
+</script>
+-->
+
+    <script>
+
+
+        /*Math.round(3.4);  ei method er kaj holo kuno sonka k round kore dewa, jodi dosomik er pore (1-5)obdi hoi tahole niser dike order dosomik er ager sonkar dike round kore dibe, */
+        /* Math.round(3.7);   ar jodi dosomik er pore 5-9 obdi kuno sonka hoi thle uporer dike round kore dibe, ortat 4 er dike round kore dibe. */
+
+        /*Math.floor(3.6);  ei method er  kaj holo kuno sonka k niser dike floor/round kore dewa. dosomik er pore jei sonkai takuk na keno dosomik er ager sonka jeta otai dekabe, ortat floor/ager sonka */
+
+        /*Math.ceil(2.4);  er kaj holo uporer dike round/ceil kore dewa. ortat dosomik er pore jei sonkai thakuk na keno uporer purno sonka boshabe ortat 3 */
+
+        /* Math.random();  ei method er kaj holo random  sonka genarate kora.  */
+        /* */
+        /* */
+    </script>
+
+    <!-- GUSING GAME 
+    <script>
+        // gaussing game
+
+        var usernumber = parseInt(prompt("Enter a number (1-5) : "));
+
+        var randomnumber = Math.floor(Math.random() * 5) + 1;
+        // ekane jeheot random number emne (0.xyz) sonka genrate korbe bracket er vitore kuno value na dilew kintu sei sonkar sate jokon 5gon kora hobe ,tkn 1 theke 4 obdi sonka genarate krobe, & sei sonka gulo floor mathod er maddome floor/purno sonkai convert korbe, then bairer 1 er sate jog hoye jabe.
+
+var numOfwon = 0;
+var numOflose = 0;
+
+for(let i=1; i<=5;i++){
+
+var usernumber = parseInt(prompt("Enter a number (1-5) : "));
+
+var randomnumber = Math.floor(Math.random() * 5) + 1;
+
+    if (usernumber == randomnumber) {
+            document.write("you are won!, the result is = " + randomnumber + " = " + usernumber + "<br>");
+            won++;
+        }
+        else {
+            document.write("your are lose!, the number was : " + randomnumber + "<br>");
+            lose++;
+        }
+}
+
+document.write("you have total won : " +numOfwon+ " time " + "<br>");
+document.write(" you have total lose : " +numOflose+ " time");
+
+
+    </script>
+-->
+    <!-- constructor object -->
+    <script>
+        // normal niom
+        // var student0 = {
+        //     name: "sahil",
+        //     age: "22",
+        //     age: "32",
+        //     lang: ["english", "bangla"],
+        // }
+        // document.write(student0.name + " <br>");
+
+// contructor obj er syntex & niom.
+        function Student(name, age, roll, lang) {
+            this.name = name;
+            this.age = age;
+            this.roll = roll;
+            this.lang = lang;
+
+            // all data eksate print korte  caile arekta function create korte hobe.
+            this.all_data = function(){
+                document.write(this.name);
+                document.write(this.age);
+                document.write(this.roll);
+                document.write(this.lang + "<br>");
+            
+            };
+        }
+
+var student1 = new Student("rahman", 20, 43, ["HTML,CSS,JS"]);
+var student2 = new Student("jabbar", 19, 1.3, ["pytohon,CSS,JS"]);
+
+        // document.write(student1.name);
+        // document.write(student1.age);
+        // document.write(student1.lang);
+
+        student1.all_data();
+        student2.all_data();
+// contructor obj er body er vitore  all data eksate prit korar jonno kuno function evabei likte hove. kuno doc/console na likei print korte hoi
+    </script>
 
 
 </body>

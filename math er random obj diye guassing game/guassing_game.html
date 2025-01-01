@@ -1,51 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>math er random math obj diye guassing game.</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>math er random math obj diye guassing game.</title>
 </head>
+
 <body>
   video: 33;
   class:33;
   topic: guassing game create
-<!--  pura game & dekle syntex buje asbe,na sle nise details example soho deakno ase -->
+  <!--  pura game & dekle syntex buje asbe,na sle nise details example soho deakno ase -->
   <div class="syntex">
-  <script>
-// ##1.guassing game ta jevabe banano holo/sytex ta jmn: 
-var number_of_win=0;
-var number_of_lose=0;
+    <script>
+      // ##1.guassing game ta jevabe banano holo/sytex ta jmn: 
+      var number_of_win = 0;
+      var number_of_lose = 0;
 
 
-for(var x=1; x<=5;x++){
-    var usernumber=parseInt(prompt("enter your guassing number: "));
-    var randomnumber= Math.floor(Math.random() *5)+1;
+      for (var x = 1; x <= 5; x++) {
+        var usernumber = parseInt(prompt("enter your guassing number: "));
+        var randomnumber = Math.floor(Math.random() * 5) + 1;
 
 
-            if(usernumber===randomnumber){
-            document.write([x]+  ".you are win =" +randomnumber + "<br>");
-            number_of_win++;
-            }
-            else{
-                document.write([x]+ ".you are lose! "+" the number was:" +randomnumber + "<br>");
-                number_of_lose++;
-            }
+        if (usernumber === randomnumber) {
+          document.write([x] + ".you are win =" + randomnumber + "<br>");
+          number_of_win++;
+        }
+        else {
+          document.write([x] + ".you are lose! " + " the number was:" + randomnumber + "<br>");
+          number_of_lose++;
+        }
 
 
-}
+      }
 
-document.write(" total number of won!= " + number_of_win + "<br>");
-document.write(" total number of lose!= " + number_of_lose + "<br>");
+      document.write(" total number of won!= " + number_of_win + "<br>");
+      document.write(" total number of lose!= " + number_of_lose + "<br>");
 
-   </script> 
+    </script>
 
 
   </div>
 
-<!-- game ta bananur details:  -->
+  <!-- game ta bananur details:  -->
 
-<pre>
-        
+  <pre>
+
 ##1.guassing game ta jevabe banano holo ta details e dekte caile: 
 
 // ##1.guassing game ta jevabe banano holo/sytex ta jmn: 
@@ -96,18 +98,19 @@ seta print korar jonno same (for) loop er bairei oi win/lose er number ta print 
    
 </pre>
 
-<style>
-.syntex{
-background:linear-gradient(rgb(227, 150, 150),rgb(127, 231, 127),rgb(194, 194, 241));
+  <style>
+    .syntex {
+      background: linear-gradient(rgb(227, 150, 150), rgb(127, 231, 127), rgb(194, 194, 241));
 
-}
+    }
 
-pre{
-    background:linear-gradient(rgb(9, 235, 160),rgb(78, 3, 80),rgb(201, 242, 173));
+    pre {
+      background: linear-gradient(rgb(9, 235, 160), rgb(78, 3, 80), rgb(201, 242, 173));
 
-}
-</style>
+    }
+  </style>
 
 
 </body>
+
 </html>
